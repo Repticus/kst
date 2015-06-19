@@ -1,0 +1,280 @@
+{block title}KURZY kraniosakrální terapie{/block}
+{block keywords}kurzy kraniosakrální terapie, kranio-sakrální, energetické léčení, práce s energií, transformace vědomí{/block}
+{block description}Registrace do kurzu kraniosakrální metody, energie a transformace vědomí. Náplň kurzu, práce s energiemi, témata.{/block}
+
+{block head}
+<link rel="stylesheet" href="/css/jquery.css" type="text/css">
+<link rel="stylesheet" href="/css/gallery.css" type="text/css">
+<link rel="stylesheet" href="/css/form2.css" type="text/css">
+<!--<script type="application/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>-->
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script type="application/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script type="text/javascript" src="/js/nette.ajax.js"></script>
+<!--<script type="text/javascript" src="/js/netteForms.js"></script>-->
+
+<script src="//nette.github.io/resources/js/netteForms.min.js"></script>
+
+
+<script type="text/javascript" src="/js/kranio2.js"></script>
+{/block}
+
+{block content}
+<h1 id="coursename" itemprop="name">KURZY kraniosakrální terapie</h1>
+<p>
+	<b>Níže v tabulce najdete termíny</b>.
+	Po rozkliknutí řádky se můžete zaregistrovat.
+	Po odeslání vyplněného formuláře nám přijde vaše přihláška a vy obdržíte platební údaje a instrukce,
+	které generuje automat. Jinak nám můžete poslat mail.
+</p>
+<p>
+	Mějte prosím na paměti, že vaše přihláška je oboustranně závazná teprve uhrazením zálohy.
+	Pokud se kapacita kurzu zaplní dříve než dorazí vaše záloha, můžete si vybrat,
+	zda chcete být v evidenci jako náhradník na váš termín, ponechat zálohu na jiný termín, anebo vrátit peníze zpět.
+	Pokud je u kurzu poznámka OBSAZENO, můžete se přihlásit jako náhradník a současně i jako řádný účastník na jiný neobsazený termín.
+	Jako náhradník nemusíte posílat žádnou zálohu.
+	Budeme vás informovat mailem a odpovíme na vaše případné dotazy.
+</p>
+
+<h2>Termíny základního kurzu kraniosakrální terapie</h2>
+<div id="accordion" n:inner-foreach="$courses as $course">
+	<div itemscope itemref="coursename coursedescription address{$iterator->counter}" itemtype="http://schema.org/Event">
+		<time itemprop="startDate" datetime="{$course['dates'][0]['date']|date:'%Y-%m-%d'}">{$course['dates'][0]['date']|date:'%d.%m.%Y'}</time>
+		- {$course['price']} Kč
+		- {block #placeName}{$course['place']['name']}{/block}
+		{if $course['expiration']}
+			- UZAVŘENO
+		{elseif $course['occupied']}
+			- OBSAZENO
+		{elseif $course['advanced']}
+			- PRO POKROČILÉ
+		{/if}
+		<span class="info">více info zde</span>
+	</div>
+	<div id="address{$iterator->counter}" courseId="{$iterator->counter-1}">
+		<div class="address" itemprop="location" itemscope itemtype="http://schema.org/PostalAddress">
+			<b>Adresa</b>
+			<ul>
+				<li>
+					{ifset $course['place']['url']}
+						<span class="ui-icon ui-icon-home"></span>
+						<a target="_blank" title="Odkaz na www stránky" href="{$course['place']['url']}" itemprop="url name">
+							{include #placeName}
+						</a>
+					{else}
+						<span itemprop="name">{include #placeName}</span>
+					{/ifset}
+				</li>
+				<li>
+					{ifset $course['place']['map']}
+						<span class="ui-icon ui-icon-pin-s"></span>
+						<a target="_blank" title="Odkaz na mapu místa konání" href="{$course['place']['map']}" itemprop="streetAddress">
+							{$course['place']['street']}
+						</a>
+					{else}
+						<span itemprop="streetAddress">{$course['place']['street']}</span>
+					{/ifset}
+				</li>
+				<li>
+					<span itemprop="addressRegion">{$course['place']['city']}</span>
+				</li>
+			</ul>
+			<ul>
+				<li><b>Cena kurzu:</b> {$course['price']} Kč</li>
+				<li><b>Záloha na kurz:</b> {$course['deposit']} Kč</li>
+				<li n:ifset="$course['accommodation']"><b>Ubytování:</b> {$course['accommodation']} Kč/noc</li>
+			</ul>
+		</div>
+		<div class="term">
+			<b>Časový rozvrh kurzu</b>
+			<ul>
+				{foreach $course['dates'] as $date}
+					<li>{$date['date']|date:'%a %d.%m.%Y'} od {$date['date']|date:'%H:%M'} do {$date['end']} h</li>
+					{/foreach}
+			</ul>
+			{if !$course['expiration']}
+				<button class="registration">
+					{if $course['occupied']}
+						Registrace náhradníka
+					{else}
+						Registrace do kurzu
+					{/if}
+				</button>
+			{else}
+				Do kurzu se již nelze registrovat.
+			{/if}
+		</div>
+	</div>
+</div>
+
+{snippet flash}
+	<div n:foreach="$flashes as $flash" class="flash {$flash->type}">{$flash->message}</div>
+{/snippet}
+
+{form courseReservation2, "class"=>"ajax", "style"=>"display:none"}
+	<table>
+		<tr>
+			<td>*{label firstname /}:</td>
+			<td>{input firstname}</td>
+			<td colspan="2" rowspan="6">{input note}</td>
+		</tr>
+		<tr>
+			<td>*{label lastname /}:</td>
+			<td>{input lastname}</td>
+		</tr>
+		<tr>
+			<td>*{label phone /}:</td>
+			<td>{input phone}</td>
+		</tr>
+		<tr>
+			<td>*{label email /}:</td>
+			<td>{input email}</td>
+		</tr>
+		<tr>
+			<td>{label city /}:</td>
+			<td>{input city}</td>
+		</tr>
+		<tr>
+			<td>{label profession /}:</td>
+			<td>{input profession}</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td colspan="3">{input invoice}</td>
+		</tr>
+		<tr class="invoice">
+			<td>*{label firm /}:</td>
+			<td>{input firm}</td>
+			<td>*{label ic /}:</td>
+			<td>{input ic}</td>
+		</tr>
+		<tr class="invoice">
+			<td>*{label street /}:</td>
+			<td>{input street}</td>
+			<td>{label dic /}:</td>
+			<td>{input dic}</td>
+		</tr>
+		<tr class="invoice">
+			<td>*{label psc /}:</td>
+			<td>{input psc}</td>
+		</tr>
+		<tr class="invoice">
+			<td>*{label place /}:</td>
+			<td>{input place}</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td colspan="3">{input contentment}</td>
+		</tr>
+		<tr>
+			<td>*</td>
+			<td colspan="3">
+				Údaje označené hvězdičkou jsou povinné.
+			</td>
+		</tr>
+		<tr>
+			<td colspan="4">
+				{input course}
+				{input send}
+				<button class="storno">Storno</button>
+			</td>
+		</tr>
+	</table>
+{/form}
+
+<h2>Důležité informace ke kurzům KST</h2>
+<p>
+	Kurzy jsou určeny pro stávající i potenciální terapeuty, léčitele, maséry i laiky,
+	tedy každého, kdo je starší 18 let, chce se rozvíjet a pomáhat sobě i druhým,
+	má citlivost pro jemnou práci nebo si tuto schopnost chce rozvinout či rozšířit.
+	Na ně můžete volně navázat dalšími kurzy, které budeme vypisovat.
+	Od listopadu 2014 budou kurzy práce s energiemi jako samostatné semináře bez nutnosti absolvování kurzů KST.
+</p>
+<h2>Co si vzít sebou na kurz</h2>
+<p>
+	Přezůvky, pohodlné a čisté bavlněné tričko, tepláky (legíny), ponožky a deku, psací potřeby – tužku a papír.
+	A dobrou náladu.
+	Terapie se provádí v oblečení.
+</p>
+<h2>Ubytování v Praze</h2>
+<p>
+	Většina kurzů probíhá v Praze, mapu a fotografii najdete v sekci Kontakt.
+	Pokud potřebujete ubytování, doporučuji vám domluvit si je buď v trochu dražším
+	<a target="_blank" href="http://www.hotelbella.cz">Hotelu Bella</a>,
+	který je pár minut chůze od místa konání kurzů směrem k centru Prahy,
+	anebo velmi levné ubytování v <a target="_blank" href="http://www.ubytovani-alfa.cz">Hostelu Alfa</a>,
+	který je asi 15 minut chůze od místa konání kurů směrem k centru Prahy.
+</p>
+
+<h2>Program základního kurzu KST</h2>
+<p>
+	Kurzy vedou vedle mne další lektorky – moje dcera Bc. Šárka Richterová,
+	Bc. Michaela Habrunová a další - reference najdete v sekci <a n:href="Web:ohlasyAbsolventu">Ohlasy absolventů</a>.
+	Ke každému přistupujeme s respektem k jeho individualitě a snažím se zodpovědět všechny dotazy.
+	Není potřeba být předem nějak terapeuticky vzdělán ani mít zkušenosti s energiemi. 
+</p>
+<p>
+	V úvodu každý obdrží písemné materiály.
+	V teoretické části pracujeme s názornými pomůckami – rozložitelná lebka, pánev s částí páteře apod.
+	Při praxi jsou studenti většinou ve dvojicích u lehátek a vyměňují si role ležícího a praktikujícího.
+	Většinu času se věnujeme praxi a všichni se naučí přesný a efektivní postup.
+	Ten pak mohou plnohodnotně využívat a pomáhat tak sobě i druhým.
+</p>
+<p>
+	V rámci teorie nezabíháme do zbytečných podrobností, jež k dobrému výsledku své práce nebudete potřebovat.
+	Navíc si teorii můžete detailněji nastudovat z knih, které vám doporučíme.
+	Více podrobností by prodloužilo kurz možná o několik desítek dalších hodin, ale pak je stejně neuplatníte.
+	Zde totiž nejde o lékařské vzdělání, ale o schopnost kvalitně a s láskou pomoci vašim klientům či blízkým
+	nebo i sami sobě, a to se zde naučíte.
+	Stačí trocha vaší vnímavosti a empatie.
+</p>
+
+<h2>Odborná část kurzu</h2>
+<ul>
+	<li>Historie kraniosakrální terapie</li>
+	<li>Princip kraniosakrální biodynamiky a terapie</li>
+	<li>Indikace a kontraindikace kraniosakrální terapie</li>
+	<li>Anatomie kraniosakrálního systému (lebky, páteře, CNS, atd.)</li>
+	<li>Zkrácené postupy, rozšířené postupy ošetření kraniosakrální metodou</li>
+	<li>Úvod do Somatoemocionálního uvolnění (na toto téma jsou samostatné kurzy či semináře)</li>
+</ul>
+
+<h2>Praktická část kurzu</h2>
+<ul>
+	<li>vnímaní kraniosakrálníhu rytmu</li>
+	<li>korekce kraniosakrálního rytmu</li>
+	<li>přesný postup při kraniosakrálním ošetření ve zkrácené verzi</li>
+	<li>postup při rozšířené verzi ošetření</li>
+</ul>
+
+<h2>Získání osvědčení</h2>
+<p>
+	Absolventi se naučí tyto metody plnohodnotně praktikovat a získají osvědčení o absolvování.
+	Jelikož však jde o alternativní metody, nelze absolvováním získat licenci pro vydání živnostenského oprávnění,
+	která by byla rovnocenná osvědčení z absolvování zdravotnického studia či akreditovaných masérských zkoušek.
+	Pokud však taková osvědčení již vlastníte, pak vám nic nebude bránit ve využívání těchto metod oficiálně.
+	Totéž platí v případě, že sice nemáte ani masérské ani zdravotnické vzdělání,
+	avšak hodláte nabyté zkušenosti využívat pouze mimo profesní praxi.
+</p>
+<h2>Co je na práci kraniosakrálního terapeuta nejúžasnější</h2>
+<p>
+	Kraniosakrální terapie, stejně jako práce s energií, je metodou, díky níž neustále profesně porostete,
+	a pokud se do ní „obujete“, nikdy vás nepřestane bavit a bude pro vás radostí a dobrodružstvím.
+	Můžete ji kombinovat s energiemi a také s jakoukoli masážní či fyzioterapeutickou metodou.
+	A co je nejúžasnější? I kdybyste kraniosakrální terapii po absolvování kurzů praktikovali denně po zbytek svého života,
+	nikdy ji nedostudujete, jak tvrdí i jeden z jejích novodobých tvůrců Dr. Upledger,
+	neboť při praxi stále objevujete nová tajemství jejích skrytých sil a neprobádaných možností.
+	Zde totiž terapeut neléčí, nýbrž jakoby medituje a přitom je láskyplným pozorovatelem uzdravujících procesů,
+	které se v ošetřované bytosti automaticky nastolují. A pokaždé je to jiné! A v tom je její kouzlo.
+</p>
+<h2>Zázraky</h2>
+<p>
+	A pokud budete pracovat dobře a s čistým srdcem i úmysly,
+	nebude výjimkou, když vám klient s vděčností řekne,
+	že se mu pod vašima rukama stal zázrak.
+	Při práci budete ve spojení se svojí duší i s duší klienta,
+	budete se samovolně terapeuticky i duchovně rozvíjet,
+	zlepší se vaše zdraví, spolupráce obou vašich mozkových hemisfér,
+	třetího oka, srdeční a korunní čakry a postupně se zharmonizuje váš tělesný i duševní systém.
+	Totéž se bude dít i vašim klientům vaším prostřednictvím.
+	A to je můj záměr.
+</p>

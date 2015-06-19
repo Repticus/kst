@@ -9,7 +9,7 @@ cache = false
 # generate endlines in linux style
 sass_options = {:unix_newlines => true}
 
-output_style = :expanded
+output_style = :compressed
 # output_style = :expanded or :nested or :compact or :compressed
 
 # To enable relative paths to assets via compass helper functions. Uncomment:

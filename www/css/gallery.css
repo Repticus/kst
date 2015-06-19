@@ -1,0 +1,33 @@
+#slideshowWrapper{
+	position:relative;
+	padding:8px 0 24px 0;
+}
+ul#slideshow{
+	list-style:none;
+	padding:0px;
+	margin:auto;
+}
+#fssPlayPause, #fssNext, #fssPrev{
+	position: absolute;
+	top: 332px;
+	left: 5px;
+}
+#fssPlayPause{
+	left: 37px;
+}
+#fssNext{
+	left: 69px;
+}
+#fssList{
+	font-size: 0.9em;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+#fssList li{
+	display:inline;
+	margin-bottom: 1px;
+}
+#fssList a{
+	margin-bottom: 1px;
+}

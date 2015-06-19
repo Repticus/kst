@@ -1,0 +1,55 @@
+{block title}Kontakty{/block}
+{block keywords}kontakty, terapeuti, kontakty terapeutů, kurzy, ošetření, konzultace, kraniosakrální, kranio-sakrální, terapie, masáže, léčení{/block}
+{block description}Kontakty spolupracujících terapeutů podle místa působiště.{/block}
+
+{block head}
+<link rel="stylesheet" href="/css/jquery.css" type="text/css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$("#city a").click(function() {
+			$("#city a").removeClass("ui-state-focus actcity");
+			$(this).addClass("ui-state-focus actcity");
+			var $city = $(this).attr("cityid");
+			$("#therapist ul").each(function() {
+				var $contact = $(this).attr("cityid");
+				if ($city & $contact) {
+					$(this).show();
+				} else {
+					$(this).hide();
+				}
+			});
+		});
+		$("#city a:first").click();
+	});
+</script>
+{/block}
+
+{block content}
+<h1>Kontakty terapeutů</h1>
+<p>
+	Seznam mých kolegyň a kolegů v ČR praktikujících kraniosakrální terapii.
+	Pro informace o cenách a dalších podrobnostech kontaktujte prosím přímo konkrétního terapeuta.
+	Pro informace ke kurzům kontaktujte prosím moji dceru a asistentku Bc. Šárku Richterovou - viz níže.
+</p>
+
+<h2>Kontakty terapeutů podle místa působiště</h2>
+<ul id="city" class="ui-menu ui-widget ui-widget-content ui-corner-all">
+	<li class="ui-menu-item" n:foreach="$cities as $cityId => $city"><a class="city ui-corner-all" cityid="{$cityId}">{$city}</a></li>
+</ul>
+<div id="therapist" n:inner-foreach="$therapists as $therapist">
+	<ul cityid="{$therapist['cityid']}">
+		<li class="foto" title="Foto" n:ifset="$therapist['photo']"><img src="/img/cnt/{$therapist['photo']}" /></li>
+		<li class="person" title="Jméno a příjmení"><strong>{$therapist['name']}</strong></li>
+		{ifset $therapist['profession']}
+		<li class="profession" title="Profese" n:foreach="$therapist['profession'] as $profession">{$profession}</li>
+		{/ifset}
+		<li class="city" title="Místo působnosti">{$therapist['city']}</li>
+		<li class="phone" title="Telefon" n:ifset="$therapist['phone']">{$therapist['phone']}</li>
+		<li class="mail" title="email" n:ifset="$therapist['mail']"><a href="mailto:{$therapist['mail']}">{$therapist['mail']}</a></li>
+		<li class="website" title="Web" n:ifset="$therapist['web']"><a target="_blank" href="http://{$therapist['web']}">{$therapist['web']}</a></li>
+		<li class="website" title="Web" n:ifset="$therapist['web2']"><a target="_blank" href="http://{$therapist['web2']}">{$therapist['web2']}</a></li>
+		<li class="website" title="Web" n:ifset="$therapist['web3']"><a target="_blank" href="http://{$therapist['web3']}">{$therapist['web3']}</a></li>
+	</ul>
+</div>
+<div class="clr"></div>

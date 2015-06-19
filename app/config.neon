@@ -1,4 +1,15 @@
+includes:
+	- course.neon
+	- place.neon
+	- therapist.neon
+
 parameters:
+		bank: '123456789/0123' #cislo uctu majitele
+		google: true #include google-analytics code
+
+		owner:
+			name: 'alias emailu majitele' #alias emailu - jak se bude email zobrazovat
+			mail: 'email@majitele.cz' #email na ktery se budou odesilat prihlasky
 
 php:
 	date.timezone: Europe/Prague

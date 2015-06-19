@@ -1,23 +1,73 @@
 <!DOCTYPE html>
 <html lang="cs">
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
-		<title>{include title|striptags|strip}</title>
-		<link rel="stylesheet" href="{$basePath}/style.css">
-		<link rel="shortcut icon" href="{$basePath}/favicon.ico">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="keywords" content="{block keywords}kurzy kraniosakrální terapie, kranio-sakrální semináře, práce s energií, energetické léčení, zasvěcení Reiki, Shamballa, Ra-Sheeba{/block}">
+		<meta name="description" content="{block description}Kurzy kraniosakrální terapie a práce s energií. Zasvěcení do Reiki, Shambally a Ra-Sheeby.{/block}">
+		{block robots|indent:2}
+		{/block}
+		<title>{block title}Kraniosakrální terapie a práce s energií{/block}</title>
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="stylesheet" href="/style.css" type="text/css">
+		{block head|indent:2}
+		{/block}
 	</head>
-
 	<body>
-		<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
-
-		{block content|indent:2}
-		{/block}
-
-		{block scripts}
-		<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-		<script src="//nette.github.io/resources/js/netteForms.min.js"></script>
-		<script src="{$basePath}/javascript.js"></script>
-		{/block}
+		<div id="head">
+			<div id="body">
+				<div id="bodycntlft">
+					<div id="bodycntrgt">
+						<div id="bodyrgt">
+							<div id="bodylft">
+								<div id="foot">
+									<div id="page">
+										<div id="menu">
+											<ul>
+												<li><a{ifCurrent uvod} class="current"{/ifCurrent} n:href="Web:uvod">Úvod</a></li>
+												<li><a{ifCurrent zdenkaOcelikova} class="current"{/ifCurrent} n:href="Web:zdenkaOcelikova">O mně</a></li>
+												<li><a{ifCurrent kraniosakralniTerapie} class="current"{/ifCurrent} n:href="Web:kraniosakralniTerapie">Kraniosakrální terapie</a></li>
+												<li><a{ifCurrent kurzyKraniosakralniTerapie} class="current"{/ifCurrent} n:href="Web:kurzyKraniosakralniTerapie">KURZY kraniosakrální terapie</a></li>
+												<li><a{ifCurrent fotoVideo} class="current"{/ifCurrent} n:href="Web:fotoVideo">Foto a video</a></li>
+												<li><a{ifCurrent praceEnergie} class="current"{/ifCurrent} n:href="Web:praceEnergie">Práce s energií</a></li>
+												<li><a{ifCurrent kauzalniMedicina} class="current"{/ifCurrent} n:href="Web:kauzalniMedicina">Kauzální medicína</a></li>
+												<li><a{ifCurrent somatoEmocionalniUvolneni} class="current"{/ifCurrent} n:href="Web:somatoEmocionalniUvolneni">Somato-emocionální uvolnění</a></li>
+												<li><a{ifCurrent lymfatickaRucniDrenaz} class="current"{/ifCurrent} n:href="Web:lymfatickaRucniDrenaz">Lymfatická ruční drenáž</a></li>
+												<li><a{ifCurrent koucingOsobniRozvoj} class="current"{/ifCurrent} n:href="Web:koucingOsobniRozvoj">Koučing osobního rozvoje</a></li>
+												<li><a{ifCurrent ohlasyAbsolventu} class="current"{/ifCurrent} n:href="Web:ohlasyAbsolventu">Ohlasy absolventů</a></li>
+												<li><a{ifCurrent cenik} class="current"{/ifCurrent} n:href="Web:cenik">Ceník</a></li>
+												<li><a{ifCurrent kontaktyTerapeutu} class="current"{/ifCurrent} n:href="Web:kontaktyTerapeutu">Kontakty</a></li>
+											</ul>
+										</div>
+										<div id="content">
+											<!--[if lt IE 9]>
+												<div class="flash error">
+													Používáte zastaralou verzi prohlížeče, některé stránky se vám mohou zobrazit nekorektně.
+													Pro správné zobrazení stránek si aktualizujte prohlízeč.
+												</div>
+											<![endif]-->
+											{include #content}
+										</div>
+										<div class="clr"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script n:if="$google" type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-27641691-1']);
+			_gaq.push(['_trackPageview']);
+			(function () {
+				var ga = document.createElement('script');
+				ga.type = 'text/javascript';
+				ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
 	</body>
 </html>

@@ -1,0 +1,94 @@
+<html lang="cs">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>{include #title}</title>
+	</head>
+	<body style="margin:0px;padding:12px;color:#444;background-color:#eee;font-size:12px;font-family:Helvetica,Arial,sans-serif">
+		<div style="width:500px;margin:auto">
+			{block #body}{/block}
+		</div>
+	</body>
+</html>
+
+{define #data}
+<table style="width:244px;font-size:12px;margin-bottom:12px;border-spacing:0px;border:1px solid #666;border-radius:6px;background-color:#c9c9c9;float:left">
+	<tr>
+		<td colspan="2" style="padding:4px;font-weight:bold">
+			Osobní údaje
+		</td>
+	</tr>
+	<tr n:foreach="$personalData as $field">
+		<td style="padding:4px;border-top:1px solid #666;border-right:1px solid #666;background-color:#eee;{if $iterator->first}width:100px;{/if}{if $iterator->last}border-bottom-left-radius:6px{/if}">
+			{$field['caption']}:
+		</td>
+		<td style="padding:4px;border-top:1px solid #666;font-style:italic;background-color:#ffffff;{if $iterator->last}border-bottom-right-radius:6px{/if}">
+			{$field['value']}
+		</td>
+	</tr>
+</table>
+<table style="width:244px;font-size:12px;margin-bottom:12px;border-spacing:0px;border:1px solid #666;border-radius:6px;background-color:#c9c9c9;float:right">
+	<tr>
+		<td colspan="2" style="padding:4px;font-weight:bold">
+			Informace o kurzu
+		</td>
+	</tr>
+	<tr n:foreach="$courseData as $name => $field">
+		<td style="padding:4px;border-top:1px solid #666;border-right:1px solid #666;background-color:#eee;{if $iterator->first}width:100px;{/if}{if $iterator->last}border-bottom-left-radius:6px{/if}">
+			{$field['caption']}:
+		</td>
+		<td style="padding:4px;border-top:1px solid #666;font-style:italic;background-color:#ffffff;{if $iterator->last}border-bottom-right-radius:6px{/if}">
+			{ifset $field['url']}
+				<a style="color:#666" href="{$field['url']}">{$field['value']}</a>
+			{else}
+				{$field['value']}
+			{/ifset}
+		</td>
+	</tr>
+</table>
+<div style="clear:both"></div>
+<table style="width:244px;font-size:12px;margin-bottom:12px;border-spacing:0px;border:1px solid #666;border-radius:6px;background-color:#c9c9c9;float:left">
+	<tr>
+		<td colspan="2" style="padding:4px;font-weight:bold">
+			Bankovní údaje
+		</td>
+	</tr>
+	<tr n:foreach="$bankData as $field">
+		<td style="padding:4px;border-top:1px solid #666;border-right:1px solid #666;background-color:#eee;{if $iterator->first}width:100px;{/if}{if $iterator->last}border-bottom-left-radius:6px{/if}">
+			{$field['caption']}:
+		</td>
+		<td style="padding:4px;border-top:1px solid #666;font-style:italic;background-color:#ffffff;{if $iterator->last}border-bottom-right-radius:6px{/if}">
+			{$field['value']}
+		</td>
+	</tr>
+</table>
+<table style="width:244px;font-size:12px;margin-bottom:12px;border-spacing:0px;border:1px solid #666;border-radius:6px;background-color:#c9c9c9;float:right">
+	<tr>
+		<td style="padding:4px;font-weight:bold">
+			Časový rozvrh kurzu
+		</td>
+	</tr>
+	<tr n:foreach="$courseDays as $day">
+		<td style="padding:4px;border-top:1px solid #666;font-style:italic;background-color:#ffffff;{if $iterator->last}border-bottom-left-radius:6px;border-bottom-right-radius:6px{/if}">
+			{$day['start']|date:'%a %d.%m.%Y'} od {$day['start']|date:'%H:%M'} do {$day['end']} h
+		</td>
+	</tr>
+</table>
+{ifset $invoiceData}
+	<div style="clear:both"></div>
+	<table style="width:244px;font-size:12px;margin-bottom:12px;border-spacing:0px;border:1px solid #666;border-radius:6px;background-color:#c9c9c9;float:left">
+		<tr>
+			<td colspan="2" style="padding:4px;font-weight:bold">
+				Fakturační údaje
+			</td>
+		</tr>
+		<tr n:foreach="$invoiceData as $field">
+			<td style="padding:4px;border-top:1px solid #666;border-right:1px solid #666;background-color:#eee;{if $iterator->first}width:100px;{/if}{if $iterator->last}border-bottom-left-radius:6px{/if}">
+				{$field['caption']}:
+			</td>
+			<td style="padding:4px;border-top:1px solid #666;font-style:italic;background-color:#ffffff;{if $iterator->last}border-bottom-right-radius:6px{/if}">
+				{$field['value']}
+			</td>
+		</tr>
+	</table>
+{/ifset}
+{/define}

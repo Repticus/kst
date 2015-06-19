@@ -1,0 +1,59 @@
+parameters:
+	courses:
+		-
+			price: 7800
+			deposit: 3800
+			occupied: false
+			advanced: false
+			place: %place.dumsvetla%
+			dates:
+				-
+					date: '21.10.2015 9:00'
+					end: '18:00'
+				-
+					date: '22.03.2015 9:00'
+					end: '16:00'
+				-
+					date: '11.04.2015 9:00'
+					end: '18:00'
+				-
+					date: '12.04.2015 9:00'
+					end: '16:00'
+		-
+			price: 7800
+			deposit: 3800
+			occupied: false
+			advanced: false
+			place: %place.dumsvetla%
+			dates:
+				-
+					date: '25.04.2015 9:00'
+					end: '18:00'
+				-
+					date: '26.04.2015 9:00'
+					end: '16:00'
+				-
+					date: '16.05.2015 9:00'
+					end: '18:00'
+				-
+					date: '17.05.2015 9:00'
+					end: '16:00'
+		-
+			price: 7800
+			deposit: 3800
+			occupied: false
+			advanced: false
+			place: %place.dumsvetla%
+			dates:
+				-
+					date: '6.6.2015 9:00'
+					end: '18:00'
+				-
+					date: '7.6.2015 9:00'
+					end: '16:00'
+				-
+					date: '20.6.2015 9:00'
+					end: '18:00'
+				-
+					date: '21.6.2015 9:00'
+					end: '16:00'

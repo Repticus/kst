@@ -1,0 +1,39 @@
+parameters:
+	place: #seznam adres mista konani
+		aktip:
+			name: 'AKTIP Praha' #nazev mista konani
+			street: 'Perucká 587/23' #ulice
+			city: 'Praha 2 - Vinohrady' #mesto
+			url: 'http://www.aktip.cz' #www stranky mista
+			map: 'http://goo.gl/maps/vAoCE' #mapa mista
+		kvetnice:
+			name: 'La-Matylda'
+			street: 'Kontryhelová 373'
+			city: 'Praha - východ'
+			url: 'http://www.la-matylda.cz'
+		zbraslavice:
+			name: 'U Starého rybníka'
+			street: 'Zbraslavice 255'
+			city: 'Zbraslavice'
+			url: 'http://www.zbraslavice.eu'
+			map: 'http://www.zbraslavice.eu/mapa'
+
+		svetloslunce:
+			name: 'Centrum Světlo Slunce'
+			street: 'Křižíkova 67/70'
+			city: 'Praha 8 - Karlín'
+			url: 'http://www.svetloslunce.cz'
+			map: 'http://www.mapy.cz/s/8A4k'
+
+		dumsvetla:
+			name: 'Dům Rukou Světla'
+			street: 'Liblická 294/5'
+			city: 'Praha - Hloubětín'
+			url: 'http://www.dumrukousvetla.cz'
+			map: 'http://www.mapy.cz/s/8DrK'
+
+		pancavskyMlyn:
+			name: 'Pančavský Mlýn'
+			street: 'Zbraslavice 81'
+			city: 'Zbraslavice'
+			map: 'http://www.mapy.cz/s/99aA'
