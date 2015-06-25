@@ -215,11 +215,10 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 		$form->addText('lastname', 'Příjmení', NULL, 30)
 				  ->setAttribute('placeholder', 'Novák')
 				  ->setRequired('%label musí být vyplněno.');
-		$form->addText('phone', 'Telefon', NULL, 9)
+		$form->addText('phone', 'Telefon', NULL, 14)
 				  ->setAttribute('placeholder', '606111222')
 				  ->setRequired('%label musí být vyplněn.')
-				  ->addRule(BaseForm::INTEGER, '%label není správně vyplněn.')
-				  ->addRule(BaseForm::LENGTH, '%label není správně vyplněn.', 9);
+				  ->addRule(BaseForm::PATTERN, '%label může být buď v místním formátu bez mezer anebo s mezinárodní předvolbou oddělenou mezerou.', '(\+[1-9][0-9]{1,2} )?[1-9][0-9]{8}');
 		$form->addText('email', 'Email', NULL, 50)
 				  ->setAttribute('placeholder', 'novak@seznam.cz')
 				  ->setRequired('%label musí být vyplněn.')
@@ -254,8 +253,6 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 				  ->addRule(BaseForm::FILLED, 'Pro vystavení faktury je nutné uvést %label.');
 		$form->addText('dic', 'DIČ')
 				  ->setAttribute('placeholder', 'CZ11122333');
-		$form->addCheckbox('contentment', "Prohlašuji, že jsem v psychické i fyzické rovnováze")
-				  ->addRule(BaseForm::EQUAL, "Pokud nejste v psychické i fyzické rovnováze, nemůžete se zůčastnit kurzu.", array(TRUE));
 		$form->addHidden('course');
 		$form->addSubmit('send', 'Rezervovat');
 		$form->onSuccess[] = array($this, 'submitCourseReservation');
