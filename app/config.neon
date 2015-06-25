@@ -4,7 +4,13 @@ includes:
 	- therapist.neon
 
 parameters:
-		bank: '123456789/0123' #cislo uctu majitele
+		bank:
+			name: 'Název účtu' #nazev uctu
+			number: '123456789/0123' #mistni cislo uctu
+			currency: 'CZK' #mena
+			iban: 'CZ70 0123 0000 0001 2345 6789' #mezinarodni format uctu
+			swift: 'GIBACZPX' #swift
+
 		google: true #include google-analytics code
 
 		owner:

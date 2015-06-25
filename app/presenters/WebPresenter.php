@@ -123,8 +123,17 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 	}
 
 	public function setBankData($courseId) {
-		$bankInfo['bank']['caption'] = 'Číslo účtu';
-		$bankInfo['bank']['value'] = $this->context->parameters['bank'];
+		$bank = $this->context->parameters['bank'];
+		$bankInfo['name']['caption'] = 'Název účtu';
+		$bankInfo['name']['value'] = $bank['name'];
+		$bankInfo['number']['caption'] = 'Číslo účtu';
+		$bankInfo['number']['value'] = $bank['number'];
+		$bankInfo['currency']['caption'] = 'Měna';
+		$bankInfo['currency']['value'] = $bank['currency'];
+		$bankInfo['iban']['caption'] = 'IBAN';
+		$bankInfo['iban']['value'] = $bank['iban'];
+		$bankInfo['swift']['caption'] = 'BIC(SWIFT)';
+		$bankInfo['swift']['value'] = $bank['swift'];
 		$bankInfo['variable']['caption'] = 'Variabilní symbol';
 		$bankInfo['variable']['value'] = $this->createVariable();
 		$bankInfo['deposit']['caption'] = 'Částka k úhradě';
@@ -159,9 +168,8 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 		$clientMail = $form['email']->value;
 		$ownerMail = $this->context->parameters['owner']['mail'];
 		$ownerName = $this->context->parameters['owner']['name'];
-
 		$template = $this->createTemplate();
-		$template->setFile(APP_DIR . "/templates/Mail/clientCourseReservation.latte");
+		$template->setFile(__DIR__ . "/../templates/Mail/clientCourseReservation.latte");
 		$template->personalData = $this->setPersonalData($form);
 		$template->courseData = $this->setCourseData($form['course']->value);
 		$template->courseDays = $this->setCourseDays($form['course']->value);
@@ -175,7 +183,7 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 		$mailer = new SendmailMailer;
 		$mailer->send($mail);
 
-		$template->setFile(APP_DIR . "/templates/Mail/ownerCourseReservation.latte");
+		$template->setFile(__DIR__ . "/../templates/Mail/ownerCourseReservation.latte");
 		$mail->setFrom($clientMail)
 				  ->clearHeader('To')
 				  ->addTo($ownerMail, $ownerName);
