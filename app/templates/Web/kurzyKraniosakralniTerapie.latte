@@ -50,8 +50,7 @@
 <div id="accordion" n:inner-foreach="$courses as $course">
 	<div itemscope itemref="coursename coursedescription address{$iterator->counter}" itemtype="http://schema.org/Event">
 		<time itemprop="startDate" datetime="{$course['dates'][0]['date']|date:'%Y-%m-%d'}">{$course['dates'][0]['date']|date:'%d.%m.%Y'}</time>
-		- {$course['price']} Kč
-		- {block #placeName}{$course['place']['name']}{/block}
+		- {$course['name']}
 		{if $course['expiration']}
 			- UZAVŘENO
 		{elseif $course['occupied']}
@@ -69,10 +68,10 @@
 					{ifset $course['place']['url']}
 						<span class="ui-icon ui-icon-home"></span>
 						<a target="_blank" title="Odkaz na www stránky" href="{$course['place']['url']}" itemprop="url name">
-							{include #placeName}
+							{$course['place']['name']}
 						</a>
 					{else}
-						<span itemprop="name">{include #placeName}</span>
+						<span itemprop="name">{$course['place']['name']}</span>
 					{/ifset}
 				</li>
 				<li>

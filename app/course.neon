@@ -1,6 +1,7 @@
 parameters:
 	courses:
 		-
+			name: 'Kurz KST a práce s energií I.+ II.'
 			price: 12500
 			deposit: 4000
 			occupied: false
