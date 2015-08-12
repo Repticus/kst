@@ -26,3 +26,17 @@ parameters:
 				-
 					date: '4.10.2015 9:00'
 					end: '16:00'
+		-
+			name: 'Kurz KST a práce s energií III.'
+			price: 4300
+			deposit: 4300
+			occupied: false
+			advanced: false
+			place: %place.dumsvetla%
+			dates:
+				-
+					date: '26.9.2015 9:00'
+					end: '17:00'
+				-
+					date: '27.9.2015 9:00'
+					end: '16:00'
