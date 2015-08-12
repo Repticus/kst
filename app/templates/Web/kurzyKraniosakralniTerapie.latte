@@ -10,25 +10,19 @@
 <script type="application/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 <script type="text/javascript" src="/js/nette.ajax.js"></script>
 <script src="//nette.github.io/resources/js/netteForms.min.js"></script>
-
-
 <script type="text/javascript" src="/js/kranio2.js"></script>
 {/block}
 
 {block content}
-<h1 id="coursename" itemprop="name">Kurz základů KST a práce s Energií</h1>
+<h1 id="coursename" itemprop="name">Kurzy kraniosakrální a práce s energií</h1>
+
 <p>
-	<b>KURZY a semináře jsou určeny maximálně pro 10 účastníků.</b>
-	Mohou se jich zúčastnit ženy i muži od 18-ti let.
-	Výuka je zaměřena na techniky využívající <b>Kraniosakrální biodynamiky a Práce s energií
-		dle individuálních přirozených vloh a potřeb každého jednotlivého účastníka.</b>
-	Snažím se, aby se účastníci dozvěděli a prakticky naučili vše důležité,
-	co mohou potřebovat nejen pro spokojenost klientů, ale i pro sebe samotné.
-	Na kurzech nezabíhám do detailů, které běžně pro svou práci nepotřebujete a
-	které navíc patří do sféry zdravotnictví a mimo ni legislativa nepřipouští jejich výuku či provozování.
-	Vycházím z osobních zkušeností na základě výsledků praktikování kraniosakrální metody u tisíců klientů.
-	Na kurzech se nejvíce času věnuje praxi ve dvojicích.
-	Jde o jemnou dotykovou metodu a pracujeme oblečeni na lehátkách.
+	<b>Kurz KST a energie I. + II.</b> – na tomto kurzu se naučíte plnohodnotně používat KST metodu od hlavy až k patě - v rámci toho, co umožňuje legislativa.
+	V pasáži týkající se energií se věnuji účastníkům tak, aby každý viděl, pocítil a pochopil praktickou zkušeností své individuální vlohy.
+</p>
+<p>
+	<b>Kurz KST a energie III.</b> – na tomto kurzu si rozebereme vaše zkušenosti z praxe s KST a navážeme výukou rozšířené verze KST regenerace,
+	která se týká zejména obličejových svalů s vlivem na emoce.
 </p>
 <p>
 	<b>Níže v tabulce najdete termíny.</b>
@@ -36,17 +30,8 @@
 	Po odeslání vyplněného formuláře nám přijde vaše přihláška a vy obdržíte platební údaje a instrukce, které generuje automat.
 	Jinak nám můžete poslat mail.
 </p>
-<p>
-	Mějte prosím na paměti, že vaše přihláška je oboustranně závazná teprve uhrazením zálohy.
-	Pokud se kapacita kurzu zaplní dříve než dorazí vaše záloha, můžete si vybrat,
-	zda chcete být v evidenci jako náhradník na váš termín,
-	ponechat zálohu na nový termín či kurz s jinou tématikou, anebo vrátit peníze zpět.
-	Pokud je u kurzu poznámka OBSAZENO, můžete se přihlásit jako náhradník a současně i jako řádný účastník na jiný neobsazený termín.
-	Jako náhradník nemusíte posílat žádnou zálohu.
-	Budeme vás informovat mailem a odpovíme na vaše případné dotazy. 
-</p>
 
-<h2>Termíny třívíkendového kurzu KST a práce s Energií</h2>
+<h2>Termíny kurzů KST a práce s Energií</h2>
 <div id="accordion" n:inner-foreach="$courses as $course">
 	<div itemscope itemref="coursename coursedescription address{$iterator->counter}" itemtype="http://schema.org/Event">
 		<time itemprop="startDate" datetime="{$course['dates'][0]['date']|date:'%Y-%m-%d'}">{$course['dates'][0]['date']|date:'%d.%m.%Y'}</time>
@@ -203,18 +188,33 @@
 	</table>
 {/form}
 
+<h2>Další důležité informace ke kurzům KST</h2>
+<p>
+	<b>KURZY a semináře jsou určeny maximálně pro 10 účastníků.</b>
+	Mohou se jich zúčastnit ženy i muži od 18-ti let, kteří se chcejí rozvíjet a pomáhat sobě i druhým jemným způsobem.
+	Výuka je zaměřena na techniky využívající <b>Kraniosakrální biodynamiky a Práce s energií dle individuálních přirozených vloh a potřeb každého jednotlivého účastníka.</b>
+	Snažím se, aby se účastníci dozvěděli a prakticky naučili vše důležité, co mohou potřebovat nejen pro spokojenost klientů, ale i pro sebe samotné.
+	Na kurzech nezabíhám do detailů, které běžně pro svou práci nepotřebujete a které navíc patří do sféry zdravotnictví a mimo ni legislativa nepřipouští jejich výuku či provozování.
+	Vycházím z osobních zkušeností na základě výsledků praktikování kraniosakrální metody u tisíců klientů.
+	Na kurzech se nejvíce času věnuje praxi ve dvojicích.
+	Jde o jemnou dotykovou metodu a pracujeme oblečeni na lehátkách.
+</p>
+
+<h2>Přihláška</h2>
+<p>
+	Přihlaste se prosím skrze formulář u termínu v tabulce.
+	Mějte prosím na paměti, že vaše přihláška je oboustranně závazná teprve uhrazením zálohy.
+	Pokud se kapacita kurzu zaplní dříve než dorazí vaše záloha, můžete si vybrat,
+	zda chcete být v evidenci jako náhradník na váš termín,
+	ponechat zálohu na nový termín či kurz s jinou tématikou, anebo vrátit peníze zpět.
+	Pokud je u kurzu poznámka OBSAZENO, můžete se přihlásit jako náhradník a současně i jako řádný účastník na jiný neobsazený termín.
+	Jako náhradník nemusíte posílat žádnou zálohu.
+	Budeme vás informovat mailem a odpovíme na vaše případné dotazy.
+</p>
 <p>
 	Více se o kurzech dozvíte nejen zde, ale také na <a n:href="Web:uvod">úvodní stránce</a> tohoto webu a v sekci <a n:href="Web:ohlasyAbsolventu">Ohlasy absolventů</a>
 </p>
 
-<h2>Další důležité informace ke kurzům KST</h2>
-<p>
-	Kurzy jsou určeny pro stávající i potenciální terapeuty, léčitele, maséry i laiky,
-	tedy každého, kdo je starší 18 let, chce se rozvíjet a pomáhat sobě i druhým,
-	má citlivost pro jemnou práci nebo si tuto schopnost chce rozvinout či rozšířit.
-	Na ně můžete volně navázat dalšími kurzy, které budeme vypisovat.
-	Od listopadu 2014 budou kurzy práce s energiemi jako samostatné semináře bez nutnosti absolvování kurzů KST.
-</p>
 <h2>Co si vzít sebou na kurz</h2>
 <p>
 	Přezůvky, pohodlné a čisté bavlněné tričko, tepláky (legíny), ponožky a deku, psací potřeby – tužku a papír.
