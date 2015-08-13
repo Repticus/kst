@@ -76,18 +76,16 @@
 				<li><b>Záloha na kurz:</b> {$course['deposit']} Kč</li>
 				<li>
 					<table>
-						<tr>
-							<th>Lektor:</th>
-							<td>Zdenka Ocelíková</td>
-						</tr>
-						<tr>
-							<td></td>
-							<td>Bc. Šárka Richterová</td>
-						</tr>
-						<tr>
-							<td></td>
-							<td>Bc. Michaela Habrunová</td>
-						</tr>
+						{foreach $course['lectors'] as $lector}
+							<tr>
+								<th>
+									{if $iterator->isFirst()}
+										Lektor:
+									{/if}
+								</th>
+								<td>{$lector}</td>
+							</tr>
+						{/foreach}
 					</table>
 				</li>
 				<li n:ifset="$course['accommodation']"><b>Ubytování:</b> {$course['accommodation']} Kč/noc</li>

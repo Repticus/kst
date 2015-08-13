@@ -6,6 +6,10 @@ parameters:
 			deposit: 4000
 			occupied: false
 			place: %place.dumsvetla%
+			lectors:
+				- 'Zdenka Ocelíková'
+				- 'Bc. Šárka Richterová'
+				- 'Bc. Michaela Habrunová'
 			dates:
 				-
 					date: '29.8.2015 9:00'
@@ -31,6 +35,8 @@ parameters:
 			deposit: 4300
 			occupied: false
 			place: %place.dumsvetla%
+			lectors:
+				- 'Zdenka Ocelíková'
 			dates:
 				-
 					date: '26.9.2015 9:00'
