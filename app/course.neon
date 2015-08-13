@@ -5,7 +5,6 @@ parameters:
 			price: 12500
 			deposit: 4000
 			occupied: false
-			advanced: false
 			place: %place.dumsvetla%
 			dates:
 				-
@@ -31,7 +30,6 @@ parameters:
 			price: 4300
 			deposit: 4300
 			occupied: false
-			advanced: false
 			place: %place.dumsvetla%
 			dates:
 				-
