@@ -4,18 +4,19 @@ includes:
 	- therapist.neon
 
 parameters:
-		bank:
-			name: 'Název účtu' #nazev uctu
-			number: '123456789/0123' #mistni cislo uctu
-			currency: 'CZK' #mena
-			iban: 'CZ70 0123 0000 0001 2345 6789' #mezinarodni format uctu
-			swift: 'GIBACZPX' #swift
+	google: true #include google-analytics code
+	setlocale: cs_CZ.UTF-8 #nastaveni pro unix
 
-		google: true #include google-analytics code
+	bank:
+		name: 'Název účtu' #nazev uctu
+		number: '123456789/0123' #mistni cislo uctu
+		currency: 'CZK' #mena
+		iban: 'CZ70 0123 0000 0001 2345 6789' #mezinarodni format uctu
+		swift: 'GIBACZPX' #swift
 
-		owner:
-			name: 'alias emailu majitele' #alias emailu - jak se bude email zobrazovat
-			mail: 'email@majitele.cz' #email na ktery se budou odesilat prihlasky
+	owner:
+		name: 'alias emailu majitele' #alias emailu - jak se bude email zobrazovat
+		mail: 'email@majitele.cz' #email na ktery se budou odesilat prihlasky
 
 php:
 	date.timezone: Europe/Prague
