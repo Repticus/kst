@@ -1,4 +1,4 @@
-parameters:
+﻿parameters:
 	courses:
 		-
 			name: 'Kurz KST a práce s energií I.+ II.'
@@ -33,7 +33,7 @@ parameters:
 			name: 'Kurz KST a práce s energií III.'
 			price: 4300
 			deposit: 4300
-			occupied: false
+			occupied: true
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdenka Ocelíková'
