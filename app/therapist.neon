@@ -13,6 +13,11 @@ parameters:
 			profession:
 				- 'Organizace kurzů, lektor'
 				- 'Přednášky a konzultace'
+				- 'Kraniosakrální terapie a masáže'
+				- 'Astroporadenství a energie'
+				- 'Astro-konstelace a kurzy'
+				- 'Harmonizační cviky'
+				- 'Hramonizační tanec a choreografie'
 			city: 'Praha'
 			cityid: 1
 			phone: '+420 602 748 729'
