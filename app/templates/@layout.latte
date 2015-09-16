@@ -6,7 +6,7 @@
 		<meta name="description" content="{block description}Kurzy kraniosakrální terapie a práce s energií. Zasvěcení do Reiki, Shambally a Ra-Sheeby.{/block}">
 		{block robots|indent:2}
 		{/block}
-		<title>{block title}Kraniosakrální terapie a práce s energií{/block}</title>
+		<title>{block title|striptags}Kraniosakrální terapie a práce s energií{/block}</title>
 		<link rel="shortcut icon" href="/favicon.ico">
 		<link rel="stylesheet" href="/style.css" type="text/css">
 		{block head|indent:2}
@@ -27,6 +27,7 @@
 												<li><a{ifCurrent zdenkaOcelikova} class="current"{/ifCurrent} n:href="Web:zdenkaOcelikova">O mně</a></li>
 												<li><a{ifCurrent kraniosakralniTerapie} class="current"{/ifCurrent} n:href="Web:kraniosakralniTerapie">Kraniosakrální terapie</a></li>
 												<li><a{ifCurrent kurzyKraniosakralniTerapie} class="current"{/ifCurrent} n:href="Web:kurzyKraniosakralniTerapie">Kurzy KST a Energií</a></li>
+												<li><a{ifCurrent kurzyAstroKonstelaci} class="current"{/ifCurrent} n:href="Web:kurzyAstroKonstelaci">Kurzy Astro-konstelací</a></li>
 												<li><a{ifCurrent lymfatickaRucniDrenaz} class="current"{/ifCurrent} n:href="Web:lymfatickaRucniDrenaz">Lymfatická ruční drenáž</a></li>
 												<li><a{ifCurrent fotoVideo} class="current"{/ifCurrent} n:href="Web:fotoVideo">Foto a video</a></li>
 												<li><a{ifCurrent praceEnergie} class="current"{/ifCurrent} n:href="Web:praceEnergie">Práce s energií</a></li>
