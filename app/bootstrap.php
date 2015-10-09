@@ -4,6 +4,11 @@ require __DIR__ . '/../vendor/autoload.php';
 
 $configurator = new Nette\Configurator;
 
+
+// aktivuje laděnku pouze pro dané ip adresy
+//$configurator->setDebugMode(array('80.188.94.196'));
+
+//$configurator->setDebugMode(FALSE);
 $configurator->enableDebugger(__DIR__ . '/../log');
 
 $configurator->setTempDirectory(__DIR__ . '/../temp');
