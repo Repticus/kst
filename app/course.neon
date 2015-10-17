@@ -29,3 +29,20 @@ parameters:
 				-
 					date: '22.11.2015 9:00'
 					end: '16:00'
+		-
+			name: 'Kurz KST III.'
+			price: 4300
+			deposit: 4300
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdenka Ocelíková'
+				- 'Bc. Šárka Richterová'
+				- 'Bc. Michaela Habrunová'
+			dates:
+				-
+					date: '12.12.2015 9:00'
+					end: '17:00'
+				-
+					date: '13.12.2015 9:00'
+					end: '16:00'
