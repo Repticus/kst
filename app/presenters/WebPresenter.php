@@ -29,11 +29,15 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 		$this->courses = $this->context->parameters['courses'];
 		$now = strtotime(date("d.m.Y"));
 		foreach ($this->courses as $key => $course) {
-			$date = strtotime(date("d.m.Y", strtotime($course['dates']['0']['date'])));
-			if ($now >= $date) {
+			$firstDate = strtotime(date("d.m.Y", strtotime($course['dates']['0']['date'])));
+			$lastDate = strtotime($course['dates'][max(array_keys($course['dates']))]['date'] . " + 2 days");
+			if ($now >= $firstDate) {
 				$this->courses[$key]['expiration'] = true;
 			} else {
 				$this->courses[$key]['expiration'] = false;
+			}
+			if ($now > $lastDate) {
+				unset($this->courses[$key]);
 			}
 		}
 		$this->template->courses = $this->courses;
