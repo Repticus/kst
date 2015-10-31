@@ -13,8 +13,6 @@ parameters:
 			profession:
 				- 'Organizace kurzů, lektor'
 				- 'Přednášky a konzultace'
-				- 'Kraniosakrální terapie a masáže'
-				- 'Astroporadenství a energie'
 				- 'Astro-konstelace a kurzy'
 				- 'Harmonizační cviky'
 				- 'Hramonizační tanec a choreografie'
@@ -27,6 +25,17 @@ parameters:
 			web3: 'www.slunecnikruh.cz'
 			photo: 'zdenka.jpg'
 		-
+			name: 'Bc. Michaela Habrunová'
+			profession:
+				- 'Lektor'
+				- 'Fyzioterapeut'
+				- 'Kranioterapeut'
+			city: 'Praha'
+			cityid: 1
+			phone: '+420 774 681 618'
+			mail: 'habrunova.misha@atlas.cz'
+			photo: 'michaela.jpg'
+		-
 			name: 'Bc. Šárka Richterová'
 			profession:
 				- 'Asistentka a lektorka'
@@ -38,17 +47,6 @@ parameters:
 			phone: '+420 728 168 693'
 			mail: 'sarkarichterova@seznam.cz'
 			photo: 'sarka.jpg'
-		-
-			name: 'Bc. Michaela Habrunová'
-			profession:
-				- 'Lektor'
-				- 'Fyzioterapeut'
-				- 'Kranioterapeut'
-			city: 'Praha'
-			cityid: 1
-			phone: '+420 774 681 618'
-			mail: 'habrunova.misha@atlas.cz'
-			photo: 'michaela.jpg'
 		-
 			name: 'Patricia Všetečková' #jmeno terapeuta
 			profession:
