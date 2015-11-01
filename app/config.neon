@@ -8,15 +8,15 @@ parameters:
 	setlocale: cs_CZ.UTF-8 #nastaveni pro unix
 
 	bank:
-		name: 'Název účtu' #nazev uctu
-		number: '123456789/0123' #mistni cislo uctu
+		name: 'Ocelíková Zdeňka' #nazev uctu
+		number: '146916329/0800' #mistni cislo uctu
 		currency: 'CZK' #mena
-		iban: 'CZ70 0123 0000 0001 2345 6789' #mezinarodni format uctu
+		iban: 'CZ70 0800 0000 0001 4691 6329' #mezinarodni format uctu
 		swift: 'GIBACZPX' #swift
 
 	owner:
-		name: 'alias emailu majitele' #alias emailu - jak se bude email zobrazovat
-		mail: 'email@majitele.cz' #email na ktery se budou odesilat prihlasky
+		name: 'Kranio-sakrální terapie' #alias emailu - jak se bude email zobrazovat
+		mail: 'zdenka.ocelikova@seznam.cz' #email na ktery se budou odesilat prihlasky
 
 php:
 	date.timezone: Europe/Prague
