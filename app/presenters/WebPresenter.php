@@ -6,7 +6,8 @@ use Nette,
 	 App\BaseForm,
 	 Nette\Utils\Finder,
 	 Nette\Mail\Message,
-	 Nette\Mail\SendmailMailer;
+	 Nette\Mail\SendmailMailer,
+	 Nette\Utils\Html;
 
 //use Nette\Application\Responses\JsonResponse;
 
@@ -242,6 +243,11 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 		$form->addTextArea('note', 'Poznámka', NULL, NULL)
 				  ->setAttribute('placeholder', 'Vaše motivace k účasti na kurzu nebo jakýkoli dotaz.')
 				  ->addRule(BaseForm::MAX_LENGTH, 'Poznámka je příliš dlouhá', 1000);
+		$checkboxLabel = Html::el();
+		$checkboxLabel->add('Souhlasím s ');
+		$checkboxLabel->add(Html::el('a')->id('term')->setText('podmínkami účasti'));
+		$form->addCheckbox('terms', $checkboxLabel)
+				  ->setRequired('Bez souhlasu s podmínkami účasti se nemůžete kurzu zúčastnit.');
 		$form->addCheckbox('invoice', 'Chci vystavit fakturu.');
 		$form->addText('firm', 'Firma')
 				  ->setAttribute('placeholder', 'Název firmy s.r.o.')
