@@ -39,6 +39,16 @@
 												<li><a{ifCurrent cenik} class="current"{/ifCurrent} n:href="Web:cenik">Ceník</a></li>
 												<li><a{ifCurrent kontaktyTerapeutu} class="current"{/ifCurrent} n:href="Web:kontaktyTerapeutu">Kontakty</a></li>
 											</ul>
+											<div n:if="$toplist" id="toplist">
+												<a target="_blank" href="http://www.toplist.cz/stat/1707354">
+													<script language="JavaScript" type="text/javascript">
+														document.write('<img src="https://toplist.cz/count.asp?id=1707354&logo=mc&http=' + escape(document.referrer) + '&t=' + escape(document.title) + '&wi=' + escape(window.screen.width) + '&he=' + escape(window.screen.height) + '&cd=' + escape(window.screen.colorDepth) + '" width="88" height="60" border=0 alt="TOPlist" />');
+													</script>
+													<noscript>
+													<img src="https://toplist.cz/count.asp?id=1707354&logo=mc" border="0" alt="TOPlist" width="88" height="60" />
+													</noscript>
+												</a>
+											</div>
 										</div>
 										<div id="content">
 											<!--[if lt IE 9]>

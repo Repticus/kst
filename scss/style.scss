@@ -32,6 +32,10 @@ $layoutDir: '/img/layout';
 	list-style: none;
 	clear: both;
 }
+#toplist{
+	margin-top: 40px;
+	text-align: center;
+}
 *:before{
 	font-family: webglyphs;
 	font-weight: normal;
@@ -153,7 +157,7 @@ hr{
 }
 img, iframe, video{
 	border-radius: 8px;
-	border: #004f44 solid 1px; 
+	border: #004f44 solid 1px;
 }
 img.nobrd{
 	border:none;

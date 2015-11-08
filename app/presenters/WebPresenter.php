@@ -19,6 +19,7 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 
 	public function beforeRender() {
 		$this->template->google = $this->context->parameters['google'];
+		$this->template->toplist = $this->context->parameters['toplist'];
 	}
 
 	public function actionKontaktyTerapeutu() {

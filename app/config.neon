@@ -5,6 +5,7 @@ includes:
 
 parameters:
 	google: true #include google-analytics code
+	toplist: true #include toplist code
 	setlocale: cs_CZ.UTF-8 #nastaveni pro unix
 
 	bank:
