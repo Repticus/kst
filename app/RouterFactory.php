@@ -13,8 +13,8 @@ class RouterFactory {
 	 */
 	public static function createRouter() {
 		$router = new RouteList();
-		$router[] = new Route('<action>', 'Web:uvod');
-		$router[] = new Route('<presenter>/<action>', 'Web:uvod');
+		$router[] = new Route('<action>', 'Web:domu');
+		$router[] = new Route('<presenter>/<action>', 'Web:domu');
 		return $router;
 	}
 
