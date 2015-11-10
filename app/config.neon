@@ -17,7 +17,7 @@ parameters:
 
 	owner:
 		name: 'Kranio-sakrální terapie' #alias emailu - jak se bude email zobrazovat
-		mail: 'zdenka.ocelikova@seznam.cz' #email na ktery se budou odesilat prihlasky
+		mail: 'kurzkst@seznam.cz' #email na ktery se budou odesilat prihlasky
 
 php:
 	date.timezone: Europe/Prague
