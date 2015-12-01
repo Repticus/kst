@@ -1,35 +1,6 @@
 parameters:
 	courses:
 		-
-			name: 'Kurz KST a práce s energií I.+ II.'
-			price: 12500
-			deposit: 4000
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdenka Ocelíková'
-				- 'Bc. Šárka Richterová'
-				- 'Bc. Michaela Habrunová'
-			dates:
-				-
-					date: '24.10.2015 9:00'
-					end: '17:00'
-				-
-					date: '25.10.2015 9:00'
-					end: '16:00'
-				-
-					date: '07.11.2015 9:00'
-					end: '17:00'
-				-
-					date: '08.11.2015 9:00'
-					end: '16:00'
-				-
-					date: '21.11.2015 9:00'
-					end: '17:00'
-				-
-					date: '22.11.2015 9:00'
-					end: '16:00'
-		-
 			name: 'Kurz KST III.'
 			price: 4300
 			deposit: 4300
@@ -41,10 +12,10 @@ parameters:
 				- 'Bc. Michaela Habrunová'
 			dates:
 				-
-					date: '12.12.2015 9:00'
+					date: '13.2.2016 9:00'
 					end: '17:00'
 				-
-					date: '13.12.2015 9:00'
+					date: '14.2.2016 9:00'
 					end: '16:00'
 		-
 			name: 'Kurz KST I. a II.'
