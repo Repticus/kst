@@ -1,23 +1,6 @@
 parameters:
 	courses:
 		-
-			name: 'Kurz KST III.'
-			price: 4300
-			deposit: 4300
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdenka Ocelíková'
-				- 'Bc. Šárka Richterová'
-				- 'Bc. Michaela Habrunová'
-			dates:
-				-
-					date: '13.2.2016 9:00'
-					end: '17:00'
-				-
-					date: '14.2.2016 9:00'
-					end: '16:00'
-		-
 			name: 'Kurz KST I. a II.'
 			price: 8700
 			deposit: 3700
@@ -39,4 +22,21 @@ parameters:
 					end: '17:00'
 				-
 					date: '31.01.2016 9:00'
+					end: '16:00'
+		-
+			name: 'Kurz KST III.'
+			price: 4300
+			deposit: 4300
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdenka Ocelíková'
+				- 'Bc. Šárka Richterová'
+				- 'Bc. Michaela Habrunová'
+			dates:
+				-
+					date: '13.2.2016 9:00'
+					end: '17:00'
+				-
+					date: '14.2.2016 9:00'
 					end: '16:00'
