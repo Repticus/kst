@@ -48,29 +48,6 @@ parameters:
 			mail: 'sarkarichterova@seznam.cz'
 			photo: 'sarka.jpg'
 		-
-			name: 'Patricia Všetečková' #jmeno terapeuta
-			profession:
-				- 'Kranio-sakrální terapie'
-				- 'Konzultace'
-			city: 'Praha' #pusobiste
-			cityid: 1 #id pusobiste
-			phone: '+420 736 643 193' #telefon
-			mail: 'vseteckova.p@seznam.cz' #email
-			web: 'www.spirala-annie.cz' #web
-			photo: 'patricie.jpg'
-		-
-			name: 'Laura Brožová' #jmeno terapeuta
-			profession:
-				- 'EFT terapie'
-				- 'Kranio-sakrální terapie'
-				- 'Manuální lymfodrenáž'
-			city: 'Praha' #pusobiste
-			cityid: 1 #id pusobiste
-			phone: '+420 605 039 300' #telefon
-			mail: 'eft-poradenstvi@seznam.cz' #email
-			web: 'www.eft-poradenstvi.cz' #web
-			photo: 'laura.jpg'
-		-
 			name: 'Naďa Glacová'
 			profession:
 				- 'Kranio-sakrální terapie'
@@ -82,60 +59,17 @@ parameters:
 			web: 'www.nada-metamorfa.cz'
 			photo: 'nada.jpg'
 		-
-			name: 'Eva Hromadová'
+			name: 'Laura Brožová'
 			profession:
-				- 'Kranio-sakrální terapie'
-				- 'Konzultace'
-			city: 'Praha'
-			cityid: 1
-			phone: '+420 602 950 954'
-			mail: 'hromix@seznam.cz'
-			web: null
-		-
-			name: 'Michaela Polanská'
-			profession:
+				- 'EFT terapie'
 				- 'Kranio-sakrální terapie'
 				- 'Manuální lymfodrenáž'
-				- 'Masáže a manuální techniky'
 			city: 'Praha'
 			cityid: 1
-			phone: '+420 731 582 056'
-			mail: 'krcmis@centrum.cz'
-			web: 'www.masazepolanska.cz'
-		-
-			name: 'Vladimír Žák'
-			profession:
-				- 'Kranio-sakrální terapie'
-				- 'Energetické masáže'
-			city: 'Praha'
-			cityid: 1
-			phone: '+420 776 176 254'
-			mail: 'vladimir.zak@email.cz'
-			web: 'www.studio.essencis.cz'
-			photo: 'vladimir.jpg'
-		-
-			name: 'Mgr. Deborah Kaminská, Ph.D'
-			profession:
-				- 'Psychoterapie'
-				- 'Kranio-sakrální terapie'
-			city: 'Praha'
-			cityid: 1
-			phone: '+420 737 157 780'
-			mail: 'deborah.kaminska@gmail.cz'
-			web: 'www.brana-promeny.webnode.cz'
-			web2: 'www.aktip.cz'
-			photo: 'deborah.jpg'
-		-
-			name: 'Monika Nováková'
-			profession:
-				- 'Kranio-sakrální terapie'
-				- 'Konzultace'
-			city: 'Český Brod'
-			cityid: 4
-			phone: '+420 777 949 212'
-			mail: 'info@terapiemonika.cz'
-			web: 'www.terapiemonika.cz'
-			photo: 'monika.jpg'
+			phone: '+420 605 039 300'
+			mail: 'eft-poradenstvi@seznam.cz'
+			web: 'www.eft-poradenstvi.cz'
+			photo: 'laura.jpg'
 		-
 			name: 'Mgr. Monika Růžičková'
 			profession:
@@ -146,6 +80,7 @@ parameters:
 			phone: '+420 608 416 154'
 			mail: null
 			web: 'www.monikaruzickova.cz'
+			photo: 'monika-ruzickova.jpg'
 		-
 			name: 'Eva Šedivá'
 			profession:
@@ -157,23 +92,3 @@ parameters:
 			mail: 'masazeva@seznam.cz'
 			web: 'www.lecivedoteky.cz'
 			photo: 'eva.jpg'
-		-
-			name: 'Marcela Velková'
-			profession:
-				- 'Kranio-sakrální terapie'
-				- 'Konzultace'
-			city: 'Český Krumlov, České Budějovice'
-			cityid: 48
-			phone: '+420 777 067 047'
-			mail: 'marcela.velkova@seznam.cz'
-			web: 'www.slunecnicestudio.cz'
-		-
-			name: 'Alice Jankovcová'
-			profession:
-				- 'Kranio-sakrální terapie'
-				- 'Konzultace'
-			city: 'Praha, České Budějovice, Strakonice'
-			cityid: 8
-			phone: '+420 608 774 677'
-			mail: null
-			web: 'www.jankovcova.estranky.cz'

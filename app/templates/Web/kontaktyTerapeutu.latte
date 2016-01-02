@@ -35,11 +35,11 @@
 
 <h2>Kontakty terapeutů podle místa působiště</h2>
 <ul id="city" class="ui-menu ui-widget ui-widget-content ui-corner-all">
-	<li class="ui-menu-item" n:foreach="$cities as $cityId => $city"><a class="city ui-corner-all" cityid="{$cityId}">{$city}</a></li>
+	<li class="ui-menu-item" n:foreach="$cities as $cityId => $city"><a class="city ui-corner-all" cityid="{$cityId}">{$city['name']}</a></li>
 </ul>
 <div id="therapist" n:inner-foreach="$therapists as $therapist">
 	<ul cityid="{$therapist['cityid']}">
-		<li class="foto" title="Foto" n:ifset="$therapist['photo']"><img width="90" src="/img/cnt/{$therapist['photo']}" /></li>
+		<li class="foto" title="{$therapist['name']}" n:ifset="$therapist['photo']"><img width="90" src="/img/cnt/{$therapist['photo']}" /></li>
 		<li class="person" title="Jméno a příjmení"><strong>{$therapist['name']}</strong></li>
 		{ifset $therapist['profession']}
 		<li class="profession" title="Profese" n:foreach="$therapist['profession'] as $profession">{$profession}</li>
