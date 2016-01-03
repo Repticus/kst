@@ -12,10 +12,10 @@ parameters:
 			name: 'Zdeňka Ocelíková'
 			profession:
 				- 'Organizace kurzů, lektor'
-				- 'Přednášky a konzultace'
-				- 'Astro-konstelace a kurzy'
-				- 'Harmonizační cviky'
-				- 'Hramonizační tanec a choreografie'
+				- 'Kranio-sakrální terapie a léčitelství'
+				- 'Rodinné konstelace'
+				- 'Astroporadenství a výuka astrologie'
+				- 'Hramonizační cviky, tanec a choreografie'
 			cityid: 1
 			phone: '+420 602 748 729'
 			mail: 'kurzKST@seznam.cz'
@@ -23,7 +23,7 @@ parameters:
 			web:
 				- 'www.kranio-sakralni-terapie.cz'
 				- 'www.amarhea.cz'
-				- 'www.slunecnikruh.cz'
+				- 'www.saman-ka.cz'
 		-
 			name: 'Bc. Michaela Habrunová'
 			profession:
@@ -45,6 +45,8 @@ parameters:
 			phone: '+420 728 168 693'
 			mail: 'sarkarichterova@seznam.cz'
 			photo: 'sarka.jpg'
+			web:
+				- 'www.slunecnikruh.cz'
 		-
 			name: 'Naďa Glacová'
 			profession:
