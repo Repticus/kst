@@ -16,7 +16,6 @@ parameters:
 				- 'Astro-konstelace a kurzy'
 				- 'Harmonizační cviky'
 				- 'Hramonizační tanec a choreografie'
-			city: 'Praha'
 			cityid: 1
 			phone: '+420 602 748 729'
 			mail: 'kurzKST@seznam.cz'
@@ -31,7 +30,6 @@ parameters:
 				- 'Lektor'
 				- 'Fyzioterapeut'
 				- 'Kranioterapeut'
-			city: 'Praha'
 			cityid: 1
 			phone: '+420 774 681 618'
 			mail: 'habrunova.misha@atlas.cz'
@@ -43,7 +41,6 @@ parameters:
 				- 'Fyzioterapeut'
 				- 'Manuální lymfodrenáž'
 				- 'Masér'
-			city: 'Praha'
 			cityid: 1
 			phone: '+420 728 168 693'
 			mail: 'sarkarichterova@seznam.cz'
@@ -53,7 +50,6 @@ parameters:
 			profession:
 				- 'Kranio-sakrální terapie'
 				- 'Konzultace'
-			city: 'Praha'
 			cityid: 1
 			phone: '+420 601 338 148'
 			mail: 'nada.glacova@seznam.cz'
@@ -66,7 +62,6 @@ parameters:
 				- 'EFT terapie'
 				- 'Kranio-sakrální terapie'
 				- 'Manuální lymfodrenáž'
-			city: 'Praha'
 			cityid: 1
 			phone: '+420 605 039 300'
 			mail: 'eft-poradenstvi@seznam.cz'
@@ -78,7 +73,6 @@ parameters:
 			profession:
 				- 'Psychoterapie'
 				- 'Kranio-sakrální terapie'
-			city: 'Brno'
 			cityid: 2
 			phone: '+420 608 416 154'
 			mail: null
@@ -90,7 +84,6 @@ parameters:
 			profession:
 				- 'Kranio-sakrální terapie'
 				- 'Konzultace'
-			city: 'České Budějovice'
 			cityid: 32
 			phone: '+420 774 581 168'
 			mail: 'masazeva@seznam.cz'
