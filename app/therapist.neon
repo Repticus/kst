@@ -20,10 +20,11 @@ parameters:
 			cityid: 1
 			phone: '+420 602 748 729'
 			mail: 'kurzKST@seznam.cz'
-			web: 'www.kranio-sakralni-terapie.cz'
-			web2: 'www.amarhea.cz'
-			web3: 'www.slunecnikruh.cz'
 			photo: 'zdenka.jpg'
+			web:
+				- 'www.kranio-sakralni-terapie.cz'
+				- 'www.amarhea.cz'
+				- 'www.slunecnikruh.cz'
 		-
 			name: 'Bc. Michaela Habrunová'
 			profession:
@@ -56,8 +57,9 @@ parameters:
 			cityid: 1
 			phone: '+420 601 338 148'
 			mail: 'nada.glacova@seznam.cz'
-			web: 'www.nada-metamorfa.cz'
 			photo: 'nada.jpg'
+			web:
+				- 'www.nada-metamorfa.cz'
 		-
 			name: 'Laura Brožová'
 			profession:
@@ -68,8 +70,9 @@ parameters:
 			cityid: 1
 			phone: '+420 605 039 300'
 			mail: 'eft-poradenstvi@seznam.cz'
-			web: 'www.eft-poradenstvi.cz'
 			photo: 'laura.jpg'
+			web:
+				- 'www.eft-poradenstvi.cz'
 		-
 			name: 'Mgr. Monika Růžičková'
 			profession:
@@ -79,8 +82,9 @@ parameters:
 			cityid: 2
 			phone: '+420 608 416 154'
 			mail: null
-			web: 'www.monikaruzickova.cz'
 			photo: 'monika-ruzickova.jpg'
+			web:
+				- 'www.monikaruzickova.cz'
 		-
 			name: 'Eva Šedivá'
 			profession:
@@ -90,5 +94,6 @@ parameters:
 			cityid: 32
 			phone: '+420 774 581 168'
 			mail: 'masazeva@seznam.cz'
-			web: 'www.lecivedoteky.cz'
 			photo: 'eva.jpg'
+			web:
+				- 'www.lecivedoteky.cz'
