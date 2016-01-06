@@ -55,7 +55,7 @@ parameters:
 			cityid: 1
 			phone: '+420 601 338 148'
 			mail: 'nada.glacova@seznam.cz'
-			photo: 'nada.jpg'
+			photo: 'nada-glacova.jpg'
 			web:
 				- 'www.nada-metamorfa.cz'
 		-
