@@ -1,15 +1,14 @@
 parameters:
 	courses:
 		-
-			name: 'Kurz KST I. a II.'
+			name: 'Kraniosakrální terapie I. a II.'
 			price: 8700
 			deposit: 3700
 			occupied: true
 			place: %place.dumsvetla%
 			lectors:
+				- 'Zdeňka Ocelíková'
 				- 'Bc. Michaela Habrunová'
-				- 'Bc. Šárka Richterová'
-				- 'Zdenka Ocelíková'
 			dates:
 				-
 					date: '16.01.2016 9:00'
@@ -24,14 +23,13 @@ parameters:
 					date: '31.01.2016 9:00'
 					end: '16:00'
 		-
-			name: 'Kurz KST III.'
+			name: 'Kraniosakrální terapie III.'
 			price: 4300
 			deposit: 4300
 			occupied: false
 			place: %place.dumsvetla%
 			lectors:
-				- 'Zdenka Ocelíková'
-				- 'Bc. Šárka Richterová'
+				- 'Zdeňka Ocelíková'
 				- 'Bc. Michaela Habrunová'
 			dates:
 				-
@@ -39,4 +37,147 @@ parameters:
 					end: '17:00'
 				-
 					date: '7.2.2016 9:00'
+					end: '16:00'
+		-
+			name: 'Kraniosakrální terapie I. a II. večerní'
+			price: 8700
+			deposit: 3700
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+				- 'Bc. Michaela Habrunová'
+			dates:
+				-
+					date: '15.03.2016 18:00'
+					end: '20:00'
+				-
+					date: '17.03.2016 18:00'
+					end: '20:00'
+				-
+					date: '22.03.2016 18:00'
+					end: '20:00'
+				-
+					date: '24.03.2016 18:00'
+					end: '20:00'
+				-
+					date: '29.03.2016 18:00'
+					end: '20:00'
+				-
+					date: '31.03.2016 18:00'
+					end: '20:00'
+				-
+					date: '05.04.2016 18:00'
+					end: '20:00'
+				-
+					date: '07.04.2016 18:00'
+					end: '20:00'
+				-
+					date: '23.04.2016 9:00'
+					end: '17:00'
+		-
+			name: 'Kraniosakrální terapie I. a II.'
+			price: 8700
+			deposit: 3700
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+				- 'Bc. Michaela Habrunová'
+			dates:
+				-
+					date: '02.04.2016 9:00'
+					end: '17:00'
+				-
+					date: '03.04.2016 9:00'
+					end: '16:00'
+				-
+					date: '16.04.2016 9:00'
+					end: '17:00'
+				-
+					date: '17.04.2016 9:00'
+					end: '16:00'
+		-
+			name: 'Kraniosakrální jóga'
+			price: 1500
+			deposit: 0
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			dates:
+				-
+					date: '10.04.2016 9:00'
+					end: '17:00'
+		-
+			name: 'Šamanské kontelace'
+			price: 700
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			dates:
+				-
+					date: '14.05.2016 14:00'
+					end: '19:00'
+		-
+			name: 'Prožitkový kurz Astrologie'
+			price: 1100
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			dates:
+				-
+					date: '15.05.2016 9:00'
+					end: '17:00'
+		-
+			name: 'Kraniosakrální terapie III.'
+			price: 4300
+			deposit: 4300
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+				- 'Bc. Michaela Habrunová'
+			dates:
+				-
+					date: '21.05.2016 9:00'
+					end: '17:00'
+				-
+					date: '22.05.2016 9:00'
+					end: '16:00'
+		-
+			name: 'Kurz Práce s energií'
+			price: 1900
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+				- 'Bc. Michaela Habrunová'
+			dates:
+				-
+					date: '28.05.2016 9:00'
+					end: '17:00'
+		-
+			name: 'Kraniosakrální terapie I. a II.'
+			price: 8700
+			deposit: 3700
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+				- 'Bc. Michaela Habrunová'
+			dates:
+				-
+					date: '04.06.2016 9:00'
+					end: '17:00'
+				-
+					date: '05.06.2016 9:00'
+					end: '16:00'
+				-
+					date: '11.06.2016 9:00'
+					end: '17:00'
+				-
+					date: '12.06.2016 9:00'
 					end: '16:00'
