@@ -35,19 +35,6 @@ parameters:
 			mail: 'habrunova.misha@atlas.cz'
 			photo: 'michaela.jpg'
 		-
-			name: 'Bc. Šárka Richterová'
-			profession:
-				- 'Asistentka a lektorka'
-				- 'Fyzioterapeut'
-				- 'Manuální lymfodrenáž'
-				- 'Masér'
-			cityid: 1
-			phone: '+420 728 168 693'
-			mail: 'sarkarichterova@seznam.cz'
-			photo: 'sarka.jpg'
-			web:
-				- 'www.slunecnikruh.cz'
-		-
 			name: 'Naďa Glacová'
 			profession:
 				- 'Kranio-sakrální terapie'
