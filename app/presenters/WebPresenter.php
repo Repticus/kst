@@ -203,8 +203,13 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 		$clientMail = $form['email']->value;
 		$ownerMail = $this->context->parameters['owner']['mail'];
 		$ownerName = $this->context->parameters['owner']['name'];
+		if (isset($this->context->parameters['courses'][$form['course']->value]['template'])) {
+			$mailTemplate = $this->context->parameters['courses'][$form['course']->value]['template'];
+		} else {
+			$mailTemplate = "defaultReservation";
+		}
 		$template = $this->createTemplate();
-		$template->setFile(__DIR__ . "/../templates/Mail/clientCourseReservation.latte");
+		$template->setFile(__DIR__ . "/../templates/Mail/{$mailTemplate}.latte");
 		$template->personalData = $this->setPersonalData($form);
 		$template->courseData = $this->setCourseData($form['course']->value);
 		$template->courseDays = $this->setCourseDays($form['course']->value);
@@ -218,7 +223,7 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 		$mailer = new SendmailMailer;
 		$mailer->send($mail);
 
-		$template->setFile(__DIR__ . "/../templates/Mail/ownerCourseReservation.latte");
+		$template->setFile(__DIR__ . "/../templates/Mail/ownerReservationData.latte");
 		$mail->setFrom($clientMail)
 				  ->clearHeader('To')
 				  ->addTo($ownerMail, $ownerName)
