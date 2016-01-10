@@ -79,3 +79,14 @@ parameters:
 			photo: 'eva.jpg'
 			web:
 				- 'www.lecivedoteky.cz'
+		-
+			name: 'Marcela Velková'
+			profession:
+				- 'Kranio-sakrální terapie'
+				- 'Konzultace'
+			cityid: 48
+			phone: '+420 777 067 047'
+			mail: 'marcela.velkova@seznam.cz'
+			photo: 'marcela-velkova.jpg'
+			web:
+				- 'www.slunecnicestudio.cz'
