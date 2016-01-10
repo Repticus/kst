@@ -25,7 +25,6 @@ parameters:
 		-
 			name: 'Kraniosakrální terapie III.'
 			price: 4300
-			deposit: 4300
 			occupied: false
 			place: %place.dumsvetla%
 			lectors:
@@ -100,7 +99,7 @@ parameters:
 		-
 			name: 'Kraniosakrální jóga'
 			price: 1500
-			deposit: 0
+			alumnus: 1200
 			occupied: false
 			place: %place.dumsvetla%
 			lectors:
@@ -134,7 +133,6 @@ parameters:
 		-
 			name: 'Kraniosakrální terapie III.'
 			price: 4300
-			deposit: 4300
 			occupied: false
 			place: %place.dumsvetla%
 			lectors:

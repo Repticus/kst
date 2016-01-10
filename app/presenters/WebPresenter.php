@@ -135,6 +135,10 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 		$courseInfo['placeCity']['value'] = $this->context->parameters['courses'][$courseId]['place']['city'];
 		$courseInfo['price']['caption'] = 'Cena kurzu';
 		$courseInfo['price']['value'] = $this->context->parameters['courses'][$courseId]['price'] . ' Kč';
+		if (isset($this->context->parameters['courses'][$courseId]['alumnus'])) {
+			$courseInfo['alumnus']['caption'] = 'Cena pro absolventy';
+			$courseInfo['alumnus']['value'] = $this->context->parameters['courses'][$courseId]['alumnus'] . ' Kč';
+		}
 		return $courseInfo;
 	}
 
@@ -161,8 +165,12 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 		$bankInfo['swift']['value'] = $bank['swift'];
 		$bankInfo['variable']['caption'] = 'Variabilní symbol';
 		$bankInfo['variable']['value'] = $this->createVariable();
-		$bankInfo['deposit']['caption'] = 'Částka k úhradě';
-		$bankInfo['deposit']['value'] = $this->context->parameters['courses'][$courseId]['deposit'] . ' Kč';
+		$bankInfo['price']['caption'] = 'Částka k úhradě';
+		if (isset($this->context->parameters['courses'][$courseId]['deposit'])) {
+			$bankInfo['price']['value'] = $this->context->parameters['courses'][$courseId]['deposit'] . ' Kč';
+		} else {
+			$bankInfo['price']['value'] = $this->context->parameters['courses'][$courseId]['price'] . ' Kč';
+		}
 		return $bankInfo;
 	}
 

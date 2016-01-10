@@ -145,7 +145,8 @@
 			</ul>
 			<ul>
 				<li><b>Cena kurzu:</b> {$course['price']} Kč</li>
-				<li><b>Záloha na kurz:</b> {$course['deposit']} Kč</li>
+				<li n:ifset="$course['alumnus']"><b>Cena pro absolventy KST:</b> {$course['alumnus']} Kč</li>
+				<li n:ifset="$course['deposit']"><b>Záloha na kurz:</b> {$course['deposit']} Kč</li>
 				<li>
 					<table>
 						{foreach $course['lectors'] as $lector}
