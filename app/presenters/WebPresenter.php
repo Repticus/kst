@@ -121,6 +121,8 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 	}
 
 	public function setCourseData($courseId) {
+		$courseInfo['courseName']['caption'] = 'Název kurzu';
+		$courseInfo['courseName']['value'] = $this->context->parameters['courses'][$courseId]['name'];
 		$courseInfo['placeName']['caption'] = 'Místo konání';
 		$courseInfo['placeName']['value'] = $this->context->parameters['courses'][$courseId]['place']['name'];
 		if (isset($this->context->parameters['courses'][$courseId]['place']['url'])) {
@@ -219,7 +221,8 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 		$template->setFile(__DIR__ . "/../templates/Mail/ownerCourseReservation.latte");
 		$mail->setFrom($clientMail)
 				  ->clearHeader('To')
-				  ->addTo($ownerMail, $ownerName);
+				  ->addTo($ownerMail, $ownerName)
+				  ->setHtmlBody($template);
 		$mailer->send($mail);
 	}
 

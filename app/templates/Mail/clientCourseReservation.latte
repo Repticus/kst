@@ -1,7 +1,7 @@
 {layout 'courseReservation.latte'}
-{define #title}Rezervace kurzu{/define}
+{block title}Rezervace {$courseData['courseName']['value']}{/block}
 
-{block #body}
+{block body}
 <p style="margin-bottom:12px">
 	Dobrý den,<br>
 	děkujeme za Vaši objednávku. Zkontrolujte si prosím údaje Vaší rezervace.
@@ -11,62 +11,74 @@
 	<b>
 		Uhrazením kurzovného, ať už platíte najednou či nadvakrát,
 		SOUHLASÍTE S PODMÍNKAMI uvedenými v tomto odpovědním mailu.
-		Jde o tytéž podmínky, s nimiž jste souhlasili při vyplňování registračního formuláře:
 	</b>
 </p>
+<h2 style="font-weight:bold;font-size:12px;margin:0">Zdravotní informace</h2>
 <p style="margin:4px 0 12px 0">
-	Je nezbytné, abyste byli v celkové zdravotní a psychické pohodě, aby kurz probíhal hladce.
-	Z tohoto důvodu si vyhrazuji právo vyloučit z kurzu bez nároku na odstupné účastníka,
+	Aby kurz probíhal hladce, je nezbytné, abyste byli v dobré zdravotní kondici a
+	<b>neměli kontraindikace, které si prosím přečtěte v sekci Kraniosakrální terapie v posledním odstavci.</b>
+	Dále si po jedné zkušenosti vyhrazuji právo vyloučit z kurzu bez nároku na odstupné účastníka,
 	jehož přítomnost by vážně narušila průběh kurzu či zdraví a pohodu zúčastněných.
 </p>
 <p style="margin:4px 0 12px 0">
-	Dále je zde podmínka, že na kurzu si každý ručí sám za svůj zdravotní stav,
-	a to i v případě eventuálních důsledků vyvěrající z práce ve dvojicích a z průběhu výuky kurzu.
-	Celkově tato metoda má málo kontraindikací a je velmi jemná a příjemná,
-	při práci se však mohou otevřít emocionální bloky do hloubky, a to může vést k rozladěnosti.
-	Kurz je výukový, tudíž zde není časová ani jiná kapacita na to zabývat se problémy jednolivých účastníků nad rámec časového i tématického rozsahu.
+	Na kurzu si <b>každý ručí sám za svůj zdravotní stav</b>, a to i v případě eventuálních důsledků vyvěrající z práce ve dvojicích a z průběhu výuky kurzu.
+	Celkově tato metoda má málo kontraindikací a je velmi jemná a příjemná, při práci se však mohou otevřít emocionální bloky do hloubky,
+	a to může vést k rozladěnosti, což nelze vyloučit.
+	Já samozřejmě tyto situace ošetřím, ale tím, že na kurz přijdete v psychické rovnováze, uvedená situace nastane spíše výjimečně.
+	Kurz je výukový a každý budete v roli ošetřujícího a pravděpodobně i v roli ošetřovaného,
+	tudíž zde není příliš časové kapacity na to zabývat se mnoha problémy jednolivých účastníků nad rámec tématického rozsahu.
 </p>
 <p style="margin:4px 0 12px 0">
-	Jde hlavně o to, že ten, kdo metodu praktikuje (na kurzu ji budete téměř pořád praktikovat), musí být srovnaný a přizemněný, celistvě zdravý.
-	Pamatujte na to, že nebudete jen posluchačem a tím kdo je ošetřován.
-	Budete také sami v roli ošetřovatele, protože se chcete tuto metodu především naučit, a to není dobré, pokud nejste zdravě ukotveni ve svém těle.
-	Pokud jste oslabeni nebo trpíte syndromem vyhoření, apod., pak účast pro vás není vhodná.
-	Tato podmínka je zde proto, že se stávalo, že se kurzu občas účastnili lidé, kteří se svojí účastí na kurzu chtěli z podobných potíží „vyléčit“.
+	Podmínka zdraví a dobré kondice je zde proto, že se kurzu občas účastnili lidé,
+	kteří kurz pojali jako svou vlastní terapii, a někteří z nich byli v tzv. „úletu“ a domnívali se, že jim kurz pomůže.
+	V duchovním „úletu“ však není vhodné tuto práci provádět na druhých.
+</p>
+<p style="margin:4px 0 12px 0">
+	Účastnit se však <b>můžete</b> tehdy, když:
+	máte časté migrény, hormonání disbalanci, nerizikové těhotenství do 3. měsíce a další diagnózy <b>nepsychického</b> rázu.
+	<b>Vaše diagnóza však nesmí být kontraindikací!</b>
 </p>
 <p style="margin:4px 0 12px 0">
 	Kurz můžete kdykoli v jeho průběhu opustit, a to bez nároku na vrácení kurzovného či jeho poměrné části.
 </p>
+<h2 style="font-weight:bold;font-size:12px;margin:0">Storno poplatky a rezervace</h2>
 <p style="margin:4px 0 12px 0">
-	Ubytování můžeme zajistit pouze v případě kurzů, které jsou vícedenní a mimopražské. V rámci Prahy je ubytování na každém z Vás.
+	Místo v kurzu Vám bude rezervováno až po zaplacení zálohy v případě, že je záloha uvedena.
+	Pokud záloha uvedena není, pak až po uhrazení plného kurzovného.
+	Tato platba je plně nevratná.
+	Pokud účast na kurzu zrušíte, můžete za sebe samozřejmě poslat jiného zájemce a on může použít Vaši platbu.
+	Vaše platba může být také převedena Vám samotným na budoucí termín stejného kurzu.
+	Pokud se však nebude již v budoucnu stejný kurz konat, nelze uhrazené kurzovné či zálohu vymáhat zpět.
+	V případě, že byste se nemohli či nechtěli účastnit ani dalšího termínu kurzu, nebude nadále možné Vámi uhrazenou částku převádět.
 </p>
-
-<h2 style="font-weight:bold;font-size:12px;margin:0">Storno poplatky</h2>
 <p style="margin:4px 0 12px 0">
-	Místo v kurzu Vám bude rezervováno až po zaplacení zálohy.
-	Záloha je plně nevratná. Pokud účast na kurzu zrušíte, můžete za sebe samozřejmě poslat jiného zájemce a on může použít Vaši zálohu.
-	Pokud předložíte potvrzení od lékaře, může být Vaše záloha také převedena Vám samotným na budoucí termín stejného kurzu.
-	Pokud se však nebude již v budoucnu stejný kurz konat, nelze zálohu vymáhat zpět.
-	V případě, že byste se nemohli účastnit ani dalšího termínu kurzu, nebude nadále možné Vámi uhrazenou zálohu převádět.
+	Doplatek kurzu (pokud nějaký zbývá) probíhá nejpozději ráno těsně před zahájením kurzu, a to v hotovosti.
+	Pokud je kurz doplatkový a doplatek uhradíte také předem převodem a potom se na kurz nebudete moci dostavit,
+	je možné si vyžádat vrácení pouze tohoto doplatku, to znamená i v případě,
+	že kurz je zálohovaný a vy jej uhradíte předem jednorázově v plné výši
+	– pak vám po odečtení zálohové části platby bude vrácena doplatková část Vaší úhrady
+	– to se však týká pouze některých kurzů, u nichž je uvedena záloha.
 </p>
-<p>
-	Celý kurz musí být uhrazen nejpozději ráno těsně před začátkem kurzu v hotovosti.
-	V případě jednovíkendových kurzů se většinou záloha rovná celkové ceně kurzu a tím pádem je potřeba uhradit celé kurzovné najednou a předem,
-	abychom mohli zaručit Vaši účast na daném kurzu.
+<p style="margin:4px 0 12px 0">
 	Informace o cenách a zálohách jsou k dispozici i v tabulce s rozvrhem termínů kurzů.
+	Některé kurzy se hradí předem v plné výši – nejsou zálohované.
 </p>
-<p style="margin-bottom:12px">
-	Níže je v tabulce <b>Bankovní údaje</b> uvedeno číslo účtu a výše zálohy.
+<h2 style="font-weight:bold;font-size:12px;margin:0">Bankovní údaje</h2>
+<p style="margin:4px 0 12px 0">
+	Níže je v tabulce <b>Bankovní údaje</b> uvedeno číslo účtu a výše platby.
 	Pro zahraniční klienty je určeno číslo účtu v mezinárodním formátu.
 	Nezapomeňte správně vyplnit variabilní symbol platby.
-	Po uhrazení zálohy Vám bude závazně rezervováno místo v kurzu.
-	Doplatek do plné výše kurzovného musí být uhrazen do začátku kurzu,
-	tedy v krajním případě nejpozději v hotovosti před zahájením.
-	<b>Fakturu (daňový doklad)</b> Vám vystavím dodatečně po připsání Vaší zálohy na účet, a to na základě Vašeho požadavku a zaslaných fakturačních údajů.
+	Po uhrazení Vám bude závazně rezervováno místo v kurzu.
+	<b>Fakturu (daňový doklad)</b> Vám mohu vystavit předem, anebo dodatečně po připsání Vaší platby na účet,
+	a to na základě Vašeho požadavku a zaslaných fakturačních údajů.
 	Pokud nechcete nosit hotovost na kurz, můžete poslat předem celé kurzovné převodem.
 </p>
 <h2 style="font-weight:bold;font-size:12px;margin:0">Ubytování v Praze</h2>
 <p style="margin:4px 0 12px 0">
-	V případě zájmu o ubytování v Praze poblíž místa konání kurzů se můžete podívat na levnější a komfortnější variantu na <a style="color:#666" href="http://www.kranio-sakralni-terapie.cz/kurzy-kraniosakralni-terapie">stránce pod tabulkou kurzů</a>.
+	Ubytování můžeme zajistit pouze v případě kurzů, které jsou vícedenní a mimopražské.
+	V rámci Prahy je ubytování na každém z Vás.
+	V případě zájmu o ubytování v Praze poblíž místa konání kurzů se můžete podívat na levnější či komfortnější variantu na <a style="color:#666" href="http://www.kranio-sakralni-terapie.cz/kurzy-kraniosakralni-terapie">stránce pod tabulkou kurzů</a>.
+	Včasná rezervace je důležitá, hotely bývají často plné.
 </p>
 {include #data}
 <p style="margin-bottom:2px;clear:both">
@@ -77,4 +89,3 @@
 	Tel: +420 728 168 693<br>
 	Web: <a style="color:#666" href="http://www.kranio-sakralni-terapie.cz">www.kranio-sakralni-terapie.cz</a>
 </p>
-{/block}

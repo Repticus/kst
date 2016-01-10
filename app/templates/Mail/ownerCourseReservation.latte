@@ -1,5 +1,4 @@
 {layout 'courseReservation.latte'}
-{define #title}Rezervace kurzu - {$courseDays[0]['start']|date:'%d.%m.%Y'} - {$bankData['variable']['value']}{/define}
-{block #body}
+{block title}Rezervace {$bankData['variable']['value']}{/block}
+{block body}
 {include #data}
-{/block}
