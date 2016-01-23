@@ -1,7 +1,7 @@
 parameters:
 	courses:
 		-
-			name: 'Kraniosakrální terapie I. a II.'
+			name: 'Kurz kraniosakrální terapie I. a II. [víkendový]'
 			price: 8700
 			deposit: 3700
 			occupied: true
@@ -24,7 +24,7 @@ parameters:
 					date: '31.01.2016 9:00'
 					end: '16:00'
 		-
-			name: 'Kraniosakrální terapie III.'
+			name: 'Kurz kraniosakrální terapie III.'
 			price: 4300
 			occupied: false
 			place: %place.dumsvetla%
@@ -40,7 +40,7 @@ parameters:
 					date: '7.2.2016 9:00'
 					end: '16:00'
 		-
-			name: 'Kraniosakrální terapie I. a II. večerní'
+			name: 'Kurz kraniosakrální terapie I. a II. [večerní]'
 			price: 8700
 			deposit: 3700
 			occupied: false
@@ -78,7 +78,7 @@ parameters:
 					date: '23.04.2016 9:00'
 					end: '17:00'
 		-
-			name: 'Kraniosakrální terapie I. a II.'
+			name: 'Kurz kraniosakrální terapie I. a II. [víkendový]'
 			price: 8700
 			deposit: 3700
 			occupied: false
@@ -101,7 +101,7 @@ parameters:
 					date: '17.04.2016 9:00'
 					end: '16:00'
 		-
-			name: 'Kraniosakrální jóga'
+			name: 'Seminář kraniosakrální jógy'
 			price: 1500
 			alumnus: 1200
 			occupied: false
@@ -113,7 +113,7 @@ parameters:
 					date: '10.04.2016 9:00'
 					end: '17:00'
 		-
-			name: 'Šamanské kontelace'
+			name: 'Šamanské rodinné konstelace'
 			price: 700
 			occupied: false
 			place: %place.dumsvetla%
@@ -124,7 +124,7 @@ parameters:
 					date: '14.05.2016 14:00'
 					end: '19:00'
 		-
-			name: 'Prožitkový kurz Astrologie'
+			name: 'Seminář Astrologie hrou'
 			price: 1100
 			occupied: false
 			place: %place.dumsvetla%
@@ -135,7 +135,7 @@ parameters:
 					date: '15.05.2016 9:00'
 					end: '17:00'
 		-
-			name: 'Kraniosakrální terapie III.'
+			name: 'Kurz kraniosakrální terapie III.'
 			price: 4300
 			occupied: false
 			place: %place.dumsvetla%
@@ -163,7 +163,7 @@ parameters:
 					date: '28.05.2016 9:00'
 					end: '17:00'
 		-
-			name: 'Kraniosakrální terapie I. a II.'
+			name: 'Kurz kraniosakrální terapie I. a II. [víkendový]'
 			price: 8700
 			deposit: 3700
 			occupied: false

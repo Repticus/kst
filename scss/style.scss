@@ -6,7 +6,13 @@ $layoutDir: '/img/layout';
 	font-family: webglyphs;
 	src: url('../font/webglyphs2.eot');
 	src: url('../font/webglyphs2.woff') format('woff'),
-        url('../font/webglyphs2.ttf') format('truetype');
+		url('../font/webglyphs2.ttf') format('truetype');
+}
+ol, ul{
+	padding-left: 20px;
+}
+ol li{
+	margin-bottom: 6px;
 }
 #city{
 	margin-right: 20px;
@@ -31,6 +37,27 @@ $layoutDir: '/img/layout';
 	padding:0;
 	list-style: none;
 	clear: both;
+}
+.button{
+	padding: 8px !important;
+	margin-bottom: 10px !important;
+	text-decoration: none;
+	text-align: center;
+}
+.courses {
+	margin: 0 0 20px 20px;
+	padding: 0;
+	list-style: none;
+}
+.courses li{
+	position: relative;
+	margin-bottom: 12px;
+}
+.courses li:before{
+	content: '\f058';
+	margin: 0 !important;
+	position: absolute;
+	left: -18px;
 }
 #toplist{
 	margin-top: 40px;
@@ -194,7 +221,7 @@ a{
 	text-shadow:0px 0px 4px #B8FFEA, 0px 0px 8px #FFFFFF
 }
 #frm-authentication{
-    margin-top: 14px;
+	margin-top: 14px;
 }
 #menu a{
 	font-size: 0.9em;
@@ -237,8 +264,8 @@ a{
 	clear: both;
 }
 a[href^="error:"] {
-    background: red;
-    color: white;
+	background: red;
+	color: white;
 }
 /*** Flash zpravicky ***/
 .flash {
