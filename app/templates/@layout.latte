@@ -9,6 +9,7 @@
 		<title>{block title|striptags}Kraniosakrální terapie a práce s energií{/block}</title>
 		<link rel="shortcut icon" href="/favicon.ico">
 		<link rel="stylesheet" href="/style.css" type="text/css">
+		<link rel="stylesheet" href="/css/jquery.css" type="text/css">
 		{block head|indent:2}
 		{/block}
 	</head>
@@ -26,7 +27,7 @@
 												<li><a{ifCurrent domu} class="current"{/ifCurrent} n:href="Web:domu">Domů</a></li>
 												<li><a{ifCurrent zdenkaOcelikova} class="current"{/ifCurrent} n:href="Web:zdenkaOcelikova">O mně</a></li>
 												<li><a{ifCurrent kraniosakralniTerapie} class="current"{/ifCurrent} n:href="Web:kraniosakralniTerapie">Kraniosakrální terapie</a></li>
-												<li><a{ifCurrent kurzyKraniosakralniTerapie} class="current"{/ifCurrent} n:href="Web:kurzyKraniosakralniTerapie">Nabídka kurzů</a></li>
+												<li><a{ifCurrent kurzyKraniosakralniTerapie} class="current"{/ifCurrent} n:href="Web:kurzyKraniosakralniTerapie">Nabídka KURZŮ</a></li>
 												<li><a{ifCurrent praceEnergie} class="current"{/ifCurrent} n:href="Web:praceEnergie">Práce s energií</a></li>
 												<li><a{ifCurrent hovoryDuse} class="current"{/ifCurrent} n:href="Web:hovoryDuse">Hovory s duší</a></li>
 												<li><a{ifCurrent kauzalniMedicina} class="current"{/ifCurrent} n:href="Web:kauzalniMedicina">Kauzální medicína</a></li>
@@ -38,6 +39,20 @@
 												<li><a{ifCurrent cenik} class="current"{/ifCurrent} n:href="Web:cenik">Ceník</a></li>
 												<li><a{ifCurrent kontaktyTerapeutu} class="current"{/ifCurrent} n:href="Web:kontaktyTerapeutu">Kontakty</a></li>
 											</ul>
+											<div class="ui-menu ui-widget ui-widget-content ui-corner-all address">
+												<h2 class="ui-accordion-header ui-state-default">Adresa působiště</h2>
+												<div>
+													<a href="http://www.dumrukousvetla.cz/kontakt" target="_blank">
+														Dům Rukou Světla
+													</a>
+												</div>
+												<div>
+													<a href="http://www.mapy.cz/s/8DrK" target="_blank">
+														Liblická 294/5
+													</a>
+												</div>
+												<div>Praha - Hloubětín</div>
+											</div>
 											<div n:if="$toplist" id="toplist">
 												<a target="_blank" href="http://www.toplist.cz/stat/1707354">
 													<script language="JavaScript" type="text/javascript">

@@ -3,7 +3,6 @@
 {block description}Nabídka Kurzů kraniosakrální terapie, práce s energií, astro-konstelací a kraniosakrální jógy.{/block}
 
 {block head}
-<link rel="stylesheet" href="/css/jquery.css" type="text/css">
 <link rel="stylesheet" href="/css/gallery.css" type="text/css">
 <link rel="stylesheet" href="/css/form2.css" type="text/css">
 <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -15,50 +14,6 @@
 
 {block content}
 <h1>Nabídka kurzů</h1>
-<ul class="courses">
-	<li>
-		<a n:href="kurzKraniosakralniTerapie12">Kurz kraniosakrální terapie I. a II.</a>
-		- vás zavede do fantastického světa vnitřního léčitele a naučí vás logický a lehce zapamatovatelný ucelený postup ošetření kraniosakrální terapií.
-		S tímto základem už se dá pracovat a pokud se naučíte pracovat s energiemi,
-		můžete si s kurzem kraniosakrální terapie I. a II. vystačit na dlouhou dobu vaší praxe,
-		pokud nebudete mít potřebu dál se vzdělávat v tomto oboru.
-		<i>číst dále...</i>
-	</li>
-	<li>
-		<a n:href="kurzKraniosakralniTerapie3">Kurz kraniosakrální terapie III.</a>
-		- vás naučí rozšířenou verzi ošetření kraniosakrální terapií.
-		Pro některé typy potíží je tato rozšířená verze kraniosakrální terapie III. nenahraditelná,
-		protože se naučíte pracovat na lebečních švech a tkáních, které nelze uchopit z povrchu, ale musíte se k nim dostat z dutiny ústní.
-		Kraniosakrální terapie III. je nejen příjemná, ale také užitečná,
-		a to nejen pro tkáně na hlavě, ale pro řadu dalších potíží, protože vše je provázáno se vším.
-		<i>číst dále...</i>
-	</li>
-	<li class="profession">
-		<a n:href="kurzPraceEnergie">Kurz práce s energií</a>
-		- zde se naučíte pochopit, jak vypadají jednotlivá jemná těla a jak jsou provázaná a jaký vliv může mít jejich jemné ošetřování.
-		Seznámíte se podrobněji s energetickým systémem člověka a s jeho hlubokými úrovněmi.
-		S energií si vyzkoušíte na tomto kurzu prakticky pracovat, a to nejen na lehátku s klientem, ale i na dálku.
-		<i>číst dále...</i>
-	</li>
-	<li class="profession">
-		<a n:href="seminarKraniosakralniJogy">Seminář kraniosakrální jógy</a>
-		- zde se naučíte jak používat výhody kraniosakrální terapie sami na sobě.
-		<i>číst dále...</i>
-	</li>
-	<li class="profession">
-		<a n:href="seminarAstrologie">Seminář Astrologie hrou</a>
-		- v tomto semináři si budete hrát s planetami a astro-konstelacemi a naučíte se tak astrologii a horoskopům rozumět velice zábavnou formou,
-		při níž si vše potřebné lehce zafixujete.
-		<i>číst dále...</i>
-	</li>
-	<li class="profession">
-		<a n:href="samanskeRodinneKonstelace">Šamanské rodinné konstelace</a>
-		- zde si můžete postavit konstelaci na váš problém a vyřešit jej zábavnými konstelacemi jednou provždy.
-		Kromě rodinných vztahů můžete řešit i věci typu strach z určité situace, vztah ke svému tělu, k práci, reakce na určité typy lidí, apod.
-		Na šamanských rodinných konstelacích se pracuje nejen s osobami a vlastnostmi, ale také s totemovými zvířaty, planetami apod.
-		<i>číst dále...</i>
-	</li>
-</ul>
 
 <h2>Termíny kurzů, časový rozvrh, cena a přihláška</h2>
 <div id="accordion" n:inner-foreach="$courses as $course">
@@ -146,6 +101,52 @@
 {snippet flash}
 	<div n:foreach="$flashes as $flash" class="flash {$flash->type}">{$flash->message}</div>
 {/snippet}
+
+<h2>O čem jednotlivé kurzy a semináře pojednávají</h2>
+<ul class="courses">
+	<li>
+		<a n:href="kurzKraniosakralniTerapie12">Kurz kraniosakrální terapie I. a II.</a>
+		- vás zavede do fantastického světa vnitřního léčitele a naučí vás logický a lehce zapamatovatelný ucelený postup ošetření kraniosakrální terapií.
+		S tímto základem už se dá pracovat a pokud se naučíte pracovat s energiemi,
+		můžete si s kurzem kraniosakrální terapie I. a II. vystačit na dlouhou dobu vaší praxe,
+		pokud nebudete mít potřebu dál se vzdělávat v tomto oboru.
+		<i>číst dále...</i>
+	</li>
+	<li>
+		<a n:href="kurzKraniosakralniTerapie3">Kurz kraniosakrální terapie III.</a>
+		- vás naučí rozšířenou verzi ošetření kraniosakrální terapií.
+		Pro některé typy potíží je tato rozšířená verze kraniosakrální terapie III. nenahraditelná,
+		protože se naučíte pracovat na lebečních švech a tkáních, které nelze uchopit z povrchu, ale musíte se k nim dostat z dutiny ústní.
+		Kraniosakrální terapie III. je nejen příjemná, ale také užitečná,
+		a to nejen pro tkáně na hlavě, ale pro řadu dalších potíží, protože vše je provázáno se vším.
+		<i>číst dále...</i>
+	</li>
+	<li class="profession">
+		<a n:href="kurzPraceEnergie">Kurz práce s energií</a>
+		- zde se naučíte pochopit, jak vypadají jednotlivá jemná těla a jak jsou provázaná a jaký vliv může mít jejich jemné ošetřování.
+		Seznámíte se podrobněji s energetickým systémem člověka a s jeho hlubokými úrovněmi.
+		S energií si vyzkoušíte na tomto kurzu prakticky pracovat, a to nejen na lehátku s klientem, ale i na dálku.
+		<i>číst dále...</i>
+	</li>
+	<li class="profession">
+		<a n:href="seminarKraniosakralniJogy">Seminář kraniosakrální jógy</a>
+		- zde se naučíte jak používat výhody kraniosakrální terapie sami na sobě.
+		<i>číst dále...</i>
+	</li>
+	<li class="profession">
+		<a n:href="seminarAstrologie">Seminář Astrologie hrou</a>
+		- v tomto semináři si budete hrát s planetami a astro-konstelacemi a naučíte se tak astrologii a horoskopům rozumět velice zábavnou formou,
+		při níž si vše potřebné lehce zafixujete.
+		<i>číst dále...</i>
+	</li>
+	<li class="profession">
+		<a n:href="samanskeRodinneKonstelace">Šamanské rodinné konstelace</a>
+		- zde si můžete postavit konstelaci na váš problém a vyřešit jej zábavnými konstelacemi jednou provždy.
+		Kromě rodinných vztahů můžete řešit i věci typu strach z určité situace, vztah ke svému tělu, k práci, reakce na určité typy lidí, apod.
+		Na šamanských rodinných konstelacích se pracuje nejen s osobami a vlastnostmi, ale také s totemovými zvířaty, planetami apod.
+		<i>číst dále...</i>
+	</li>
+</ul>
 
 {form courseReservation2, "class"=>"ajax", "style"=>"display:none"}
 	<table>
