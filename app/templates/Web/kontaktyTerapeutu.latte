@@ -27,13 +27,27 @@
 
 {block content}
 <h1>Kontakty terapeutů</h1>
+<img width="90" class="leftimg" src="/img/dcr/lektorka-kurzu-kranio-sakralni-terapie.jpg" title="Zdeňka Ocelíková">
+<ul>
+	<li class="person" title="Jméno a příjmení">
+		<strong>Zdeňka Ocelíková</strong>
+	</li>
+	<li class="profession" title="Profese">
+		kraniosakrální terapie, léčitelství, astroporadenství, kurzy
+	</li>
+	<li class="phone" title="Telefon">+420 602 748 729</li>
+	<li class="mail" title="email">
+		<a href="mailto:kurzKST@seznam.cz">kurzKST@seznam.cz</a>
+	</li>
+	<li class="city" title="Web">
+		<a target="_blank" href="http://www.dumrukousvetla.cz/kontakt">Dům Rukou Světla</a>, Liblická 5, Praha 9 Hloubětín
+	</li>
+</ul>
 <p>
-	Seznam mých kolegyň a kolegů v ČR praktikujících kraniosakrální terapii.
-	Pro informace o cenách a dalších podrobnostech kontaktujte prosím přímo konkrétního terapeuta.
-	Pro informace ke kurzům kontaktujte Zdeňku Ocelíkovou na email uvedený níže v profilu.
+	5 min.chůze od stanice metra B „Hloubětín“, parkování u domu
 </p>
 
-<h2>Kontakty terapeutů podle místa působiště</h2>
+<h2>Kontakty dalších terapeutů podle místa působiště</h2>
 <ul id="city" class="ui-menu ui-widget ui-widget-content ui-corner-all">
 	<li class="ui-menu-item" n:foreach="$cities as $cityId => $city"><a class="city ui-corner-all" cityid="{$cityId}">{$city['name']}</a></li>
 </ul>
