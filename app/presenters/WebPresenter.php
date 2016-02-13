@@ -9,8 +9,6 @@ use Nette,
 	 Nette\Mail\SendmailMailer,
 	 Nette\Utils\Html;
 
-//use Nette\Application\Responses\JsonResponse;
-
 class WebPresenter extends Nette\Application\UI\Presenter {
 
 	/** persistent */

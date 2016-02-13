@@ -80,8 +80,10 @@
 			<b>Časový rozvrh kurzu</b>
 			<ul>
 				{foreach $course['dates'] as $date}
-					<li>{$date['date']|date:'%a %d.%m.%Y'} od {$date['date']|date:'%H:%M'} do {$date['end']} h</li>
-					{/foreach}
+					<li>
+						{$date['date']|date:'%a %d.%m.%Y'} od {$date['date']|date:'%H:%M'} do {$date['end']} h
+					</li>
+				{/foreach}
 			</ul>
 			{if !$course['expiration']}
 				<button class="registration">
