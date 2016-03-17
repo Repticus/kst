@@ -12,29 +12,6 @@ parameters:
 				- 'Bc. Michaela Habrunová'
 			dates:
 				-
-					date: '05.03.2016 9:00'
-					end: '17:00'
-				-
-					date: '06.03.2016 9:00'
-					end: '16:00'
-				-
-					date: '12.03.2016 9:00'
-					end: '17:00'
-				-
-					date: '13.03.2016 9:00'
-					end: '16:00'
-		-
-			name: 'Kurz kraniosakrální terapie I. a II. [víkendový]'
-			price: 8700
-			deposit: 3700
-			occupied: false
-			place: %place.dumsvetla%
-			template: 'kranioReservation'
-			lectors:
-				- 'Zdeňka Ocelíková'
-				- 'Bc. Michaela Habrunová'
-			dates:
-				-
 					date: '02.04.2016 9:00'
 					end: '17:00'
 				-
@@ -50,7 +27,7 @@ parameters:
 			name: 'Seminář kraniosakrální jógy'
 			price: 1500
 			alumnus: 1200
-			occupied: false
+			occupied: true
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'
