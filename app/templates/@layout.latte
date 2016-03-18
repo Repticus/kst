@@ -6,83 +6,71 @@
 		<meta name="description" content="{block description}Kurzy kraniosakrální terapie a práce s energií. Zasvěcení do Reiki, Shambally a Ra-Sheeby.{/block}">
 		{block robots|indent:2}
 		{/block}
-		<title>{block title|striptags}Kraniosakrální terapie a práce s energií{/block}</title>
+		<title>{block title|striptags}Kraniosakrální terapie{/block}</title>
 		<link rel="shortcut icon" href="/favicon.ico">
 		<link rel="stylesheet" href="/style.css" type="text/css">
-		<link rel="stylesheet" href="/css/jquery.css" type="text/css">
+		<link href="css/jquery.css" rel="stylesheet" type="text/css"/>
 		{block head|indent:2}
 		{/block}
 	</head>
 	<body>
-		<div id="head">
-			<div id="body">
-				<div id="bodycntlft">
-					<div id="bodycntrgt">
-						<div id="bodyrgt">
-							<div id="bodylft">
-								<div id="foot">
-									<div id="page">
-										<div id="menu">
-											<ul>
-												<li><a{ifCurrent domu} class="current"{/ifCurrent} n:href="Web:domu">Domů</a></li>
-												<li><a{ifCurrent zdenkaOcelikova} class="current"{/ifCurrent} n:href="Web:zdenkaOcelikova">O mně</a></li>
-												<li><a{ifCurrent nabidkaSluzeb} class="current"{/ifCurrent} n:href="Web:nabidkaSluzeb">Nabídka SLUŽEB</a></li>
-												<li><a{ifCurrent kurzyKraniosakralniTerapie} class="current"{/ifCurrent} n:href="Web:kurzyKraniosakralniTerapie">Nabídka KURZŮ</a></li>
-												<li><a{ifCurrent kraniosakralniTerapie} class="current"{/ifCurrent} n:href="Web:kraniosakralniTerapie">Kraniosakrální terapie</a></li>
-												<li><a{ifCurrent praceEnergie} class="current"{/ifCurrent} n:href="Web:praceEnergie">Práce s energií</a></li>
-												<li><a{ifCurrent astroporadna} class="current"{/ifCurrent} n:href="Web:astroporadna">Astroporadna</a></li>
-												<li><a{ifCurrent samanizmus} class="current"{/ifCurrent} n:href="Web:samanizmus">Šamanizmus</a></li>
-												<li><a{ifCurrent raSheebaReikiShamballa} class="current"{/ifCurrent} n:href="Web:raSheebaReikiShamballa">Ra-Sheeba Reiki Shamballa </a></li>
-												<li><a{ifCurrent hovoryDuse} class="current"{/ifCurrent} n:href="Web:hovoryDuse">Hovory s duší</a></li>
-												<li><a{ifCurrent kauzalniMedicina} class="current"{/ifCurrent} n:href="Web:kauzalniMedicina">Kauzální medicína</a></li>
-												<li><a{ifCurrent somatoEmocionalniUvolneni} class="current"{/ifCurrent} n:href="Web:somatoEmocionalniUvolneni">Somato-emocionální uvolnění</a></li>
-												<li><a{ifCurrent lymfatickaRucniDrenaz} class="current"{/ifCurrent} n:href="Web:lymfatickaRucniDrenaz">Lymfatická ruční drenáž</a></li>
-												<li><a{ifCurrent fotoVideo} class="current"{/ifCurrent} n:href="Web:fotoVideo">Foto a video</a></li>
-												<li><a{ifCurrent ohlasyAbsolventu} class="current"{/ifCurrent} n:href="Web:ohlasyAbsolventu">Reference absolventů kurzů</a></li>
-												<li><a{ifCurrent ohlasyKlientu} class="current"{/ifCurrent} n:href="Web:ohlasyKlientu">Reference klientů</a></li>
-												<li><a{ifCurrent kontaktyTerapeutu} class="current"{/ifCurrent} n:href="Web:kontaktyTerapeutu">Kontakty</a></li>
-											</ul>
-											<div class="ui-menu ui-widget ui-widget-content ui-corner-all address">
-												<h2 class="ui-accordion-header ui-state-default">Adresa působiště</h2>
-												<div>
-													<a href="http://www.dumrukousvetla.cz/kontakt" target="_blank">
-														Dům Rukou Světla
-													</a>
-												</div>
-												<div>
-													<a href="http://www.mapy.cz/s/8DrK" target="_blank">
-														Liblická 294/5
-													</a>
-												</div>
-												<div>Praha - Hloubětín</div>
-											</div>
-											<div n:if="$toplist" id="toplist">
-												<a target="_blank" href="http://www.toplist.cz/stat/1707354">
-													<script language="JavaScript" type="text/javascript">
-														document.write('<img src="https://toplist.cz/count.asp?id=1707354&logo=mc&http=' + escape(document.referrer) + '&t=' + escape(document.title) + '&wi=' + escape(window.screen.width) + '&he=' + escape(window.screen.height) + '&cd=' + escape(window.screen.colorDepth) + '" width="88" height="60" border=0 alt="TOPlist" />');
-													</script>
-													<noscript>
-													<img src="https://toplist.cz/count.asp?id=1707354&logo=mc" border="0" alt="TOPlist" width="88" height="60" />
-													</noscript>
-												</a>
-											</div>
-										</div>
-										<div id="content">
-											<!--[if lt IE 9]>
-												<div class="flash error">
-													Používáte zastaralou verzi prohlížeče, některé stránky se vám mohou zobrazit nekorektně.
-													Pro správné zobrazení stránek si aktualizujte prohlízeč.
-												</div>
-											<![endif]-->
-											{include #content}
-										</div>
-										<div class="clr"></div>
-									</div>
-								</div>
-							</div>
+		<div id="page">
+			<div id="shadow">
+				<div id="menu">
+					<ul>
+						<li><a{ifCurrent domu} class="current"{/ifCurrent} n:href="Web:domu">Domů</a></li>
+						<li><a{ifCurrent zdenkaOcelikova} class="current"{/ifCurrent} n:href="Web:zdenkaOcelikova">O mně</a></li>
+						<li><a{ifCurrent nabidkaSluzeb} class="current"{/ifCurrent} n:href="Web:nabidkaSluzeb">Nabídka SLUŽEB</a></li>
+						<li><a{ifCurrent kurzyKraniosakralniTerapie} class="current"{/ifCurrent} n:href="Web:kurzyKraniosakralniTerapie">Nabídka KURZŮ</a></li>
+						<li><a{ifCurrent kraniosakralniTerapie} class="current"{/ifCurrent} n:href="Web:kraniosakralniTerapie">Kraniosakrální terapie</a></li>
+						<li><a{ifCurrent praceEnergie} class="current"{/ifCurrent} n:href="Web:praceEnergie">Práce s energií</a></li>
+						<li><a{ifCurrent astroporadna} class="current"{/ifCurrent} n:href="Web:astroporadna">Astroporadna</a></li>
+						<li><a{ifCurrent samanizmus} class="current"{/ifCurrent} n:href="Web:samanizmus">Šamanizmus</a></li>
+						<li><a{ifCurrent raSheebaReikiShamballa} class="current"{/ifCurrent} n:href="Web:raSheebaReikiShamballa">Ra-Sheeba Reiki Shamballa </a></li>
+						<li><a{ifCurrent hovoryDuse} class="current"{/ifCurrent} n:href="Web:hovoryDuse">Hovory s duší</a></li>
+						<li><a{ifCurrent kauzalniMedicina} class="current"{/ifCurrent} n:href="Web:kauzalniMedicina">Kauzální medicína</a></li>
+						<li><a{ifCurrent somatoEmocionalniUvolneni} class="current"{/ifCurrent} n:href="Web:somatoEmocionalniUvolneni">Somato-emocionální uvolnění</a></li>
+						<li><a{ifCurrent lymfatickaRucniDrenaz} class="current"{/ifCurrent} n:href="Web:lymfatickaRucniDrenaz">Lymfatická ruční drenáž</a></li>
+						<li><a{ifCurrent fotoVideo} class="current"{/ifCurrent} n:href="Web:fotoVideo">Foto a video</a></li>
+						<li><a{ifCurrent ohlasyAbsolventu} class="current"{/ifCurrent} n:href="Web:ohlasyAbsolventu">Reference absolventů kurzů</a></li>
+						<li><a{ifCurrent ohlasyKlientu} class="current"{/ifCurrent} n:href="Web:ohlasyKlientu">Reference klientů</a></li>
+						<li><a{ifCurrent kontaktyTerapeutu} class="current"{/ifCurrent} n:href="Web:kontaktyTerapeutu">Kontakty</a></li>
+					</ul>
+					<div class="ui-menu ui-widget ui-widget-content ui-corner-all address">
+						<h2 class="ui-accordion-header ui-state-default">Adresa působiště</h2>
+						<div>
+							<a target="_blank" href="http://www.dumrukousvetla.cz/kontakt">
+								Dům Rukou Světla
+							</a>
 						</div>
+						<div>
+							<a target="_blank" href="http://www.mapy.cz/s/8DrK">
+								Liblická 294/5
+							</a>
+						</div>
+						<div>Praha - Hloubětín</div>
+					</div>
+					<div n:if="$toplist" id="toplist">
+						<a target="_blank" href="http://www.toplist.cz/stat/1707354">
+							<script language="JavaScript" type="text/javascript">
+								document.write('<img src="https://toplist.cz/count.asp?id=1707354&logo=mc&http=' + escape(document.referrer) + '&t=' + escape(document.title) + '&wi=' + escape(window.screen.width) + '&he=' + escape(window.screen.height) + '&cd=' + escape(window.screen.colorDepth) + '" width="88" height="60" border=0 alt="TOPlist" />');
+							</script>
+							<noscript>
+							<img src="https://toplist.cz/count.asp?id=1707354&logo=mc" border="0" alt="TOPlist" width="88" height="60" />
+							</noscript>
+						</a>
 					</div>
 				</div>
+				<div id="content">
+					<!--[if lt IE 9]>
+						<div class="flash error">
+							Používáte zastaralou verzi prohlížeče, některé stránky se vám mohou zobrazit nekorektně.
+							Pro správné zobrazení stránek si aktualizujte prohlízeč.
+						</div>
+					<![endif]-->
+					{include #content}
+				</div>
+				<div class="clr"></div>
 			</div>
 		</div>
 		<script n:if="$google" type="text/javascript">

@@ -39,7 +39,7 @@
 </p>
 <div n:snippet="video">
 	{if $presenter->client}
-		<video class="leftimg" width="384" height="288" controls>
+		<video class="img" width="384" height="288" controls>
 			<source src="mpg/kranio.mp4" type="video/mp4">
 			<source src="mpg/kranio.webm" type="video/webm">
 			<p>
@@ -47,7 +47,7 @@
 			</p>
 		</video>
 	{else}
-		<img class="leftimg" src="img/dcr/kurz-kraniosakralni-terapie.jpg" title="Kurz kraniosakrální terapie" alt="Kurz kraniosakrální terapie" />
+		<img class="img" src="img/dcr/kurz-kraniosakralni-terapie.jpg" title="Kurz kraniosakrální terapie" alt="Kurz kraniosakrální terapie" />
 		<div class="clr"></div>
 		{form authentication, "class"=>"ajax"}
 			{input password}
