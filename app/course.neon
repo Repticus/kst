@@ -108,3 +108,65 @@ parameters:
 				-
 					date: '12.06.2016 9:00'
 					end: '16:00'
+		-
+			name: 'Kurz kraniosakrální terapie I. a II. [víkendový]'
+			price: 8700
+			deposit: 3700
+			occupied: false
+			place: %place.dumsvetla%
+			template: 'kranioReservation'
+			lectors:
+				- 'Zdeňka Ocelíková'
+				- 'Bc. Michaela Habrunová'
+			dates:
+				-
+					date: '17.09.2016 9:00'
+					end: '17:00'
+				-
+					date: '18.09.2016 9:00'
+					end: '16:00'
+				-
+					date: '1.10.2016 9:00'
+					end: '17:00'
+				-
+					date: '2.10.2016 9:00'
+					end: '16:00'
+		-
+			name: 'Kurz kraniosakrální terapie III.'
+			price: 4300
+			occupied: false
+			place: %place.dumsvetla%
+			template: 'kranioReservation'
+			lectors:
+				- 'Zdeňka Ocelíková'
+				- 'Bc. Michaela Habrunová'
+			dates:
+				-
+					date: '05.11.2016 9:00'
+					end: '17:00'
+				-
+					date: '06.11.2016 9:00'
+					end: '16:00'
+		-
+			name: 'Kurz kraniosakrální terapie I. a II. [víkendový]'
+			price: 8700
+			deposit: 3700
+			occupied: false
+			place: %place.dumsvetla%
+			template: 'kranioReservation'
+			lectors:
+				- 'Zdeňka Ocelíková'
+				- 'Bc. Michaela Habrunová'
+			dates:
+				-
+					date: '12.11.2016 9:00'
+					end: '17:00'
+				-
+					date: '13.11.2016 9:00'
+					end: '16:00'
+				-
+					date: '26.11.2016 9:00'
+					end: '17:00'
+				-
+					date: '27.11.2016 9:00'
+					end: '16:00'
