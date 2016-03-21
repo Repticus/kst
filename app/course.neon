@@ -132,6 +132,24 @@ parameters:
 					date: '2.10.2016 9:00'
 					end: '16:00'
 		-
+			name: 'Šamanský seminář'
+			price: 3600
+			deposit: 1600
+			occupied: false
+			place: %place.jedraz%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			dates:
+				-
+					date: '14.10.2016 17:00'
+					end: '20:00'
+				-
+					date: '15.10.2016 9:00'
+					end: '20:00'
+				-
+					date: '16.10.2016 9:00'
+					end: '12:00'
+		-
 			name: 'Kurz kraniosakrální terapie III.'
 			price: 4300
 			occupied: false

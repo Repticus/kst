@@ -128,9 +128,6 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 		}
 		$courseInfo['placeStreet']['caption'] = 'Ulice';
 		$courseInfo['placeStreet']['value'] = $this->context->parameters['courses'][$courseId]['place']['street'];
-		if (isset($this->context->parameters['courses'][$courseId]['place']['map'])) {
-			$courseInfo['placeStreet']['url'] = $this->context->parameters['courses'][$courseId]['place']['map'];
-		}
 		$courseInfo['placeCity']['caption'] = 'Město';
 		$courseInfo['placeCity']['value'] = $this->context->parameters['courses'][$courseId]['place']['city'];
 		$courseInfo['price']['caption'] = 'Cena kurzu';
@@ -277,11 +274,6 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 		$form->addTextArea('note', 'Poznámka', NULL, NULL)
 				  ->setAttribute('placeholder', 'Vaše motivace k účasti na kurzu nebo jakýkoli dotaz.')
 				  ->addRule(BaseForm::MAX_LENGTH, 'Poznámka je příliš dlouhá', 1000);
-		$checkboxLabel = Html::el();
-		$checkboxLabel->add('Souhlasím s ');
-		$checkboxLabel->add(Html::el('a')->id('term')->setText('podmínkami účasti'));
-		$form->addCheckbox('terms', $checkboxLabel)
-				  ->setRequired('Bez souhlasu s podmínkami účasti se nemůžete kurzu zúčastnit.');
 		$form->addCheckbox('invoice', 'Chci vystavit fakturu.');
 		$form->addText('firm', 'Firma')
 				  ->setAttribute('placeholder', 'Název firmy s.r.o.')

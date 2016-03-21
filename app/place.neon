@@ -30,10 +30,16 @@ parameters:
 			street: 'Liblická 294/5'
 			city: 'Praha - Hloubětín'
 			url: 'http://www.dumrukousvetla.cz'
-			map: 'http://www.mapy.cz/s/8DrK'
+			map: 'https://mapy.cz/zakladni?x=14.5400403&y=50.1042856&z=17&source=addr&id=8996426'
 
 		pancavskyMlyn:
 			name: 'Pančavský Mlýn'
 			street: 'Zbraslavice 81'
 			city: 'Zbraslavice'
 			map: 'http://www.mapy.cz/s/99aA'
+		jedraz:
+			name: 'Penzion Jedraž'
+			street: 'Jedraž 1'
+			city: '38601 Strakonice'
+			url: 'http://jedraz.cz'
+			map: 'https://mapy.cz/zakladni?x=13.9319797&y=49.2015713&z=13&source=ward&id=10765'
