@@ -4,7 +4,7 @@ parameters:
 			name: 'Kurz kraniosakrální terapie I. a II. [víkendový]'
 			price: 8700
 			deposit: 3700
-			occupied: false
+			occupied: true
 			place: %place.dumsvetla%
 			template: 'kranioReservation'
 			lectors:
@@ -34,28 +34,6 @@ parameters:
 			dates:
 				-
 					date: '10.04.2016 9:00'
-					end: '17:00'
-		-
-			name: 'Šamanské rodinné konstelace'
-			price: 700
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '14.05.2016 14:00'
-					end: '19:00'
-		-
-			name: 'Seminář Astrologie hrou'
-			price: 1100
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '15.05.2016 9:00'
 					end: '17:00'
 		-
 			name: 'Kurz kraniosakrální terapie III.'
