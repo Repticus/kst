@@ -1,7 +1,7 @@
 parameters:
 	courses:
 		-
-			name: 'Seminář kraniosakrální jógy'
+			name: 'Kraniosakrální cvičení - ošetřuji sám sebe'
 			price: 1500
 			alumnus: 1200
 			occupied: true
