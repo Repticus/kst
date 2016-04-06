@@ -16,7 +16,7 @@
 <h1>Nabídka kurzů</h1>
 
 <h2>Termíny kurzů, časový rozvrh, cena a přihláška</h2>
-<div id="accordion" n:inner-foreach="$courses as $course">
+<div id="accordion" n:inner-foreach="$courses as $key => $course">
 	<div itemscope itemref="coursename coursedescription address{$iterator->counter}" itemtype="http://schema.org/Event">
 		<time itemprop="startDate" datetime="{$course['dates'][0]['date']|date:'%Y-%m-%d'}">{$course['dates'][0]['date']|date:'%d.%m.%Y'}</time>
 		- {$course['name']}
@@ -27,7 +27,7 @@
 		{/if}
 		<span class="info">více info zde</span>
 	</div>
-	<div id="address{$iterator->counter}" courseId="{$iterator->counter-1}">
+	<div id="address{$iterator->counter}" courseId="{$key}">
 		<div class="address" itemprop="location" itemscope itemtype="http://schema.org/PostalAddress">
 			<b>Adresa</b>
 			<ul>

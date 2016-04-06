@@ -45,22 +45,27 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 	}
 
 	public function actionKurzyKraniosakralniTerapie() {
-		$this->courses = $this->context->parameters['courses'];
+		$this->courses = $this->loadCourses();
+		$this->template->courses = $this->courses;
+		$this->template->addFilter('days', 'WebPresenter::dayFormat');
+	}
+
+	private function loadCourses() {
+		$courses = $this->context->parameters['courses'];
 		$now = strtotime(date("d.m.Y"));
-		foreach ($this->courses as $key => $course) {
+		foreach ($courses as $key => $course) {
 			$firstDate = strtotime(date("d.m.Y", strtotime($course['dates']['0']['date'])));
 			$lastDate = strtotime($course['dates'][max(array_keys($course['dates']))]['date'] . " + 2 days");
 			if ($now >= $firstDate) {
-				$this->courses[$key]['expiration'] = true;
+				$courses[$key]['expiration'] = true;
 			} else {
-				$this->courses[$key]['expiration'] = false;
+				$courses[$key]['expiration'] = false;
 			}
 			if ($now > $lastDate) {
-				unset($this->courses[$key]);
+				unset($courses[$key]);
 			}
 		}
-		$this->template->courses = $this->courses;
-		$this->template->addFilter('days', 'WebPresenter::dayFormat');
+		return $courses;
 	}
 
 	public function actionFotoVideo() {
@@ -93,15 +98,6 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 			default:
 				return $day . " dnů";
 		}
-	}
-
-	public function generateCourseDates() {
-		foreach ($this->courses as $key => $course) {
-			$timestamp = strtotime($course['dates']['0']['date']);
-			$date = date("d.m.Y", $timestamp);
-			$dates[$key] = $date;
-		}
-		return $dates;
 	}
 
 	public function setPersonalData($form) {
