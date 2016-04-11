@@ -35,7 +35,6 @@ parameters:
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'
-				- 'Bc. Michaela Habrunová'
 			dates:
 				-
 					date: '28.05.2016 9:00'
