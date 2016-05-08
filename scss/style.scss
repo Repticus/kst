@@ -18,13 +18,14 @@ body{
 	font-size: 0.8em;
 }
 ul{
-	margin: 0;
-	padding: 0;
-	list-style: none;
+	padding-left: 20px;
 }
 a {
 	color: #ffffff;
 	font-weight: bold;
+}
+a.current, a:hover {
+	text-shadow: 0 0 4px #b8ffea, 0 0 8px #fff;
 }
 img{
 	float: left;
@@ -84,6 +85,8 @@ q{
 	}
 	ul{
 		text-align: right;
+		padding: 0;
+		list-style: none;
 	}
 	li{
 		margin-bottom: 15px;
