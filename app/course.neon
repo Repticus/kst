@@ -40,17 +40,6 @@ parameters:
 					date: '28.05.2016 9:00'
 					end: '17:00'
 		-
-			name: 'Kurz Práce s energií'
-			price: 1900
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '29.05.2016 9:00'
-					end: '17:00'
-		-
 			name: 'Kurz kraniosakrální terapie I. a II. [víkendový]'
 			price: 8700
 			deposit: 3700
