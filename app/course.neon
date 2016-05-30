@@ -1,7 +1,7 @@
 parameters:
 	courses:
 		-
-			name: 'Kurz kraniosakrální terapie I. a II. [víkendový]'
+			name: 'Kurz kraniosakrální terapie I. a II.'
 			price: 8700
 			deposit: 3700
 			occupied: false
@@ -73,7 +73,7 @@ parameters:
 					date: '2.10.2016 9:00'
 					end: '16:00'
 		-
-			name: 'Kurz kraniosakrální terapie I. a II. [víkendový]'
+			name: 'Kurz kraniosakrální terapie I. a II.'
 			price: 8700
 			deposit: 3700
 			occupied: false
@@ -114,7 +114,7 @@ parameters:
 					date: '16.10.2016 9:00'
 					end: '12:00'
 		-
-			name: 'Seminář kraniosakrální jógy'
+			name: 'Seminář Kranio-jóga'
 			price: 1500
 			alumnus: 1200
 			occupied: false
@@ -179,7 +179,7 @@ parameters:
 					date: '27.11.2016 9:00'
 					end: '16:00'
 		-
-			name: 'Kurz kraniosakrální terapie I. a II. [víkendový]'
+			name: 'Kurz kraniosakrální terapie I. a II.'
 			price: 8700
 			deposit: 3700
 			occupied: false
