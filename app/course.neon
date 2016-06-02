@@ -200,3 +200,14 @@ parameters:
 				-
 					date: '27.11.2016 9:00'
 					end: '16:00'
+		-
+			name: 'Kurz Astrologie hrou I.'
+			price: 1200
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			dates:
+				-
+					date: '11.12.2016 9:00'
+					end: '17:00'
