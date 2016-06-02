@@ -32,7 +32,7 @@ parameters:
 				- 'Zdeňka Ocelíková'
 			dates:
 				-
-					date: '9.6.2016 9:00'
+					date: '9.7.2016 9:00'
 					end: '17:00'
 		-
 			name: 'Kurz Práce s energií'
@@ -115,8 +115,7 @@ parameters:
 					end: '12:00'
 		-
 			name: 'Seminář Kranio-jóga'
-			price: 1500
-			alumnus: 1200
+			price: 1200
 			occupied: false
 			place: %place.dumsvetla%
 			lectors:
