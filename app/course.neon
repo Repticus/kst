@@ -6,7 +6,6 @@ parameters:
 			deposit: 3700
 			occupied: false
 			place: %place.dumsvetla%
-			template: 'kranioReservation'
 			lectors:
 				- 'Zdeňka Ocelíková'
 				- 'Bc. Michaela Habrunová'
@@ -52,7 +51,6 @@ parameters:
 			deposit: 3900
 			occupied: false
 			place: %place.dumsvetla%
-			template: 'kranioReservation'
 			lectors:
 				- 'Zdeňka Ocelíková'
 				- 'Bc. Michaela Habrunová'
@@ -78,7 +76,6 @@ parameters:
 			deposit: 3700
 			occupied: false
 			place: %place.dumsvetla%
-			template: 'kranioReservation'
 			lectors:
 				- 'Zdeňka Ocelíková'
 				- 'Bc. Michaela Habrunová'
@@ -129,7 +126,6 @@ parameters:
 			price: 4300
 			occupied: false
 			place: %place.dumsvetla%
-			template: 'kranioReservation'
 			lectors:
 				- 'Zdeňka Ocelíková'
 				- 'Bc. Michaela Habrunová'
@@ -157,7 +153,6 @@ parameters:
 			deposit: 3900
 			occupied: false
 			place: %place.dumsvetla%
-			template: 'kranioReservation'
 			lectors:
 				- 'Zdeňka Ocelíková'
 				- 'Bc. Michaela Habrunová'
@@ -183,7 +178,6 @@ parameters:
 			deposit: 3700
 			occupied: false
 			place: %place.dumsvetla%
-			template: 'kranioReservation'
 			lectors:
 				- 'Zdeňka Ocelíková'
 				- 'Bc. Michaela Habrunová'

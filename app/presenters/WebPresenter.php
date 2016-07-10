@@ -194,13 +194,8 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 		$clientMail = $form['email']->value;
 		$ownerMail = $this->context->parameters['owner']['mail'];
 		$ownerName = $this->context->parameters['owner']['name'];
-		if (isset($this->context->parameters['courses'][$form['course']->value]['template'])) {
-			$mailTemplate = $this->context->parameters['courses'][$form['course']->value]['template'];
-		} else {
-			$mailTemplate = "defaultReservation";
-		}
 		$template = $this->createTemplate();
-		$template->setFile(__DIR__ . "/../templates/Mail/{$mailTemplate}.latte");
+		$template->setFile(__DIR__ . "/../templates/Mail/clientReservation.latte");
 		$template->personalData = $this->setPersonalData($form);
 		$template->courseData = $this->setCourseData($form['course']->value);
 		$template->courseDays = $this->setCourseDays($form['course']->value);
