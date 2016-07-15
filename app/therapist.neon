@@ -74,3 +74,14 @@ parameters:
 			photo: 'marcela-velkova.jpg'
 			web:
 				- 'www.slunecnicestudio.cz'
+		-
+			name: 'Mgr. Eva Vojtěchovská'
+			profession:
+				- 'Kraniosakrální Reiki terapie'
+				- 'Kraniosakrální terapie v ústech'
+			cityid: 1
+			phone: '+420 736 264 988'
+			mail: 'eva@kraniosa.cz'
+			photo: 'eva-vojtechovska.jpg'
+			web:
+				- 'www.kraniosa.cz'
