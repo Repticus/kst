@@ -1,39 +1,6 @@
 parameters:
 	courses:
 		-
-			name: 'Kurz kraniosakrální terapie I. a II.'
-			price: 8700
-			deposit: 3700
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-				- 'Bc. Michaela Habrunová'
-			dates:
-				-
-					date: '04.06.2016 9:00'
-					end: '17:00'
-				-
-					date: '05.06.2016 9:00'
-					end: '16:00'
-				-
-					date: '11.06.2016 9:00'
-					end: '17:00'
-				-
-					date: '12.06.2016 9:00'
-					end: '16:00'
-		-
-			name: 'Kurz Práce s energií'
-			price: 1900
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '9.7.2016 9:00'
-					end: '17:00'
-		-
 			name: 'Kurz Práce s energií'
 			price: 1900
 			occupied: true
@@ -47,8 +14,8 @@ parameters:
 
 		-
 			name: 'Kurz kraniosakrální terapie I. a II. a práce s energií'
-			price: 9900
-			deposit: 3900
+			price: 9200
+			deposit: 3200
 			occupied: false
 			place: %place.dumsvetla%
 			lectors:
@@ -72,8 +39,8 @@ parameters:
 					end: '16:00'
 		-
 			name: 'Kurz kraniosakrální terapie I. a II.'
-			price: 8700
-			deposit: 3700
+			price: 7800
+			deposit: 2800
 			occupied: false
 			place: %place.dumsvetla%
 			lectors:
@@ -94,7 +61,7 @@ parameters:
 					end: '16:00'
 		-
 			name: 'Šamanský seminář'
-			price: 3600
+			price: 2900
 			deposit: 1600
 			occupied: false
 			place: %place.jedraz%
@@ -123,7 +90,7 @@ parameters:
 					end: '16:00'
 		-
 			name: 'Kurz kraniosakrální terapie III.'
-			price: 4300
+			price: 4200
 			occupied: false
 			place: %place.dumsvetla%
 			lectors:
@@ -138,7 +105,7 @@ parameters:
 					end: '16:00'
 		-
 			name: 'Kurz Práce s energií'
-			price: 1900
+			price: 1700
 			occupied: false
 			place: %place.dumsvetla%
 			lectors:
@@ -149,8 +116,8 @@ parameters:
 					end: '17:00'
 		-
 			name: 'Kurz kraniosakrální terapie I. a II. a práce s energií'
-			price: 9900
-			deposit: 3900
+			price: 9200
+			deposit: 3200
 			occupied: false
 			place: %place.dumsvetla%
 			lectors:
@@ -174,8 +141,8 @@ parameters:
 					end: '16:00'
 		-
 			name: 'Kurz kraniosakrální terapie I. a II.'
-			price: 8700
-			deposit: 3700
+			price: 7800
+			deposit: 2800
 			occupied: false
 			place: %place.dumsvetla%
 			lectors:
