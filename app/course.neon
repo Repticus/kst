@@ -16,7 +16,7 @@ parameters:
 			name: 'Kurz kraniosakrální terapie I. a II. a práce s energií'
 			price: 9200
 			deposit: 3200
-			occupied: false
+			occupied: true
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'
@@ -41,7 +41,7 @@ parameters:
 			name: 'Kurz kraniosakrální terapie I. a II.'
 			price: 7800
 			deposit: 2800
-			occupied: false
+			occupied: true
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'
