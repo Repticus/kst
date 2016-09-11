@@ -15,7 +15,10 @@
 {block content}
 <h1>Nabídka kurzů</h1>
 
-<h2>Termíny kurzů, časový rozvrh, cena a přihláška</h2>
+<h2>
+	Termíny kurzů, časový rozvrh, cena a přihláška.<br>
+	Pod tabulkou najdete popis kurzů.
+</h2>
 <div id="accordion" n:inner-foreach="$courses as $key => $course">
 	<div itemscope itemref="coursename coursedescription address{$iterator->counter}" itemtype="http://schema.org/Event">
 		<time itemprop="startDate" datetime="{$course['dates'][0]['date']|date:'%Y-%m-%d'}">{$course['dates'][0]['date']|date:'%d.%m.%Y'}</time>

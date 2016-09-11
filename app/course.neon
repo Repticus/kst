@@ -172,3 +172,177 @@ parameters:
 				-
 					date: '11.12.2016 9:00'
 					end: '17:00'
+		-
+			name: 'Kurz Práce s energií'
+			price: 1900
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			dates:
+				-
+					date: '13.01.2017 9:00'
+					end: '17:00'
+		-
+			name: 'Kurz kraniosakrální terapie I. a II. a práce s energií'
+			price: 9200
+			deposit: 3200
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+				- 'Bc. Michaela Habrunová'
+			dates:
+				-
+					date: '13.1.2017 9:00'
+					end: '17:00'
+				-
+					date: '14.1.2017 9:00'
+					end: '16:00'
+				-
+					date: '15.1.2017 9:00'
+					end: '17:00'
+				-
+					date: '11.2.2017 9:00'
+					end: '17:00'
+				-
+					date: '12.2.2017 9:00'
+					end: '16:00'
+		-
+			name: 'Kurz kraniosakrální terapie I. a II.'
+			price: 7800
+			deposit: 2800
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+				- 'Bc. Michaela Habrunová'
+			dates:
+				-
+					date: '14.1.2017 9:00'
+					end: '17:00'
+				-
+					date: '15.1.2017 9:00'
+					end: '16:00'
+				-
+					date: '11.2.2017 9:00'
+					end: '17:00'
+				-
+					date: '12.2.2017 9:00'
+					end: '16:00'
+		-
+			name: 'Kurz Práce s energií'
+			price: 1900
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			dates:
+				-
+					date: '24.3.2017 9:00'
+					end: '17:00'
+		-
+			name: 'Kurz kraniosakrální terapie I. a II. a práce s energií'
+			price: 9200
+			deposit: 3200
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+				- 'Bc. Michaela Habrunová'
+			dates:
+				-
+					date: '24.03.2017 9:00'
+					end: '17:00'
+				-
+					date: '25.03.2017 9:00'
+					end: '17:00'
+				-
+					date: '26.03.2017 9:00'
+					end: '16:00'
+				-
+					date: '08.04.2017 9:00'
+					end: '17:00'
+				-
+					date: '09.04.2017 9:00'
+					end: '16:00'
+		-
+			name: 'Kurz kraniosakrální terapie I. a II.'
+			price: 7800
+			deposit: 2800
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+				- 'Bc. Michaela Habrunová'
+			dates:
+				-
+					date: '25.03.2017 9:00'
+					end: '17:00'
+				-
+					date: '26.03.2017 9:00'
+					end: '16:00'
+				-
+					date: '08.04.2017 9:00'
+					end: '17:00'
+				-
+					date: '09.04.2017 9:00'
+					end: '16:00'
+		-
+			name: 'Kurz kraniosakrální terapie I. a II. a práce s energií'
+			price: 9200
+			deposit: 3200
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+				- 'Bc. Michaela Habrunová'
+			dates:
+				-
+					date: '27.05.2017 9:00'
+					end: '17:00'
+				-
+					date: '28.05.2017 9:00'
+					end: '16:00'
+				-
+					date: '09.06.2017 9:00'
+					end: '17:00'
+				-
+					date: '10.06.2017 9:00'
+					end: '17:00'
+				-
+					date: '11.06.2017 9:00'
+					end: '16:00'
+		-
+			name: 'Kurz kraniosakrální terapie I. a II.'
+			price: 7800
+			deposit: 2800
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+				- 'Bc. Michaela Habrunová'
+			dates:
+				-
+					date: '27.05.2017 9:00'
+					end: '17:00'
+				-
+					date: '28.05.2017 9:00'
+					end: '16:00'
+				-
+					date: '10.06.2017 9:00'
+					end: '17:00'
+				-
+					date: '11.06.2017 9:00'
+					end: '16:00'
+		-
+			name: 'Kurz Práce s energií'
+			price: 1900
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			dates:
+				-
+					date: '09.06.2017 9:00'
+					end: '17:00'
