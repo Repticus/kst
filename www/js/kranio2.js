@@ -35,7 +35,6 @@ $(function () {
 	$("#tabs").tabs();
 
 	$("button, input[type='submit']").button();
-//		console.log($("#frmcourseReservation2-invoice"));
 
 	$("#frm-courseReservation2-invoice").click(function () {
 		if ($(this).is(':checked')) {

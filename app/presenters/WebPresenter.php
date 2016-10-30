@@ -101,9 +101,7 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 	}
 
 	public function setPersonalData($form) {
-		$fields = array("phone", "city", "profession", "note");
-		$personalData['name']['caption'] = 'Jméno a příjmení';
-		$personalData['name']['value'] = $form['firstname']->value . " " . $form['lastname']->value;
+		$fields = array("name", "phone", "city", "profession", "note");
 		foreach ($fields as $fieldName) {
 			$field['caption'] = $form[$fieldName]->caption;
 			$field['value'] = $form[$fieldName]->value;
@@ -244,11 +242,8 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 
 	protected function createComponentCourseReservation2() {
 		$form = new BaseForm();
-		$form->addText('firstname', 'Jméno', NULL, 30)
-				  ->setAttribute('placeholder', 'Jan')
-				  ->setRequired('%label musí být vyplněno.');
-		$form->addText('lastname', 'Příjmení', NULL, 30)
-				  ->setAttribute('placeholder', 'Novák')
+		$form->addText('name', 'Jméno', NULL, 50)
+				  ->setAttribute('placeholder', 'Ing. Jan Novák, PhD.')
 				  ->setRequired('%label musí být vyplněno.');
 		$form->addText('phone', 'Telefon', NULL, 14)
 				  ->setAttribute('placeholder', '606111222')
@@ -292,6 +287,7 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 		$form->addSubmit('send', 'Rezervovat');
 		$form->onSuccess[] = array($this, 'submitCourseReservation');
 		$form->onValidate[] = array($this, 'validateCourseReservation');
+		$form->onError[] = array($this, 'errorCourseReservation');
 		return $form;
 	}
 
@@ -307,6 +303,16 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 		$this->flashMessage($flashMessage, 'success');
 		if ($this->isAjax()) {
 			$this->payload->success = 1;
+			$this->invalidateControl('flash');
+		}
+	}
+
+	public function errorCourseReservation($form) {
+		foreach ($form->errors as $error) {
+			$this->flashMessage($error, 'error');
+		}
+		if ($this->isAjax()) {
+			$this->payload->success = 0;
 			$this->invalidateControl('flash');
 		}
 	}
