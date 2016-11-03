@@ -36,7 +36,6 @@
 			<ul>
 				<li>
 					{ifset $course['place']['url']}
-						<span class="ui-icon ui-icon-home"></span>
 						<a target="_blank" title="Odkaz na www stránky" href="{$course['place']['url']}" itemprop="url name">
 							{$course['place']['name']}
 						</a>
@@ -46,7 +45,6 @@
 				</li>
 				<li>
 					{ifset $course['place']['map']}
-						<span class="ui-icon ui-icon-pin-s"></span>
 						<a target="_blank" title="Odkaz na mapu místa konání" href="{$course['place']['map']}" itemprop="streetAddress">
 							{$course['place']['street']}
 						</a>
@@ -59,10 +57,9 @@
 				</li>
 			</ul>
 			<ul>
-				<li><b>Cena kurzu:</b> {$course['price']} Kč</li>
-				<li n:ifset="$course['alumnus']"><b>Cena pro absolventy KST:</b> {$course['alumnus']} Kč</li>
-				<li n:ifset="$course['deposit']"><b>Záloha na kurz:</b> {$course['deposit']} Kč</li>
-				<li>
+				<li><b>Cena:</b> {$course['price']|number:0:0:' '} Kč</li>
+				<li n:ifset="$course['deposit']"><b>Záloha:</b> {$course['deposit']|number:0:0:' '} Kč</li>
+				<li><br>
 					<table>
 						{foreach $course['lectors'] as $lector}
 							<tr>
@@ -76,11 +73,24 @@
 						{/foreach}
 					</table>
 				</li>
-				<li n:ifset="$course['accommodation']"><b>Ubytování:</b> {$course['accommodation']} Kč/noc</li>
+				<li n:ifset="$course['substitute']">
+					<table>
+						{foreach $course['substitute'] as $substitute}
+							<tr>
+								<th>
+									{if $iterator->isFirst()}
+										Zástupný lektor:
+									{/if}
+								</th>
+								<td>{$substitute}</td>
+							</tr>
+						{/foreach}
+					</table>
+				</li>
 			</ul>
 		</div>
 		<div class="term">
-			<b>Časový rozvrh kurzu</b>
+			<b>Časový rozvrh</b>
 			<ul>
 				{foreach $course['dates'] as $date}
 					<li>
