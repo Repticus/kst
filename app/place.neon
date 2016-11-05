@@ -38,7 +38,7 @@ parameters:
 			city: 'Zbraslavice'
 			map: 'http://www.mapy.cz/s/99aA'
 		jedraz:
-			name: 'Penzion Jedraž'
+			name: 'Statek Jedraž'
 			street: 'Jedraž 1'
 			city: '38601 Strakonice'
 			url: 'http://jedraz.cz'

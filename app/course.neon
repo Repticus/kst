@@ -354,6 +354,25 @@ parameters:
 					date: '10.9.2017 9:00'
 					end: '16:00'
 		-
+			name: 'Šamanský seminář'
+			price: 4200
+			deposit: 1500
+			occupied: false
+			place: %place.jedraz%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			dates:
+				-
+					date: '5.5.2017 19:00'
+					end: '23:00'
+				-
+					date: '6.5.2017 9:00'
+					end: '23:00'
+				-
+					date: '7.5.2017 9:00'
+					end: '16:00'
+
+		-
 			name: 'Kurz Kraniosakrální terapie I. + II. a práce s energií'
 			price: 9200
 			deposit: 3200
