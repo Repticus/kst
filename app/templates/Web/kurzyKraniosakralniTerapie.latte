@@ -87,6 +87,14 @@
 						{/foreach}
 					</table>
 				</li>
+				<li n:ifset="$course['info']">
+					<table>
+						<tr>
+							<th>Informace:</th>
+							<td><a target="_blank" href="{$course['info']['link']}">{$course['info']['caption']}</a></td>
+						</tr>
+					</table>
+				</li>
 			</ul>
 		</div>
 		<div class="term">
