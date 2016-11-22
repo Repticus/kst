@@ -260,6 +260,8 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 		$form->addTextArea('note', 'Poznámka', NULL, NULL)
 				  ->setAttribute('placeholder', 'Vaše motivace k účasti na kurzu nebo jakýkoli dotaz.')
 				  ->addRule(BaseForm::MAX_LENGTH, 'Poznámka je příliš dlouhá', 1000);
+		$form->addCheckbox('acceptance', 'Seznámil/a jsem se s obsahem kurzu pod tabulkou.')
+				  ->setRequired('Před odesláním formuláře je nutné se seznámit s obsahem kurzu.');
 		$form->addCheckbox('invoice', 'Chci vystavit fakturu.');
 		$form->addText('firm', 'Firma')
 				  ->setAttribute('placeholder', 'Název firmy s.r.o.')

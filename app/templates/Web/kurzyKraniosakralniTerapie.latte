@@ -120,11 +120,9 @@
 		</div>
 	</div>
 </div>
-
 {snippet flash}
 	<div n:foreach="$flashes as $flash" class="flash {$flash->type}">{$flash->message}</div>
 {/snippet}
-
 <h2>O čem jednotlivé kurzy a semináře pojednávají</h2>
 <ul class="courses">
 	<li>
@@ -191,7 +189,7 @@
 		<tr>
 			<td>*{label name /}:</td>
 			<td>{input name}</td>
-			<td colspan="2" rowspan="6">{input note}</td>
+			<td colspan="2" rowspan="5">{input note}</td>
 		</tr>
 		<tr>
 			<td>*{label phone /}:</td>
@@ -208,6 +206,10 @@
 		<tr>
 			<td>{label profession /}:</td>
 			<td>{input profession}</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td colspan="3">{input acceptance}</td>
 		</tr>
 		<tr>
 			<td></td>
