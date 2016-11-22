@@ -79,7 +79,7 @@ parameters:
 		-
 			name: 'Opakování kraniosakrálního ošetření pro absolventy'
 			price: 900
-			occupied: false
+			occupied: true
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'
