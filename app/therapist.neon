@@ -2,8 +2,8 @@ parameters:
 	city: #seznam mest
 			1: 'Praha'
 			2: 'Brno'
-			8: 'Strakonice'
 			4: 'Český Brod'
+			8: 'Pardubice'
 			16: 'Český Krumlov'
 			32: 'České Budějovice'
 
@@ -18,6 +18,27 @@ parameters:
 			phone: '+420 774 681 618'
 			mail: 'habrunova.misha@atlas.cz'
 			photo: 'michaela.jpg'
+		-
+			name: 'Mgr. Eva Vojtěchovská'
+			profession:
+				- 'Kraniosakrální Reiki terapie'
+				- 'Kraniosakrální terapie v ústech'
+			cityid: 1
+			phone: '+420 736 264 988'
+			mail: 'eva@kraniosa.cz'
+			photo: 'eva-vojtechovska.jpg'
+			web:
+				- 'www.kraniosa.cz'
+		-
+			name: 'Eva Plicková'
+			profession:
+				- 'Kranio-sakrální terapie'
+				- 'Reiki'
+				- 'Kosmetika (Pevonia Botanica)'
+				- 'Manuální lymfodrenáž'
+			cityid: 1
+			phone: '+420 777 237 004'
+			mail: 'eva.plickova@seznam.cz'
 		-
 			name: 'Naďa Glacová'
 			profession:
@@ -75,13 +96,14 @@ parameters:
 			web:
 				- 'www.slunecnicestudio.cz'
 		-
-			name: 'Mgr. Eva Vojtěchovská'
+			name: 'Milena Moravcová'
 			profession:
-				- 'Kraniosakrální Reiki terapie'
-				- 'Kraniosakrální terapie v ústech'
-			cityid: 1
-			phone: '+420 736 264 988'
-			mail: 'eva@kraniosa.cz'
-			photo: 'eva-vojtechovska.jpg'
+				- 'Kranio-sakrální terapie'
+				- 'Jikiden Reiki - léčebná a relaxační terapie'
+				- 'Osobní poradenství + psychoterapie'
+			cityid: 8
+			phone: '+420 607 238 826'
+			mail: 'arcaneia@email.cz'
+			photo: 'milena-moravcova.jpg'
 			web:
-				- 'www.kraniosa.cz'
+				- 'www.terapie-pardubice.cz'
