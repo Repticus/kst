@@ -93,7 +93,7 @@ q {
   list-style: none;
 }
 #menu li {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 #content {
@@ -134,7 +134,7 @@ q {
 }
 
 .address {
-  margin: 0 0 30px 0 !important;
+  margin: 30px 0 30px 0 !important;
   padding: 0 0 6px 0 !important;
   overflow: hidden;
   cursor: default;
@@ -169,6 +169,15 @@ q {
 #toplist {
   margin-top: 40px;
   text-align: center;
+}
+
+.tariff td {
+  padding: 6px;
+}
+.tariff tr td:first-child {
+  white-space: nowrap;
+  vertical-align: top;
+  text-align: right;
 }
 
 *:before {

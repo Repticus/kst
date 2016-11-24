@@ -89,7 +89,7 @@ q{
 		list-style: none;
 	}
 	li{
-		margin-bottom: 15px;
+		margin-bottom: 10px;
 	}
 }
 #content{
@@ -157,6 +157,16 @@ q{
 #toplist{
 	margin-top: 40px;
 	text-align: center;
+}
+.tariff {
+	td{
+		padding: 6px;
+	}
+	tr td:first-child{
+		white-space: nowrap;
+		vertical-align: top;
+		text-align: right;
+	}
 }
 *:before{
 	font-family: webglyphs;
