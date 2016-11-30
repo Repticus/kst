@@ -2,12 +2,24 @@ parameters:
 	city: #seznam mest
 			1: 'Praha'
 			2: 'Brno'
+			64: 'Plzeň'
 			4: 'Český Brod'
 			8: 'Pardubice'
 			16: 'Český Krumlov'
 			32: 'České Budějovice'
 
 	therapist: #seznam terapeutu
+		-
+			name: 'Daniel Kříž'
+			profession:
+				- 'Masáže'
+				- 'Kranio-sakrální terapie'
+			cityid: 64
+			phone: '+420 606 265 552'
+			mail: 'dany.kriz.68@seznam.cz'
+			photo: 'daniel-kriz.jpg'
+			web:
+				- 'www.dany.websnadno.cz'
 		-
 			name: 'Bc. Michaela Habrunová'
 			profession:
@@ -39,6 +51,7 @@ parameters:
 			cityid: 1
 			phone: '+420 777 237 004'
 			mail: 'eva.plickova@seznam.cz'
+			photo: 'eva-plickova.jpg'
 		-
 			name: 'Naďa Glacová'
 			profession:
