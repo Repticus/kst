@@ -3,7 +3,7 @@
 namespace App\Presenters;
 
 use Nette,
-	 App\BaseForm,
+	 Nette\Application\UI\Form,
 	 Nette\Utils\Finder,
 	 Nette\Mail\Message,
 	 Nette\Mail\SendmailMailer,
@@ -216,7 +216,7 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 	}
 
 	protected function createComponentAuthentication() {
-		$form = new BaseForm();
+		$form = new Form();
 		$form->addText('password', 'Heslo', NULL, 11)
 				  ->setAttribute('placeholder', 'heslo')
 				  ->setRequired("Pro přehrání videa zadejte heslo.");
@@ -241,48 +241,48 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 	}
 
 	protected function createComponentCourseReservation2() {
-		$form = new BaseForm();
+		$form = new Form();
 		$form->addText('name', 'Jméno', NULL, 50)
 				  ->setAttribute('placeholder', 'Ing. Jan Novák, PhD.')
 				  ->setRequired('%label musí být vyplněno.');
 		$form->addText('phone', 'Telefon', NULL, 14)
 				  ->setAttribute('placeholder', '606111222')
 				  ->setRequired('%label musí být vyplněn.')
-				  ->addRule(BaseForm::PATTERN, '%label může být buď v místním formátu bez mezer anebo s mezinárodní předvolbou oddělenou mezerou.', '(\+[1-9][0-9]{1,2} )?[1-9][0-9]{8}');
+				  ->addRule(Form::PATTERN, '%label může být buď v místním formátu bez mezer anebo s mezinárodní předvolbou oddělenou mezerou.', '(\+[1-9][0-9]{1,2} )?[1-9][0-9]{8}');
 		$form->addText('email', 'Email', NULL, 50)
 				  ->setAttribute('placeholder', 'novak@seznam.cz')
 				  ->setRequired('%label musí být vyplněn.')
-				  ->addRule(BaseForm::EMAIL, '%label není správně vyplněn.');
+				  ->addRule(Form::EMAIL, '%label není správně vyplněn.');
 		$form->addText('city', 'Město', NULL, 30)
 				  ->setAttribute('placeholder', 'Praha');
 		$form->addText('profession', 'Profese', NULL, 50)
 				  ->setAttribute('placeholder', 'Fyzioterapeut');
 		$form->addTextArea('note', 'Poznámka', NULL, NULL)
 				  ->setAttribute('placeholder', 'Vaše motivace k účasti na kurzu nebo jakýkoli dotaz.')
-				  ->addRule(BaseForm::MAX_LENGTH, 'Poznámka je příliš dlouhá', 1000);
+				  ->addRule(Form::MAX_LENGTH, 'Poznámka je příliš dlouhá', 1000);
 		$form->addCheckbox('acceptance', 'Seznámil/a jsem se s obsahem kurzu pod tabulkou.')
-				  ->setRequired('Před odesláním formuláře je nutné se seznámit s obsahem kurzu.');
+				  ->setRequired('Před odesláním formuláře je nutné zaškrtnout okénko o seznámení se s obsahem kurzu.');
 		$form->addCheckbox('invoice', 'Chci vystavit fakturu.');
 		$form->addText('firm', 'Firma')
 				  ->setAttribute('placeholder', 'Název firmy s.r.o.')
-				  ->addConditionOn($form['invoice'], BaseForm::EQUAL, TRUE)
-				  ->addRule(BaseForm::FILLED, 'Pro vystavení faktury je nutné uvést název firmy.');
+				  ->addConditionOn($form['invoice'], Form::EQUAL, TRUE)
+				  ->addRule(Form::FILLED, 'Pro vystavení faktury je nutné uvést název firmy.');
 		$form->addText('street', 'Ulice')
 				  ->setAttribute('placeholder', 'Vratislavská 323/5')
-				  ->addConditionOn($form['invoice'], BaseForm::EQUAL, TRUE)
-				  ->addRule(BaseForm::FILLED, 'Pro vystavení faktury je nutné uvést ulici sídla firmy.');
+				  ->addConditionOn($form['invoice'], Form::EQUAL, TRUE)
+				  ->addRule(Form::FILLED, 'Pro vystavení faktury je nutné uvést ulici sídla firmy.');
 		$form->addText('psc', 'PSČ')
 				  ->setAttribute('placeholder', '184 04')
-				  ->addConditionOn($form['invoice'], BaseForm::EQUAL, TRUE)
-				  ->addRule(BaseForm::FILLED, 'Pro vystavení faktury je nutné uvést PSČ sídla firmy.');
+				  ->addConditionOn($form['invoice'], Form::EQUAL, TRUE)
+				  ->addRule(Form::FILLED, 'Pro vystavení faktury je nutné uvést PSČ sídla firmy.');
 		$form->addText('place', 'Město')
 				  ->setAttribute('placeholder', 'Praha 5')
-				  ->addConditionOn($form['invoice'], BaseForm::EQUAL, TRUE)
-				  ->addRule(BaseForm::FILLED, 'Pro vystavení faktury je nutné uvést město sídla firmy.');
+				  ->addConditionOn($form['invoice'], Form::EQUAL, TRUE)
+				  ->addRule(Form::FILLED, 'Pro vystavení faktury je nutné uvést město sídla firmy.');
 		$form->addText('ic', 'IČ')
 				  ->setAttribute('placeholder', '11122333')
-				  ->addConditionOn($form['invoice'], BaseForm::EQUAL, TRUE)
-				  ->addRule(BaseForm::FILLED, 'Pro vystavení faktury je nutné uvést %label.');
+				  ->addConditionOn($form['invoice'], Form::EQUAL, TRUE)
+				  ->addRule(Form::FILLED, 'Pro vystavení faktury je nutné uvést %label.');
 		$form->addText('dic', 'DIČ')
 				  ->setAttribute('placeholder', 'CZ11122333');
 		$form->addHidden('course');
@@ -307,6 +307,7 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 			$this->payload->success = 1;
 			$this->invalidateControl('flash');
 		}
+		$this->redirect('this');
 	}
 
 	public function errorCourseReservation($form) {
