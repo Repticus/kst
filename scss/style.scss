@@ -55,6 +55,11 @@ q{
 	font-style: italic;
 	quotes:  none;
 }
+p q:last-child{
+	display: block;
+	text-align: right;
+}
+
 #page{
 	width: 800px;
 	margin: auto;
