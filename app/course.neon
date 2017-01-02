@@ -1,96 +1,9 @@
 parameters:
 	courses:
 		-
-			name: 'Kurz Kraniosakrální terapie III.'
-			price: 4200
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			substitute:
-				- 'Bc. Michaela Habrunová'
-			dates:
-				-
-					date: '05.11.2016 9:00'
-					end: '17:00'
-				-
-					date: '06.11.2016 9:00'
-					end: '16:00'
-		-
 			name: 'Kurz Práce s energií'
 			price: 1700
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '11.11.2016 9:00'
-					end: '17:00'
-		-
-			name: 'Kurz Kraniosakrální terapie I. + II. a práce s energií'
-			price: 9200
-			deposit: 3200
 			occupied: true
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			substitute:
-				- 'Bc. Michaela Habrunová'
-			dates:
-				-
-					date: '11.11.2016 9:00'
-					end: '17:00'
-				-
-					date: '12.11.2016 9:00'
-					end: '17:00'
-				-
-					date: '13.11.2016 9:00'
-					end: '16:00'
-				-
-					date: '26.11.2016 9:00'
-					end: '17:00'
-				-
-					date: '27.11.2016 9:00'
-					end: '16:00'
-		-
-			name: 'Kurz Kraniosakrální terapie I. + II.'
-			price: 7800
-			deposit: 2800
-			occupied: true
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			substitute:
-				- 'Bc. Michaela Habrunová'
-			dates:
-				-
-					date: '12.11.2016 9:00'
-					end: '17:00'
-				-
-					date: '13.11.2016 9:00'
-					end: '16:00'
-				-
-					date: '26.11.2016 9:00'
-					end: '17:00'
-				-
-					date: '27.11.2016 9:00'
-					end: '16:00'
-		-
-			name: 'Opakování kraniosakrálního ošetření pro absolventy'
-			price: 900
-			occupied: true
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '11.12.2016 9:00'
-					end: '17:00'
-		-
-			name: 'Kurz Práce s energií'
-			price: 1700
-			occupied: false
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'
@@ -102,7 +15,7 @@ parameters:
 			name: 'Kurz Kraniosakrální terapie I. + II. a práce s energií'
 			price: 9200
 			deposit: 3200
-			occupied: false
+			occupied: true
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'
@@ -125,10 +38,10 @@ parameters:
 					date: '29.1.2017 9:00'
 					end: '16:00'
 		-
-			name: 'Kurz Kraniosakrální terapie I. + II. + III. a práce s energií'
+			name: 'Kurz Kraniosakrální t. I. + II. + III. a práce s energií'
 			price: 13200
 			deposit: 5200
-			occupied: false
+			occupied: true
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'
@@ -160,7 +73,7 @@ parameters:
 			name: 'Kurz Kraniosakrální terapie I. + II.'
 			price: 7800
 			deposit: 2800
-			occupied: false
+			occupied: true
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'
@@ -183,7 +96,7 @@ parameters:
 			name: 'Kurz Kraniosakrální terapie I. + II. + III.'
 			price: 11800
 			deposit: 4800
-			occupied: false
+			occupied: true
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'
