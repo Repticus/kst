@@ -21,16 +21,6 @@ parameters:
 			web:
 				- 'www.dany.websnadno.cz'
 		-
-			name: 'Bc. Michaela Habrunová'
-			profession:
-				- 'Lektor'
-				- 'Fyzioterapeut'
-				- 'Kranioterapeut'
-			cityid: 1
-			phone: '+420 774 681 618'
-			mail: 'habrunova.misha@atlas.cz'
-			photo: 'michaela.jpg'
-		-
 			name: 'Mgr. Eva Vojtěchovská'
 			profession:
 				- 'Kraniosakrální Reiki terapie'
@@ -53,17 +43,6 @@ parameters:
 			mail: 'eva.plickova@seznam.cz'
 			photo: 'eva-plickova.jpg'
 		-
-			name: 'Naďa Glacová'
-			profession:
-				- 'Kranio-sakrální terapie'
-				- 'Konzultace'
-			cityid: 1
-			phone: '+420 601 338 148'
-			mail: 'nada.glacova@seznam.cz'
-			photo: 'nada-glacova.jpg'
-			web:
-				- 'www.nada-metamorfa.cz'
-		-
 			name: 'Laura Brožová'
 			profession:
 				- 'EFT terapie'
@@ -75,6 +54,14 @@ parameters:
 			photo: 'laura.jpg'
 			web:
 				- 'www.eft-poradenstvi.cz'
+		-
+			name: 'Bc. Michaela Habrunová'
+			profession:
+				- 'Lektor'
+			cityid: 1
+			phone: '+420 774 681 618'
+			mail: 'habrunova.misha@atlas.cz'
+			photo: 'michaela.jpg'
 		-
 			name: 'Mgr. Monika Růžičková'
 			profession:
