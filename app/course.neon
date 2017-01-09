@@ -267,6 +267,61 @@ parameters:
 					date: '10.9.2017 9:00'
 					end: '16:00'
 		-
+			name: 'Kurz Kraniosakrální terapie I. + II. a práce s en. - vcelku s ubyt.'
+			price: 9200
+			deposit: 3200
+			occupied: false
+			place: %place.sokolovna%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			substitute:
+				- 'Bc. Michaela Habrunová'
+			housing:
+				price: 1120
+				night: 4
+			dates:
+				-
+					date: '13.04.2017 10:00'
+					end: '18:00'
+				-
+					date: '14.04.2017 10:00'
+					end: '18:00'
+				-
+					date: '15.04.2017 9:00'
+					end: '17:00'
+				-
+					date: '16.04.2017 9:00'
+					end: '17:00'
+				-
+					date: '17.04.2017 9:00'
+					end: '14:00'
+		-
+			name: 'Kurz Kraniosakrální terapie I. + II. - vcelku s ubyt.'
+			price: 7800
+			deposit: 2800
+			occupied: false
+			place: %place.sokolovna%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			substitute:
+				- 'Bc. Michaela Habrunová'
+			housing:
+				price: 840
+				night: 3
+			dates:
+				-
+					date: '14.04.2017 10:00'
+					end: '18:00'
+				-
+					date: '15.04.2017 9:00'
+					end: '17:00'
+				-
+					date: '16.04.2017 9:00'
+					end: '17:00'
+				-
+					date: '17.04.2017 9:00'
+					end: '14:00'
+		-
 			name: 'Šamanský seminář'
 			price: 4200
 			deposit: 1500
@@ -484,4 +539,64 @@ parameters:
 					end: '17:00'
 				-
 					date: '08.10.2017 9:00'
+					end: '16:00'
+		-
+			name: 'Kurz Práce s energií'
+			price: 1700
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			dates:
+				-
+					date: '10.11.2017 9:00'
+					end: '17:00'
+		-
+			name: 'Kurz Kraniosakrální terapie I. + II. + práce s energií'
+			price: 9200
+			deposit: 3200
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			substitute:
+				- 'Bc. Michaela Habrunová'
+			dates:
+				-
+					date: '10.11.2017 9:00'
+					end: '17:00'
+				-
+					date: '11.11.2017 9:00'
+					end: '17:00'
+				-
+					date: '12.11.2017 9:00'
+					end: '16:00'
+				-
+					date: '25.11.2017 9:00'
+					end: '17:00'
+				-
+					date: '26.11.2017 9:00'
+					end: '16:00'
+		-
+			name: 'Kurz Kraniosakrální terapie I. + II.'
+			price: 7800
+			deposit: 2800
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			substitute:
+				- 'Bc. Michaela Habrunová'
+			dates:
+				-
+					date: '11.11.2017 9:00'
+					end: '17:00'
+				-
+					date: '12.11.2017 9:00'
+					end: '16:00'
+				-
+					date: '25.11.2017 9:00'
+					end: '17:00'
+				-
+					date: '26.11.2017 9:00'
 					end: '16:00'

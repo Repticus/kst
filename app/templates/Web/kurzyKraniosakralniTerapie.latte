@@ -57,8 +57,16 @@
 				</li>
 			</ul>
 			<ul>
-				<li><b>Cena:</b> {$course['price']|number:0:0:' '} Kč</li>
-				<li n:ifset="$course['deposit']"><b>Záloha:</b> {$course['deposit']|number:0:0:' '} Kč</li>
+				<li>
+					<b>Cena:</b> {$course['price']|number:0:0:' '} Kč
+				</li>
+				<li n:ifset="$course['deposit']">
+					<b>Záloha:</b> {$course['deposit']|number:0:0:' '} Kč
+				</li>
+				<li n:ifset="$course['housing']">
+					<b>Ubytování:</b> {$course['housing']['night']} noci za {$course['housing']['price']} Kč
+				</li>
+
 				<li><br>
 					<table>
 						{foreach $course['lectors'] as $lector}

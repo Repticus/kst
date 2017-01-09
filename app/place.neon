@@ -43,3 +43,7 @@ parameters:
 			city: '38601 Strakonice'
 			url: 'http://jedraz.cz'
 			map: 'https://mapy.cz/zakladni?x=13.9319797&y=49.2015713&z=13&source=ward&id=10765'
+		sokolovna:
+			name: 'penzion Sokolovna'
+			street: 'Pražská 375'
+			city: 'Dobřichovice'
