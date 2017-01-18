@@ -71,6 +71,10 @@ input[type='text']{
 #accordion .term ul{
 	margin-bottom: 10px;
 }
+#accordion .housing{
+	padding: 4px;
+	background-color: #58D962;
+}
 #accordion .info{
 	float: right;
 	color: #ddd;

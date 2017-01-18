@@ -47,3 +47,4 @@ parameters:
 			name: 'penzion Sokolovna'
 			street: 'Pražská 375'
 			city: 'Dobřichovice'
+			map: 'http://mapy.cz/s/1l5IF'

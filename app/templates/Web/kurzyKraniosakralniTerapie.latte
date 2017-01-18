@@ -27,6 +27,8 @@
 			- UZAVŘENO
 		{elseif $course['occupied']}
 			- OBSAZENO
+		{elseif isset($course['housing'])}
+			<span class="housing">vcelku s ubyt.</span>
 		{/if}
 		<span class="info">více info</span>
 	</div>
