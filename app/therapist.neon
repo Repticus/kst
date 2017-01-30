@@ -55,6 +55,17 @@ parameters:
 			web:
 				- 'www.eft-poradenstvi.cz'
 		-
+			name: 'Bc. Lenka Krumpová'
+			profession:
+				- 'Kraniosakrální terapie'
+				- 'Fyzioterapie'
+			cityid: 1
+			phone: '+420 724 317 146'
+			mail: 'krumpova@centrum.cz'
+			photo: 'lenka-krumpova.jpg'
+			web:
+				- 'www.terapiemasaze.eu'
+		-
 			name: 'Bc. Michaela Habrunová'
 			profession:
 				- 'Lektor'
