@@ -68,7 +68,6 @@
 				<li n:ifset="$course['housing']">
 					<b>Ubytování:</b> {$course['housing']['night']} noci za {$course['housing']['price']} Kč
 				</li>
-
 				<li><br>
 					<table>
 						{foreach $course['lectors'] as $lector}
@@ -82,6 +81,10 @@
 							</tr>
 						{/foreach}
 					</table>
+				</li>
+				<li n:ifset="$course['note']">
+					<br>
+					<b>{$course['note']}</b>
 				</li>
 				<li n:ifset="$course['substitute']">
 					<table>
