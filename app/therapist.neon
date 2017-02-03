@@ -7,6 +7,7 @@ parameters:
 			8: 'Pardubice'
 			16: 'Český Krumlov'
 			32: 'České Budějovice'
+			128: 'Řevnice'
 
 	therapist: #seznam terapeutu
 		-
@@ -20,6 +21,19 @@ parameters:
 			photo: 'daniel-kriz.jpg'
 			web:
 				- 'www.dany.websnadno.cz'
+		-
+			name: 'Zdeňka Ocelíková'
+			profession:
+				- 'kraniosakrální terapie'
+				- 'astroporadenství'
+				- 'léčitelství'
+				- 'kurzy'
+			cityid: 128
+			phone: '+420 602 748 729'
+			mail: 'kurzKST@seznam.cz'
+			photo: 'zdenka.jpg'
+			web:
+				- 'www.kranio-sakralni-terapie.cz'
 		-
 			name: 'Mgr. Eva Vojtěchovská'
 			profession:
