@@ -3,10 +3,10 @@ parameters:
 			1: 'Praha'
 			2: 'Brno'
 			64: 'Plzeň'
+			32: 'České Budějovice'
 			4: 'Český Brod'
 			8: 'Pardubice'
 			16: 'Český Krumlov'
-			32: 'České Budějovice'
 			128: 'Řevnice'
 
 	therapist: #seznam terapeutu
