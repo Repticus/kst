@@ -284,10 +284,10 @@ parameters:
 					date: '11.06.2017 9:00'
 					end: '16:00'
 				-
-					date: '9.9.2017 9:00'
+					date: '28.10.2017 9:00'
 					end: '17:00'
 				-
-					date: '10.9.2017 9:00'
+					date: '29.10.2017 9:00'
 					end: '16:00'
 		-
 			name: 'Kurz Kraniosakrální terapie I. + II.'
@@ -336,10 +336,10 @@ parameters:
 					date: '11.06.2017 9:00'
 					end: '16:00'
 				-
-					date: '9.9.2017 9:00'
+					date: '28.10.2017 9:00'
 					end: '17:00'
 				-
-					date: '10.9.2017 9:00'
+					date: '29.10.2017 9:00'
 					end: '16:00'
 		-
 			name: 'Kurz Práce s energií'
@@ -421,10 +421,10 @@ parameters:
 					date: '08.10.2017 9:00'
 					end: '16:00'
 				-
-					date: '09.12.2017 9:00'
+					date: '28.10.2017 9:00'
 					end: '17:00'
 				-
-					date: '10.12.2017 9:00'
+					date: '29.10.2017 9:00'
 					end: '16:00'
 		-
 			name: 'Kurz Práce s energií'
@@ -484,10 +484,26 @@ parameters:
 					date: '08.10.2017 9:00'
 					end: '16:00'
 				-
-					date: '09.12.2017 9:00'
+					date: '28.10.2017 9:00'
 					end: '17:00'
 				-
-					date: '10.12.2017 9:00'
+					date: '29.10.2017 9:00'
+					end: '16:00'
+		-
+			name: 'Kurz Kraniosakrální terapie III.'
+			price: 4200
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			substitute:
+				- 'Bc. Michaela Habrunová'
+			dates:
+				-
+					date: '28.10.2017 9:00'
+					end: '17:00'
+				-
+					date: '29.10.2017 9:00'
 					end: '16:00'
 		-
 			name: 'Kurz Práce s energií'
