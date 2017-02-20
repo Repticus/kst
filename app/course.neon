@@ -1,17 +1,6 @@
 parameters:
 	courses:
 		-
-			name: 'Šamanské rodinné konstelace'
-			price: 900
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '04.03.2017 9:00'
-					end: '17:00'
-		-
 			name: 'Opakování Kraniosakrálního ošetření pro absolventy'
 			price: 900
 			occupied: false
@@ -209,28 +198,6 @@ parameters:
 				-
 					date: '17.04.2017 9:00'
 					end: '14:00'
-		-
-			name: 'Šamanský seminář'
-			price: 2900
-			deposit: 900
-			occupied: false
-			place: %place.jedraz%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			info:
-				caption: 'www.saman-ka.cz'
-				link: 'http://www.saman-ka.cz/samanske-seminare'
-			dates:
-				-
-					date: '5.5.2017 17:00'
-					end: '21:00'
-				-
-					date: '6.5.2017 9:00'
-					end: '21:00'
-				-
-					date: '7.5.2017 9:00'
-					end: '12:00'
-
 		-
 			name: 'Kurz Kraniosakrální terapie I. + II. a práce s energií'
 			price: 9200
