@@ -1,15 +1,30 @@
 parameters:
 	city: #seznam mest
 			1: 'Praha'
+			256: 'Praha 4 Lhotka'
+			512: 'Praha 9 Hloubětín'
+			1024: 'Praha 10 Vinohrady'
+			2048: 'Brandýs nad Labem'
 			2: 'Brno'
-			64: 'Plzeň'
-			32: 'České Budějovice'
 			4: 'Český Brod'
-			8: 'Pardubice'
+			32: 'České Budějovice'
 			16: 'Český Krumlov'
+			8: 'Pardubice'
+			64: 'Plzeň'
 			128: 'Řevnice'
 
 	therapist: #seznam terapeutu
+		-
+			name: 'Majka Marie Šulová'
+			profession:
+				- 'Kranio-sakrální terapie'
+				- 'osobní trenér, jóga, zdravá záda'
+			cityid: 2048
+			phone: '+420 739 226 080'
+			mail: 'marie.sulova@studiomajka.cz'
+			photo: 'marie-sulova.jpg'
+			web:
+				- 'www.studiomajka.cz'
 		-
 			name: 'Daniel Kříž'
 			profession:
@@ -28,7 +43,7 @@ parameters:
 				- 'astroporadenství'
 				- 'léčitelství'
 				- 'kurzy'
-			cityid: 128
+			cityid: 640
 			phone: '+420 602 748 729'
 			mail: 'kurzKST@seznam.cz'
 			photo: 'zdenka-ocelikova.jpg'
@@ -39,7 +54,7 @@ parameters:
 			profession:
 				- 'Kraniosakrální Reiki terapie'
 				- 'Kraniosakrální terapie v ústech'
-			cityid: 1
+			cityid: 1024
 			phone: '+420 736 264 988'
 			mail: 'eva@kraniosa.cz'
 			photo: 'eva-vojtechovska.jpg'
@@ -52,7 +67,7 @@ parameters:
 				- 'Reiki'
 				- 'Kosmetika (Pevonia Botanica)'
 				- 'Manuální lymfodrenáž'
-			cityid: 1
+			cityid: 256
 			phone: '+420 777 237 004'
 			mail: 'eva.plickova@seznam.cz'
 			photo: 'eva-plickova.jpg'
@@ -69,6 +84,14 @@ parameters:
 			web:
 				- 'www.eft-poradenstvi.cz'
 		-
+			name: 'Mgr. Michaela Habrunová'
+			profession:
+				- 'Lektor'
+			cityid: 1
+			phone: '+420 774 681 618'
+			mail: 'habrunova.misha@atlas.cz'
+			photo: 'michaela.jpg'
+		-
 			name: 'Bc. Lenka Krumpová'
 			profession:
 				- 'Kraniosakrální terapie'
@@ -79,14 +102,6 @@ parameters:
 			photo: 'lenka-krumpova.jpg'
 			web:
 				- 'www.terapiemasaze.eu'
-		-
-			name: 'Bc. Michaela Habrunová'
-			profession:
-				- 'Lektor'
-			cityid: 1
-			phone: '+420 774 681 618'
-			mail: 'habrunova.misha@atlas.cz'
-			photo: 'michaela.jpg'
 		-
 			name: 'Mgr. Monika Růžičková'
 			profession:
