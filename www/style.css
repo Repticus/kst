@@ -112,11 +112,7 @@ p q:last-child {
 }
 
 #city {
-  margin-right: 20px;
   float: left;
-}
-#city a {
-  cursor: pointer;
 }
 
 #therapist {

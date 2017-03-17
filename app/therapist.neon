@@ -1,149 +1,225 @@
 parameters:
-	city: #seznam mest
-			1: 'Praha'
-			256: 'Praha 4 Lhotka'
-			512: 'Praha 9 Hloubětín'
-			1024: 'Praha 10 Vinohrady'
-			2048: 'Brandýs nad Labem'
-			2: 'Brno'
-			4: 'Český Brod'
-			32: 'České Budějovice'
-			16: 'Český Krumlov'
-			8: 'Pardubice'
-			64: 'Plzeň'
-			128: 'Řevnice'
-
-	therapist: #seznam terapeutu
-		-
-			name: 'Majka Marie Šulová'
-			profession:
-				- 'Kranio-sakrální terapie'
-				- 'osobní trenér, jóga, zdravá záda'
-			cityid: 2048
-			phone: '+420 739 226 080'
-			mail: 'marie.sulova@studiomajka.cz'
-			photo: 'marie-sulova.jpg'
-			web:
-				- 'www.studiomajka.cz'
-		-
-			name: 'Daniel Kříž'
-			profession:
-				- 'Masáže'
-				- 'Kranio-sakrální terapie'
-			cityid: 64
-			phone: '+420 606 265 552'
-			mail: 'dany.kriz.68@seznam.cz'
-			photo: 'daniel-kriz.jpg'
-			web:
-				- 'www.dany.websnadno.cz'
-		-
-			name: 'Zdeňka Ocelíková'
-			profession:
-				- 'kraniosakrální terapie'
-				- 'astroporadenství'
-				- 'léčitelství'
-				- 'kurzy'
-			cityid: 640
-			phone: '+420 602 748 729'
-			mail: 'kurzKST@seznam.cz'
-			photo: 'zdenka-ocelikova.jpg'
-			web:
-				- 'www.kranio-sakralni-terapie.cz'
-		-
-			name: 'Mgr. Eva Vojtěchovská'
-			profession:
-				- 'Kraniosakrální Reiki terapie'
-				- 'Kraniosakrální terapie v ústech'
-			cityid: 1024
-			phone: '+420 736 264 988'
-			mail: 'eva@kraniosa.cz'
-			photo: 'eva-vojtechovska.jpg'
-			web:
-				- 'www.kraniosa.cz'
-		-
-			name: 'Eva Plicková'
-			profession:
-				- 'Kranio-sakrální terapie'
-				- 'Reiki'
-				- 'Kosmetika (Pevonia Botanica)'
-				- 'Manuální lymfodrenáž'
-			cityid: 256
-			phone: '+420 777 237 004'
-			mail: 'eva.plickova@seznam.cz'
-			photo: 'eva-plickova.jpg'
-		-
-			name: 'Laura Brožová'
-			profession:
-				- 'EFT terapie'
-				- 'Kranio-sakrální terapie'
-				- 'Manuální lymfodrenáž'
-			cityid: 1
-			phone: '+420 605 039 300'
-			mail: 'eft-poradenstvi@seznam.cz'
-			photo: 'laura.jpg'
-			web:
-				- 'www.eft-poradenstvi.cz'
-		-
-			name: 'Mgr. Michaela Habrunová'
-			profession:
-				- 'Lektor'
-			cityid: 1
-			phone: '+420 774 681 618'
-			mail: 'habrunova.misha@atlas.cz'
-			photo: 'michaela.jpg'
-		-
-			name: 'Bc. Lenka Krumpová'
-			profession:
-				- 'Kraniosakrální terapie'
-				- 'Fyzioterapie'
-			cityid: 1
-			phone: '+420 724 317 146'
-			mail: 'krumpova@centrum.cz'
-			photo: 'lenka-krumpova.jpg'
-			web:
-				- 'www.terapiemasaze.eu'
-		-
-			name: 'Mgr. Monika Růžičková'
-			profession:
-				- 'Psychoterapie'
-				- 'Kranio-sakrální terapie'
-			cityid: 2
-			phone: '+420 608 416 154'
-			mail: null
-			photo: 'monika-ruzickova.jpg'
-			web:
-				- 'www.monikaruzickova.cz'
-		-
-			name: 'Eva Šedivá'
-			profession:
-				- 'Kranio-sakrální terapie'
-				- 'Konzultace'
-			cityid: 32
-			phone: '+420 774 581 168'
-			mail: 'masazeva@seznam.cz'
-			photo: 'eva.jpg'
-			web:
-				- 'www.lecivedoteky.cz'
-		-
-			name: 'Marcela Velková'
-			profession:
-				- 'Kranio-sakrální terapie'
-				- 'Konzultace'
-			cityid: 48
-			phone: '+420 777 067 047'
-			mail: 'marcela.velkova@seznam.cz'
-			photo: 'marcela-velkova.jpg'
-			web:
-				- 'www.slunecnicestudio.cz'
-		-
-			name: 'Milena Moravcová'
-			profession:
-				- 'Kranio-sakrální terapie'
-				- 'Jikiden Reiki - léčebná a relaxační terapie'
-				- 'Osobní poradenství + psychoterapie'
-			cityid: 8
-			phone: '+420 607 238 826'
-			mail: 'arcaneia@email.cz'
-			photo: 'milena-moravcova.jpg'
-			web:
-				- 'www.terapie-pardubice.cz'
+	therapist:
+		praha-4:
+			name: 'Praha 4'
+			contact:
+				-
+					name: 'Eva Plicková'
+					profession:
+						- 'Kranio-sakrální terapie'
+						- 'Reiki'
+						- 'Kosmetika (Pevonia Botanica)'
+						- 'Manuální lymfodrenáž'
+					phone: '+420 777 237 004'
+					mail: 'eva.plickova@seznam.cz'
+					photo: 'eva-plickova.jpg'
+					address:
+						street: 'Nad Zátiším 22'
+						city: 'Praha 4 Lhotka'
+				-
+					name: 'Laura Brožová'
+					profession:
+						- 'EFT terapie'
+						- 'Kranio-sakrální terapie'
+						- 'Manuální lymfodrenáž'
+					phone: '+420 605 039 300'
+					mail: 'eft-poradenstvi@seznam.cz'
+					photo: 'laura.jpg'
+					web:
+						- 'www.eft-poradenstvi.cz'
+					address:
+						name: 'SOPHISTES'
+						street: 'Pšenčíkova 22'
+						city: 'Praha 4 Kamýk'
+		praha-8:
+			name: 'Praha 8'
+			contact:
+				-
+					name: 'Bc. Lenka Krumpová'
+					profession:
+						- 'Kraniosakrální terapie'
+						- 'Fyzioterapie'
+					phone: '+420 724 317 146'
+					mail: 'krumpova@centrum.cz'
+					photo: 'lenka-krumpova.jpg'
+					web:
+						- 'www.terapiemasaze.eu'
+					address:
+						street: 'Na hlavní 19/61'
+						city: 'Praha 8 Březiněves'
+		praha-9:
+			name: 'Praha 9'
+			contact:
+				-
+					name: 'Zdeňka Ocelíková'
+					profession:
+						- 'kraniosakrální terapie a energie'
+						- 'lektor kurzů kranio a energie'
+						- 'manuální lymfodrenáž'
+						- 'astroporadenství, konstelace'
+					phone: '+420 602 748 729'
+					mail: 'kurzKST@seznam.cz'
+					photo: 'zdenka-ocelikova.jpg'
+					web:
+						- 'www.kranio-sakralni-terapie.cz'
+					address:
+						name: 'Dům Rukou Světla'
+						street: 'Liblická 5'
+						city: 'Praha 9 Hloubětín (u metra B Hloubětín)'
+				-
+					name: 'Mgr. Michaela Habrunová'
+					profession:
+						- 'lektor kurzů kranio'
+						- 'fyzioterapeut'
+					phone: '+420 774 681 618'
+					mail: 'habrunova.misha@atlas.cz'
+					photo: 'michaela.jpg'
+					address:
+						name: 'Dům Rukou Světla'
+						street: 'Liblická 5'
+						city: 'Praha 9 Hloubětín (u metra B Hloubětín)'
+		praha-10:
+			name: 'Praha 10'
+			contact:
+				-
+					name: 'Mgr. Eva Vojtěchovská'
+					profession:
+						- 'Kraniosakrální Reiki terapie'
+						- 'Kraniosakrální terapie v ústech'
+					phone: '+420 736 264 988'
+					mail: 'eva@kraniosa.cz'
+					photo: 'eva-vojtechovska.jpg'
+					web:
+						- 'www.kraniosa.cz'
+					address:
+						street: 'Na Šafránce 17'
+						city: 'Praha 10 Vinohrady'
+		brandys-nad-labem:
+			name: 'Brandýs nad Labem'
+			contact:
+				-
+					name: 'Majka Marie Šulová'
+					profession:
+						- 'Kranio-sakrální terapie'
+						- 'osobní trenér, jóga, zdravá záda'
+					phone: '+420 739 226 080'
+					mail: 'marie.sulova@studiomajka.cz'
+					photo: 'marie-sulova.jpg'
+					web:
+						- 'www.studiomajka.cz'
+					address:
+						city: 'Brandýs nad Labem'
+		brno:
+			name: 'brno'
+			contact:
+				-
+					name: 'Mgr. Monika Růžičková'
+					profession:
+						- 'Psychoterapie'
+						- 'Kranio-sakrální terapie'
+					phone: '+420 608 416 154'
+					mail: null
+					photo: 'monika-ruzickova.jpg'
+					web:
+						- 'www.monikaruzickova.cz'
+					address:
+						street: 'Husova 13 (2. patro)'
+						city: 'Brno'
+		ceske-budejovice:
+			name: 'České Budějovice'
+			contact:
+				-
+					name: 'Eva Šedivá'
+					profession:
+						- 'Kranio-sakrální terapie'
+						- 'Konzultace'
+					phone: '+420 774 581 168'
+					mail: 'masazeva@seznam.cz'
+					photo: 'eva.jpg'
+					web:
+						- 'www.lecivedoteky.cz'
+					address:
+						street: 'Hroznova 9'
+						city: 'České Budějovice'
+				-
+					name: 'Marcela Velková'
+					profession:
+						- 'Kranio-sakrální terapie'
+						- 'Konzultace'
+					phone: '+420 777 067 047'
+					mail: 'marcela.velkova@seznam.cz'
+					photo: 'marcela-velkova.jpg'
+					web:
+						- 'www.slunecnicestudio.cz'
+					address:
+						name: 'Salon Katty'
+						street: 'nám. Přemysla Otakara II. 21 (1. patro)'
+						city: 'České Budějovice'
+		cesky-krumlov:
+			name: 'Český Krumlov'
+			contact:
+				-
+					name: 'Marcela Velková'
+					profession:
+						- 'Kranio-sakrální terapie'
+						- 'Konzultace'
+					phone: '+420 777 067 047'
+					mail: 'marcela.velkova@seznam.cz'
+					photo: 'marcela-velkova.jpg'
+					web:
+						- 'www.slunecnicestudio.cz'
+					address:
+						street: 'Kostelní 163'
+						city: 'Český Krumlov'
+		pardubice:
+			name: 'Pardubice'
+			contact:
+				-
+					name: 'Milena Moravcová'
+					profession:
+						- 'Kranio-sakrální terapie'
+						- 'Jikiden Reiki - léčebná a relaxační terapie'
+						- 'Osobní poradenství + psychoterapie'
+					phone: '+420 607 238 826'
+					mail: 'arcaneia@email.cz'
+					photo: 'milena-moravcova.jpg'
+					web:
+						- 'www.terapie-pardubice.cz'
+					address:
+						street: 'Sjezdová 147'
+						city: 'Pardubice'
+		plzen:
+			name: 'Plzeň'
+			contact:
+				-
+					name: 'Daniel Kříž'
+					profession:
+						- 'Masáže'
+						- 'Kranio-sakrální terapie'
+					phone: '+420 606 265 552'
+					mail: 'dany.kriz.68@seznam.cz'
+					photo: 'daniel-kriz.jpg'
+					web:
+						- 'www.dany.websnadno.cz'
+					address:
+						street: 'Sokolovská 77 (4. podlaží)'
+						city: 'Plzeň'
+		revnice:
+			name: 'Řevnice'
+			contact:
+				-
+					name: 'Zdeňka Ocelíková'
+					profession:
+						- 'kraniosakrální terapie a energie'
+						- 'lektor kurzů kranio a energie'
+						- 'manuální lymfodrenáž'
+						- 'astroporadenství, konstelace'
+					phone: '+420 602 748 729'
+					mail: 'kurzKST@seznam.cz'
+					photo: 'zdenka-ocelikova.jpg'
+					web:
+						- 'www.kranio-sakralni-terapie.cz'
+					address:
+						name: 'Studio Klementýna'
+						street: 'Nám. Krále Jiřího z Poděbrad 5'
+						city: 'Řevnice'

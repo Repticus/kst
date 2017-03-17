@@ -20,28 +20,13 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 		$this->template->toplist = $this->context->parameters['toplist'];
 	}
 
-	public function actionKontaktyTerapeutu() {
-		$cities = $this->context->parameters['city'];
-		$therapists = $this->context->parameters['therapist'];
-		foreach ($cities as $id => $city) {
-			$data['name'] = $city;
-			$data['count'] = 0;
-			$cities[$id] = $data;
+	public function actionKontaktyTerapeutu($city) {
+		$therapist = $this->context->parameters['therapist'];
+		if (!isset($city) or ! isset($therapist[$city])) {
+			$city = key($therapist);
 		}
-		foreach ($therapists as $therapist) {
-			foreach ($cities as $id => $city) {
-				if ($id & $therapist['cityid']) {
-					$cities[$id]['count'] ++;
-				}
-			}
-		}
-		foreach ($cities as $id => $city) {
-			if (!$city['count']) {
-				unset($cities[$id]);
-			}
-		}
-		$this->template->therapists = $therapists;
-		$this->template->cities = $cities;
+		$this->template->city = $city;
+		$this->template->therapist = $therapist;
 	}
 
 	public function actionKurzyKraniosakralniTerapie() {

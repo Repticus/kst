@@ -4,75 +4,73 @@
 
 {block head}
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-<script type="text/javascript">
-	$(function () {
-		$("#city a").click(function () {
-			$("#city a").removeClass("ui-state-focus actcity");
-			$(this).addClass("ui-state-focus actcity");
-			var $city = $(this).attr("cityid");
-			$("#therapist ul").each(function () {
-				var $contact = $(this).attr("cityid");
-				if ($city & $contact) {
-					$(this).show();
-				} else {
-					$(this).hide();
-				}
-			});
-		});
-		$("#city a:first").click();
-	});
-</script>
 {/block}
 
 {block content}
 <h1>Kontakty terapeutů</h1>
-<img class="img" src="/img/cnt/zdenka-ocelikova.jpg" title="Zdeňka Ocelíková">
+<img class="img" src="/img/cnt/zdenka-ocelikova.jpg" height="146" title="Zdeňka Ocelíková">
 <ul id="contact">
 	<li class="person" title="Jméno a příjmení">
 		<strong>Zdeňka Ocelíková</strong>
 	</li>
 	<li class="profession" title="Profese">
-		kraniosakrální terapie, léčitelství, astroporadenství, kurzy
+		kraniosakrální terapie, léčitelství, lymfodrenáž, astroporadenství
+	</li>
+	<li class="profession" title="Profese">
+		lektor kurzů kraniosakrální terapie a energie
 	</li>
 	<li class="phone" title="Telefon">+420 602 748 729 (pokud nezvedám telefon, napište SMS)</li>
 	<li class="mail" title="email">
 		<a href="mailto:kurzKST@seznam.cz">kurzKST@seznam.cz</a>
 	</li>
-	<li class="city" title="Web">
+	<li class="website" title="Web">
+		<a target="_blank" href="www.kranio-sakralni-terapie.cz">www.kranio-sakralni-terapie.cz</a>
+	</li>
+	<li class="city" title="Provozovna">
 		<a target="_blank" href="http://www.dumrukousvetla.cz/kontakt">Dům Rukou Světla</a>, Liblická 5, Praha 9 Hloubětín
 	</li>
-	<li class="city" title="Web">
+	<li class="city" title="Provozovna">
 		<a target="_blank" href="http://www.klementyna.cz/?presenter=Contact">Studio Klementýna</a>, Nám. Krále Jiřího z Poděbrad 5, Řevnice
 	</li>
 </ul>
-<p>
-	5 min.chůze od stanice metra B „Hloubětín“, parkování u domu
-</p>
 
 <h2>Kontakty dalších terapeutů podle místa působiště</h2>
 <ul id="city" class="ui-menu ui-widget ui-widget-content ui-corner-all">
-	<li class="ui-menu-item" n:foreach="$cities as $cityId => $city"><a class="city ui-corner-all" cityid="{$cityId}">{$city['name']}</a></li>
+	<li class="ui-menu-item" n:foreach="$therapist as $link => $name">
+		<a n:class="$link == $city ? current, city, ui-corner-all" n:href="Web:kontaktyTerapeutu $link">{$name['name']}</a>
+	</li>
 </ul>
-<div id="therapist" n:inner-foreach="$therapists as $therapist">
-	<ul cityid="{$therapist['cityid']}">
-		<li class="foto" title="{$therapist['name']}" n:ifset="$therapist['photo']"><img width="90" src="/img/cnt/{$therapist['photo']}" /></li>
+{var $therapist = $therapist[$city]['contact']}
+<div id="therapist" n:inner-foreach="$therapist as $contact">
+	<ul>
+		<li class="foto" title="{$contact['name']}" n:ifset="$contact['photo']"><img width="90" src="/img/cnt/{$contact['photo']}" /></li>
 		<li class="person" title="Jméno a příjmení">
-			<strong>{$therapist['name']}</strong>
+			<strong>{$contact['name']}</strong>
 		</li>
-		{ifset $therapist['profession']}
-			<li class="profession" title="Profese" n:foreach="$therapist['profession'] as $profession">
+		{ifset $contact['profession']}
+			<li class="profession" title="Profese" n:foreach="$contact['profession'] as $profession">
 				{$profession}
 			</li>
 		{/ifset}
-		<li class="phone" title="Telefon" n:ifset="$therapist['phone']">{$therapist['phone']}</li>
-		<li class="mail" title="email" n:ifset="$therapist['mail']">
-			<a href="mailto:{$therapist['mail']}">{$therapist['mail']}</a>
+		<li class="phone" title="Telefon" n:ifset="$contact['phone']">{$contact['phone']}</li>
+		<li class="mail" title="email" n:ifset="$contact['mail']">
+			<a href="mailto:{$contact['mail']}">{$contact['mail']}</a>
 		</li>
-		{ifset $therapist['web']}
-			<li class="website" title="Web" n:foreach="$therapist['web'] as $web">
+		{ifset $contact['web']}
+			<li class="website" title="Web" n:foreach="$contact['web'] as $web">
 				<a target="_blank" href="http://{$web}">{$web}</a>
 			</li>
 		{/ifset}
+		<li n:ifset="$contact['address']['name']" class="city" title="Název místa">
+			{$contact['address']['name']}
+		</li>
+		<li n:ifset="$contact['address']['street']" class="street" title="Název ulice">
+			{$contact['address']['street']}
+		</li>
+		<li n:ifset="$contact['address']['city']" class="city" title="Obec">
+			{$contact['address']['city']}
+		</li>
 	</ul>
+	<hr n:if="!$iterator->last">
 </div>
 <div class="clr"></div>
