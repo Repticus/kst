@@ -54,7 +54,7 @@ parameters:
 					name: 'Zdeňka Ocelíková'
 					profession:
 						- 'kraniosakrální terapie a energie'
-						- 'lektor kurzů kranio a energie'
+						- 'lektor kurzů uvedených na tomto webu'
 						- 'manuální lymfodrenáž'
 						- 'astroporadenství, konstelace'
 					phone: '+420 602 748 729'
@@ -69,7 +69,7 @@ parameters:
 				-
 					name: 'Mgr. Michaela Habrunová'
 					profession:
-						- 'lektor kurzů kranio'
+						- 'Lektor kurzů kraniosakrální terapie'
 						- 'fyzioterapeut'
 					phone: '+420 774 681 618'
 					mail: 'habrunova.misha@atlas.cz'
@@ -110,7 +110,7 @@ parameters:
 					address:
 						city: 'Brandýs nad Labem'
 		brno:
-			name: 'brno'
+			name: 'Brno'
 			contact:
 				-
 					name: 'Mgr. Monika Růžičková'
@@ -211,7 +211,7 @@ parameters:
 					name: 'Zdeňka Ocelíková'
 					profession:
 						- 'kraniosakrální terapie a energie'
-						- 'lektor kurzů kranio a energie'
+						- 'lektor kurzů uvedených na tomto webu'
 						- 'manuální lymfodrenáž'
 						- 'astroporadenství, konstelace'
 					phone: '+420 602 748 729'
