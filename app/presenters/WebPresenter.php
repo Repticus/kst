@@ -46,7 +46,7 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 			} else {
 				$courses[$key]['expiration'] = false;
 			}
-			if ($now > $lastDate) {
+			if ($now > $firstDate + 1296000 ) {
 				unset($courses[$key]);
 			}
 		}
