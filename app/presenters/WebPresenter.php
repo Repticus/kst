@@ -141,7 +141,7 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 		$bankInfo['swift']['value'] = $bank['swift'];
 		$bankInfo['variable']['caption'] = 'Variabilní symbol';
 		if ($invoice) {
-			$bankInfo['variable']['value'] = "Platbu uhraďte až po obdržení variabilního symbolu, který vám bude doručen emailem nejpozději do 2 dnů. Pokud se tak nestane, kontaktujte mě prosím telefonicky.";
+			$bankInfo['variable']['value'] = "Platbu proveďte až po obdržení variabilního symbolu na faktuře, kterou vám vystavím mailem do 2 dnů. Pokud by nepřišla, kontaktujte mne.";
 		} else {
 			$bankInfo['variable']['value'] = $this->createVariable();
 		}
