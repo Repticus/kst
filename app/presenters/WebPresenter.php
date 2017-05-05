@@ -46,7 +46,7 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 			} else {
 				$courses[$key]['expiration'] = false;
 			}
-			if ($now > $firstDate + 1296000 ) {
+			if ($now > $firstDate + 1296000) {
 				unset($courses[$key]);
 			}
 		}
@@ -127,7 +127,7 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 		return $days;
 	}
 
-	public function setBankData($courseId) {
+	public function setBankData($courseId, $invoice) {
 		$bank = $this->context->parameters['bank'];
 		$bankInfo['name']['caption'] = 'Název účtu';
 		$bankInfo['name']['value'] = $bank['name'];
@@ -140,7 +140,11 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 		$bankInfo['swift']['caption'] = 'BIC(SWIFT)';
 		$bankInfo['swift']['value'] = $bank['swift'];
 		$bankInfo['variable']['caption'] = 'Variabilní symbol';
-		$bankInfo['variable']['value'] = $this->createVariable();
+		if ($invoice) {
+			$bankInfo['variable']['value'] = "Platbu uhraďte až po obdržení variabilního symbolu, který vám bude doručen emailem nejpozději do 2 dnů. Pokud se tak nestane, kontaktujte mě prosím telefonicky.";
+		} else {
+			$bankInfo['variable']['value'] = $this->createVariable();
+		}
 		$bankInfo['price']['caption'] = 'Částka k úhradě';
 		if (isset($this->context->parameters['courses'][$courseId]['deposit'])) {
 			$bankInfo['price']['value'] = $this->context->parameters['courses'][$courseId]['deposit'] . ' Kč';
@@ -182,7 +186,7 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 		$template->personalData = $this->setPersonalData($form);
 		$template->courseData = $this->setCourseData($form['course']->value);
 		$template->courseDays = $this->setCourseDays($form['course']->value);
-		$template->bankData = $this->setBankData($form['course']->value);
+		$template->bankData = $this->setBankData($form['course']->value, $form['invoice']->value);
 		$template->invoiceData = $this->setInvoiceData($form);
 		$mail = new Message;
 		$mail->setFrom($ownerMail, $ownerName)
