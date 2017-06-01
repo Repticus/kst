@@ -113,7 +113,7 @@ parameters:
 		-
 			name: 'Kurz Práce s energií'
 			price: 1700
-			occupied: false
+			occupied: true
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'
