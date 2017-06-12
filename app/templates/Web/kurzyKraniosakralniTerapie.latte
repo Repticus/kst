@@ -102,7 +102,7 @@
 		{elseif $course['occupied']}
 			- OBSAZENO
 		{elseif isset($course['housing'])}
-			<span class="housing">vcelku s ubyt.</span>
+			<br><span class="housing">vcelku s ubytováním</span>
 		{/if}
 		<span class="info">více info</span>
 	</div>
@@ -140,7 +140,7 @@
 					<b>Záloha:</b> {$course['deposit']|number:0:0:' '} Kč
 				</li>
 				<li n:ifset="$course['housing']">
-					<b>Ubytování:</b> {$course['housing']['night']} noci za {$course['housing']['price']} Kč
+					<b>Ubytování:</b> {$course['housing']} Kč/noc
 				</li>
 				<li><br>
 					<table>
