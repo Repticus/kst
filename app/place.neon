@@ -47,4 +47,5 @@ parameters:
 			name: 'penzion Sokolovna'
 			street: 'Pražská 375'
 			city: 'Dobřichovice'
+			url: 'http://www.sokol-dobrichovice.cz/index.php/ubytovani'
 			map: 'http://mapy.cz/s/1l5IF'
