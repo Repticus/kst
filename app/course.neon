@@ -394,10 +394,10 @@ parameters:
 					date: '26.11.2017 9:00'
 					end: '16:00'
 				-
-					date: '09.12.2017 9:00'
+					date: '21.04.2018 9:00'
 					end: '17:00'
 				-
-					date: '10.12.2017 9:00'
+					date: '22.04.2018 9:00'
 					end: '16:00'
 		-
 			name: 'Kurz Kraniosakrální terapie I. + II.'
@@ -446,10 +446,10 @@ parameters:
 					date: '26.11.2017 9:00'
 					end: '16:00'
 				-
-					date: '09.12.2017 9:00'
+					date: '21.04.2018 9:00'
 					end: '17:00'
 				-
-					date: '10.12.2017 9:00'
+					date: '22.04.2018 9:00'
 					end: '16:00'
 		-
 			name: 'Kurz Kraniosakrální terapie III.'
