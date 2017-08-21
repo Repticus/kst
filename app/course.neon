@@ -20,7 +20,7 @@ parameters:
 			name: 'Kraniosakrální terapie I. + II. + práce s energií'
 			price: 9200
 			deposit: 3200
-			occupied: false
+			occupied: true
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'
@@ -46,7 +46,7 @@ parameters:
 			name: 'Kraniosakrální terapie I. + II. + III. a práce s energií'
 			price: 13200
 			deposit: 5200
-			occupied: false
+			occupied: true
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'
@@ -77,7 +77,7 @@ parameters:
 		-
 			name: 'Práce s energií'
 			price: 1700
-			occupied: false
+			occupied: true
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'
@@ -89,7 +89,7 @@ parameters:
 			name: 'Kraniosakrální terapie I. + II.'
 			price: 7800
 			deposit: 2800
-			occupied: false
+			occupied: true
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'
@@ -112,7 +112,7 @@ parameters:
 			name: 'Kraniosakrální terapie I. + II. + III.'
 			price: 11800
 			deposit: 4800
-			occupied: false
+			occupied: true
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'
