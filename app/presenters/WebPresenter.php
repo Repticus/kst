@@ -40,13 +40,13 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 		$now = strtotime(date("d.m.Y"));
 		foreach ($courses as $key => $course) {
 			$firstDate = strtotime(date("d.m.Y", strtotime($course['dates']['0']['date'])));
-			$lastDate = strtotime($course['dates'][max(array_keys($course['dates']))]['date'] . " + 2 days");
+			$lastDate = strtotime($course['dates'][max(array_keys($course['dates']))]['date']);
 			if ($now >= $firstDate) {
 				$courses[$key]['expiration'] = true;
 			} else {
 				$courses[$key]['expiration'] = false;
 			}
-			if ($now > $firstDate + 1296000) {
+			if ($now > $lastDate) {
 				unset($courses[$key]);
 			}
 		}
