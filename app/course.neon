@@ -257,10 +257,10 @@ parameters:
 					date: '26.11.2017 9:00'
 					end: '16:00'
 				-
-					date: '21.04.2018 10:00'
+					date: '12.05.2018 10:00'
 					end: '18:00'
 				-
-					date: '22.04.2018 9:00'
+					date: '13.05.2018 9:00'
 					end: '16:00'
 		-
 			name: 'Kraniosakrální terapie I. + II.'
@@ -309,10 +309,10 @@ parameters:
 					date: '26.11.2017 9:00'
 					end: '16:00'
 				-
-					date: '21.04.2018 10:00'
+					date: '12.05.2018 10:00'
 					end: '18:00'
 				-
-					date: '22.04.2018 9:00'
+					date: '13.05.2018 9:00'
 					end: '16:00'
 		-
 			name: 'Kraniosakrální terapie I. + II. a práce s energií'
@@ -367,10 +367,10 @@ parameters:
 					date: '28.01.2018 9:00'
 					end: '16:00'
 				-
-					date: '21.04.2018 10:00'
+					date: '12.05.2018 10:00'
 					end: '18:00'
 				-
-					date: '22.04.2018 9:00'
+					date: '13.05.2018 9:00'
 					end: '16:00'
 		-
 			name: 'Práce s energií'
@@ -430,10 +430,10 @@ parameters:
 					date: '28.01.2018 9:00'
 					end: '16:00'
 				-
-					date: '21.04.2018 10:00'
+					date: '12.05.2018 10:00'
 					end: '18:00'
 				-
-					date: '22.04.2018 9:00'
+					date: '13.05.2018 9:00'
 					end: '16:00'
 		-
 			name: 'Kraniosakrální terapie I. + II. a práce s energií'
@@ -488,10 +488,10 @@ parameters:
 					date: '18.03.2018 9:00'
 					end: '16:00'
 				-
-					date: '21.04.2018 10:00'
+					date: '12.05.2018 10:00'
 					end: '18:00'
 				-
-					date: '22.04.2018 9:00'
+					date: '13.05.2018 9:00'
 					end: '16:00'
 		-
 			name: 'Práce s energií'
@@ -554,10 +554,10 @@ parameters:
 					date: '18.03.2018 9:00'
 					end: '16:00'
 				-
-					date: '21.04.2018 10:00'
+					date: '12.05.2018 10:00'
 					end: '18:00'
 				-
-					date: '22.04.2018 9:00'
+					date: '13.05.2018 9:00'
 					end: '16:00'
 		-
 			name: 'Kraniosakrální terapie III.'
