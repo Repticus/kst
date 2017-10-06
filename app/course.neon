@@ -122,64 +122,6 @@ parameters:
 					date: '29.10.2017 9:00'
 					end: '16:00'
 		-
-			name: 'Práce s energií (v Dobřichovicích)'
-			price: 1700
-			occupied: false
-			place: %place.sokolovna%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '18.10.2017 10:00'
-					end: '18:00'
-		-
-			name: 'Kraniosakrální terapie I. + II. + práce s energií'
-			price: 9200
-			deposit: 3200
-			occupied: false
-			housing: 280
-			place: %place.sokolovna%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '18.10.2017 10:00'
-					end: '18:00'
-				-
-					date: '19.10.2017 10:00'
-					end: '18:00'
-				-
-					date: '20.10.2017 9:00'
-					end: '17:00'
-				-
-					date: '21.10.2017 9:00'
-					end: '17:00'
-				-
-					date: '22.10.2017 9:00'
-					end: '14:00'
-		-
-			name: 'Kraniosakrální terapie I. + II.'
-			price: 7800
-			deposit: 2800
-			occupied: false
-			housing: 280
-			place: %place.sokolovna%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '19.10.2017 10:00'
-					end: '18:00'
-				-
-					date: '20.10.2017 9:00'
-					end: '17:00'
-				-
-					date: '21.10.2017 9:00'
-					end: '17:00'
-				-
-					date: '22.10.2017 9:00'
-					end: '14:00'
-		-
 			name: 'Kraniosakrální terapie III.'
 			price: 4200
 			occupied: false
@@ -559,6 +501,64 @@ parameters:
 				-
 					date: '13.05.2018 9:00'
 					end: '16:00'
+		-
+			name: 'Práce s energií (v Dobřichovicích)'
+			price: 1700
+			occupied: false
+			place: %place.sokolovna%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			dates:
+				-
+					date: '29.03.2018 10:00'
+					end: '18:00'
+		-
+			name: 'Kraniosakrální terapie I. + II. + práce s energií (Velikonoce)'
+			price: 9200
+			deposit: 3200
+			occupied: false
+			housing: 280
+			place: %place.sokolovna%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			dates:
+				-
+					date: '29.03.2018 10:00'
+					end: '18:00'
+				-
+					date: '30.03.2018 09:00'
+					end: '17:00'
+				-
+					date: '31.03.2018 9:00'
+					end: '17:00'
+				-
+					date: '01.04.2018 9:00'
+					end: '17:00'
+				-
+					date: '02.04.2018 9:00'
+					end: '14:00'
+		-
+			name: 'Kraniosakrální terapie I. + II. (Velikonoce)'
+			price: 7800
+			deposit: 2800
+			occupied: false
+			housing: 280
+			place: %place.sokolovna%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			dates:
+				-
+					date: '30.03.2018 09:00'
+					end: '17:00'
+				-
+					date: '31.03.2018 9:00'
+					end: '17:00'
+				-
+					date: '01.04.2018 9:00'
+					end: '17:00'
+				-
+					date: '02.04.2018 9:00'
+					end: '14:00'
 		-
 			name: 'Kraniosakrální terapie III.'
 			price: 4200
