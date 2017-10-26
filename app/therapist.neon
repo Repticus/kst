@@ -204,22 +204,3 @@ parameters:
 					address:
 						street: 'Sokolovská 77 (4. podlaží)'
 						city: 'Plzeň'
-		revnice:
-			name: 'Řevnice'
-			contact:
-				-
-					name: 'Zdeňka Ocelíková'
-					profession:
-						- 'kraniosakrální terapie a energie'
-						- 'lektor kurzů uvedených na tomto webu'
-						- 'manuální lymfodrenáž'
-						- 'astroporadenství, rodinné konstelace'
-					phone: '+420 602 748 729'
-					mail: 'kurzKST@seznam.cz'
-					photo: 'zdenka-ocelikova.jpg'
-					web:
-						- 'www.kranio-sakralni-terapie.cz'
-					address:
-						name: 'Studio Klementýna'
-						street: 'Nám. Krále Jiřího z Poděbrad 5'
-						city: 'Řevnice'
