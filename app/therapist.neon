@@ -188,19 +188,3 @@ parameters:
 					address:
 						street: 'Sjezdová 147'
 						city: 'Pardubice'
-		plzen:
-			name: 'Plzeň'
-			contact:
-				-
-					name: 'Daniel Kříž'
-					profession:
-						- 'Masáže'
-						- 'Kranio-sakrální terapie'
-					phone: '+420 606 265 552'
-					mail: 'dany.kriz.68@seznam.cz'
-					photo: 'daniel-kriz.jpg'
-					web:
-						- 'www.dany.websnadno.cz'
-					address:
-						street: 'Sokolovská 77 (4. podlaží)'
-						city: 'Plzeň'
