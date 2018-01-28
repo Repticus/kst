@@ -4,19 +4,6 @@ parameters:
 			name: 'Praha 4'
 			contact:
 				-
-					name: 'Eva Plicková'
-					profession:
-						- 'Kranio-sakrální terapie'
-						- 'Reiki'
-						- 'Kosmetika (Pevonia Botanica)'
-						- 'Manuální lymfodrenáž'
-					phone: '+420 777 237 004'
-					mail: 'eva.plickova@seznam.cz'
-					photo: 'eva-plickova.jpg'
-					address:
-						street: 'Nad Zátiším 22'
-						city: 'Praha 4 Lhotka'
-				-
 					name: 'Laura Brožová'
 					profession:
 						- 'EFT terapie'
@@ -94,21 +81,6 @@ parameters:
 					address:
 						street: 'Na Šafránce 17'
 						city: 'Praha 10 Vinohrady'
-		brandys-nad-labem:
-			name: 'Brandýs nad Labem'
-			contact:
-				-
-					name: 'Majka Marie Šulová'
-					profession:
-						- 'Kranio-sakrální terapie'
-						- 'osobní trenér, jóga, zdravá záda'
-					phone: '+420 739 226 080'
-					mail: 'marie.sulova@studiomajka.cz'
-					photo: 'marie-sulova.jpg'
-					web:
-						- 'www.studiomajka.cz'
-					address:
-						city: 'Brandýs nad Labem'
 		brno:
 			name: 'Brno'
 			contact:
