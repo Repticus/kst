@@ -122,20 +122,6 @@ parameters:
 					date: '29.10.2017 9:00'
 					end: '16:00'
 		-
-			name: 'Kraniosakrální terapie III.'
-			price: 4200
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '28.10.2017 10:00'
-					end: '18:00'
-				-
-					date: '29.10.2017 9:00'
-					end: '16:00'
-		-
 			name: 'Práce s energií'
 			price: 1700
 			occupied: false
@@ -602,6 +588,67 @@ parameters:
 					date: '10.06.2018 9:00'
 					end: '16:00'
 		-
+			name: 'Kraniosakrální terapie I. + II. + III.'
+			price: 11200
+			deposit: 4200
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			substitute:
+				- 'Bc. Michaela Habrunová'
+			dates:
+				-
+					date: '26.5.2018 10:00'
+					end: '18:00'
+				-
+					date: '27.5.2018 9:00'
+					end: '16:00'
+				-
+					date: '9.6.2018 10:00'
+					end: '18:00'
+				-
+					date: '10.6.2018 9:00'
+					end: '16:00'
+				-
+					date: '1.12.2018 10:00'
+					end: '18:00'
+				-
+					date: '2.12.2018 9:00'
+					end: '16:00'
+		-
+			name: 'Kraniosakrální terapie I. + II. + III. + práce s energií'
+			price: 12600
+			deposit: 4600
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			substitute:
+				- 'Bc. Michaela Habrunová'
+			dates:
+				-
+					date: '25.5.2018 10:00'
+					end: '18:00'
+				-
+					date: '26.5.2018 10:00'
+					end: '18:00'
+				-
+					date: '27.5.2018 9:00'
+					end: '16:00'
+				-
+					date: '9.6.2018 10:00'
+					end: '18:00'
+				-
+					date: '10.6.2018 9:00'
+					end: '16:00'
+				-
+					date: '1.12.2018 10:00'
+					end: '18:00'
+				-
+					date: '2.12.2018 9:00'
+					end: '16:00'
+		-
 			name: 'Práce s energií'
 			price: 1700
 			occupied: false
@@ -634,4 +681,18 @@ parameters:
 					end: '18:00'
 				-
 					date: '10.06.2018 9:00'
+					end: '16:00'
+		-
+			name: 'Kraniosakrální terapie III.'
+			price: 3800
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			dates:
+				-
+					date: '1.12.2018 10:00'
+					end: '18:00'
+				-
+					date: '2.12.2018 9:00'
 					end: '16:00'
