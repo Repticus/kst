@@ -1,373 +1,10 @@
 parameters:
 	courses:
 		-
-			name: 'Kraniosakrální terapie I. + II. + práce s energií'
-			price: 9200
-			deposit: 3200
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			substitute:
-				- 'Bc. Michaela Habrunová'
-			dates:
-				-
-					date: '22.09.2017 10:00'
-					end: '18:00'
-				-
-					date: '23.09.2017 10:00'
-					end: '18:00'
-				-
-					date: '24.09.2017 9:00'
-					end: '16:00'
-				-
-					date: '07.10.2017 10:00'
-					end: '18:00'
-				-
-					date: '08.10.2017 9:00'
-					end: '16:00'
-		-
-			name: 'Kraniosakrální terapie I. + II. + III. a práce s energií'
-			price: 13200
-			deposit: 5200
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			substitute:
-				- 'Bc. Michaela Habrunová'
-			dates:
-				-
-					date: '22.09.2017 10:00'
-					end: '18:00'
-				-
-					date: '23.09.2017 10:00'
-					end: '18:00'
-				-
-					date: '24.09.2017 9:00'
-					end: '16:00'
-				-
-					date: '07.10.2017 10:00'
-					end: '18:00'
-				-
-					date: '08.10.2017 9:00'
-					end: '16:00'
-				-
-					date: '28.10.2017 10:00'
-					end: '18:00'
-				-
-					date: '29.10.2017 9:00'
-					end: '16:00'
-		-
-			name: 'Práce s energií'
-			price: 1700
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '22.09.2017 10:00'
-					end: '18:00'
-		-
-			name: 'Kraniosakrální terapie I. + II.'
-			price: 7800
-			deposit: 2800
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			substitute:
-				- 'Bc. Michaela Habrunová'
-			dates:
-				-
-					date: '23.09.2017 10:00'
-					end: '18:00'
-				-
-					date: '24.09.2017 9:00'
-					end: '16:00'
-				-
-					date: '07.10.2017 10:00'
-					end: '18:00'
-				-
-					date: '08.10.2017 9:00'
-					end: '16:00'
-		-
-			name: 'Kraniosakrální terapie I. + II. + III.'
-			price: 11800
-			deposit: 4800
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			substitute:
-				- 'Bc. Michaela Habrunová'
-			dates:
-				-
-					date: '23.09.2017 10:00'
-					end: '18:00'
-				-
-					date: '24.09.2017 9:00'
-					end: '16:00'
-				-
-					date: '07.10.2017 10:00'
-					end: '18:00'
-				-
-					date: '08.10.2017 9:00'
-					end: '16:00'
-				-
-					date: '28.10.2017 10:00'
-					end: '18:00'
-				-
-					date: '29.10.2017 9:00'
-					end: '16:00'
-		-
-			name: 'Práce s energií'
-			price: 1700
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '10.11.2017 10:00'
-					end: '18:00'
-		-
-			name: 'Kraniosakrální terapie I. + II. + práce s energií'
-			price: 9200
-			deposit: 3200
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			substitute:
-				- 'Bc. Michaela Habrunová'
-			dates:
-				-
-					date: '10.11.2017 10:00'
-					end: '18:00'
-				-
-					date: '11.11.2017 10:00'
-					end: '18:00'
-				-
-					date: '12.11.2017 9:00'
-					end: '16:00'
-				-
-					date: '25.11.2017 10:00'
-					end: '18:00'
-				-
-					date: '26.11.2017 9:00'
-					end: '16:00'
-		-
-			name: 'Kraniosakrální terapie I. + II. + III. a práce s energií'
-			price: 13200
-			deposit: 5200
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			substitute:
-				- 'Bc. Michaela Habrunová'
-			dates:
-				-
-					date: '10.11.2017 10:00'
-					end: '18:00'
-				-
-					date: '11.11.2017 10:00'
-					end: '18:00'
-				-
-					date: '12.11.2017 9:00'
-					end: '16:00'
-				-
-					date: '25.11.2017 10:00'
-					end: '18:00'
-				-
-					date: '26.11.2017 9:00'
-					end: '16:00'
-				-
-					date: '12.05.2018 10:00'
-					end: '18:00'
-				-
-					date: '13.05.2018 9:00'
-					end: '16:00'
-		-
-			name: 'Kraniosakrální terapie I. + II.'
-			price: 7800
-			deposit: 2800
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			substitute:
-				- 'Bc. Michaela Habrunová'
-			dates:
-				-
-					date: '11.11.2017 10:00'
-					end: '18:00'
-				-
-					date: '12.11.2017 9:00'
-					end: '16:00'
-				-
-					date: '25.11.2017 10:00'
-					end: '18:00'
-				-
-					date: '26.11.2017 9:00'
-					end: '16:00'
-		-
-			name: 'Kraniosakrální terapie I. + II. + III.'
-			price: 11800
-			deposit: 4800
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			substitute:
-				- 'Bc. Michaela Habrunová'
-			dates:
-				-
-					date: '11.11.2017 10:00'
-					end: '18:00'
-				-
-					date: '12.11.2017 9:00'
-					end: '16:00'
-				-
-					date: '25.11.2017 10:00'
-					end: '18:00'
-				-
-					date: '26.11.2017 9:00'
-					end: '16:00'
-				-
-					date: '12.05.2018 10:00'
-					end: '18:00'
-				-
-					date: '13.05.2018 9:00'
-					end: '16:00'
-		-
 			name: 'Kraniosakrální terapie I. + II. a práce s energií'
 			price: 9200
 			deposit: 3200
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			substitute:
-				- 'Bc. Michaela Habrunová'
-			dates:
-				-
-					date: '12.01.2018 10:00'
-					end: '18:00'
-				-
-					date: '13.01.2018 10:00'
-					end: '18:00'
-				-
-					date: '14.01.2018 9:00'
-					end: '16:00'
-				-
-					date: '27.01.2018 10:00'
-					end: '18:00'
-				-
-					date: '28.01.2018 9:00'
-					end: '16:00'
-		-
-			name: 'Kraniosakrální terapie I. + II. + III. a práce s energií'
-			price: 13200
-			deposit: 5200
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			substitute:
-				- 'Bc. Michaela Habrunová'
-			dates:
-				-
-					date: '12.01.2018 10:00'
-					end: '18:00'
-				-
-					date: '13.01.2018 10:00'
-					end: '18:00'
-				-
-					date: '14.01.2018 9:00'
-					end: '16:00'
-				-
-					date: '27.01.2018 10:00'
-					end: '18:00'
-				-
-					date: '28.01.2018 9:00'
-					end: '16:00'
-				-
-					date: '12.05.2018 10:00'
-					end: '18:00'
-				-
-					date: '13.05.2018 9:00'
-					end: '16:00'
-		-
-			name: 'Práce s energií'
-			price: 1700
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '12.01.2018 10:00'
-					end: '18:00'
-		-
-			name: 'Kraniosakrální terapie I. + II.'
-			price: 7800
-			deposit: 2800
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			substitute:
-				- 'Bc. Michaela Habrunová'
-			dates:
-				-
-					date: '13.01.2018 10:00'
-					end: '18:00'
-				-
-					date: '14.01.2018 9:00'
-					end: '16:00'
-				-
-					date: '27.01.2018 10:00'
-					end: '18:00'
-				-
-					date: '28.01.2018 9:00'
-					end: '16:00'
-		-
-			name: 'Kraniosakrální terapie I. + II. + III.'
-			price: 11800
-			deposit: 4800
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			substitute:
-				- 'Bc. Michaela Habrunová'
-			dates:
-				-
-					date: '13.01.2018 10:00'
-					end: '18:00'
-				-
-					date: '14.01.2018 9:00'
-					end: '16:00'
-				-
-					date: '27.01.2018 10:00'
-					end: '18:00'
-				-
-					date: '28.01.2018 9:00'
-					end: '16:00'
-				-
-					date: '12.05.2018 10:00'
-					end: '18:00'
-				-
-					date: '13.05.2018 9:00'
-					end: '16:00'
-		-
-			name: 'Kraniosakrální terapie I. + II. a práce s energií'
-			price: 9200
-			deposit: 3200
-			occupied: false
+			occupied: true
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'
@@ -393,7 +30,7 @@ parameters:
 			name: 'Kraniosakrální terapie I. + II. + III. a práce s energií'
 			price: 13200
 			deposit: 5200
-			occupied: false
+			occupied: true
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'
@@ -424,7 +61,7 @@ parameters:
 		-
 			name: 'Práce s energií'
 			price: 1700
-			occupied: false
+			occupied: true
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'
@@ -439,7 +76,7 @@ parameters:
 			name: 'Kraniosakrální terapie I. + II.'
 			price: 7800
 			deposit: 2800
-			occupied: false
+			occupied: true
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'
@@ -462,7 +99,7 @@ parameters:
 			name: 'Kraniosakrální terapie I. + II. + III.'
 			price: 11800
 			deposit: 4800
-			occupied: false
+			occupied: true
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'
@@ -548,7 +185,7 @@ parameters:
 		-
 			name: 'Kraniosakrální terapie III.'
 			price: 4200
-			occupied: false
+			occupied: true
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'

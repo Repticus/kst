@@ -161,9 +161,9 @@
 		<time itemprop="startDate" datetime="{$course['dates'][0]['date']|date:'%Y-%m-%d'}">{$course['dates'][0]['date']|date:'%d.%m.%Y'}</time>
 		- {$course['name']}
 		{if $course['expiration']}
-			- UZAVŘENO
+			- UZAVŘEN
 		{elseif $course['occupied']}
-			- OBSAZENO
+			- OBSAZEN
 		{elseif isset($course['housing'])}
 			<br><span class="housing">vcelku s ubytováním</span>
 		{/if}
