@@ -81,6 +81,20 @@ parameters:
 					address:
 						street: 'Na Šafránce 17'
 						city: 'Praha 10 Vinohrady'
+		praha-vychod:
+			name: 'Praha-východ'
+			contact:
+				-
+					name: 'Zuzana Mostecká'
+					profession:
+						- 'Fyzioterapie a relaxační masáže'
+						- 'Kranio-sakrální terapie'
+						- 'Reiki'
+					phone: '+420 725 279 166'
+					mail: 'z.mostecka@seznam.cz'
+					photo: 'zuzana-mostecka.jpg'
+					address:
+						city: 'Nehvizdy, Praha-východ'
 		brno:
 			name: 'Brno'
 			contact:
