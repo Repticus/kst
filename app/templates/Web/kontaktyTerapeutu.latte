@@ -8,7 +8,7 @@
 
 {block content}
 <h1>Kontakty terapeutů</h1>
-<img class="img" src="/img/cnt/zdenka-ocelikova.jpg" height="146" title="Zdeňka Ocelíková">
+<img class="img" src="/img/dcr/zdenka.jpg" title="Zdeňka Ocelíková">
 <ul id="contact">
 	<li class="person" title="Jméno a příjmení">
 		<strong>Zdeňka Ocelíková</strong>
@@ -31,7 +31,7 @@
 	</li>
 </ul>
 <br>
-<h2>Kontakty dalších terapeutů podle místa působiště</h2>
+<h2>Kontakty terapeutů, kteří u nás vystudovali kraniosakrální terapii, tříděné podle měst:</h2>
 <ul id="city" class="ui-menu ui-widget ui-widget-content ui-corner-all">
 	<li class="ui-menu-item" n:foreach="$therapist as $link => $name">
 		<a n:class="$link == $city ? current, city, ui-corner-all" n:href="Web:kontaktyTerapeutu $link">{$name['name']}</a>
