@@ -30,6 +30,11 @@ img {
   margin-right: 5px;
 }
 
+img.right {
+  margin: 0 0 0 5px;
+  float: right;
+}
+
 img, iframe, video {
   border-radius: 8px;
   border: #004f44 solid 1px;
