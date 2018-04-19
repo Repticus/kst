@@ -1,17 +1,6 @@
 parameters:
 	courses:
 		-
-			name: 'Práce s energií (v Dobřichovicích)'
-			price: 1700
-			occupied: false
-			place: %place.sokolovna%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '31.3.2018 10:00'
-					end: '18:00'
-		-
 			name: 'Kraniosakrální terapie III.'
 			price: 4200
 			occupied: true
@@ -31,7 +20,7 @@ parameters:
 			name: 'Kraniosakrální terapie I. + II. + práce s energií'
 			price: 9200
 			deposit: 3200
-			occupied: false
+			occupied: true
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'
@@ -57,7 +46,7 @@ parameters:
 			name: 'Kraniosakrální terapie I. + II. + III.'
 			price: 11200
 			deposit: 4200
-			occupied: false
+			occupied: true
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'
@@ -86,7 +75,7 @@ parameters:
 			name: 'Kraniosakrální terapie I. + II. + III. + práce s energií'
 			price: 12600
 			deposit: 4600
-			occupied: false
+			occupied: true
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'
@@ -129,7 +118,7 @@ parameters:
 			name: 'Kraniosakrální terapie I. + II.'
 			price: 7800
 			deposit: 2800
-			occupied: false
+			occupied: true
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'
