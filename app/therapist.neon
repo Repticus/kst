@@ -68,18 +68,6 @@ parameters:
 						name: 'Dům Rukou Světla'
 						street: 'Liblická 5'
 						city: 'Praha 9 Hloubětín'
-				-
-					name: 'Mgr. Michaela Habrunová'
-					profession:
-						- 'Lektor kurzů kraniosakrální terapie'
-						- 'fyzioterapeut'
-					phone: '+420 774 681 618'
-					mail: 'habrunova.misha@atlas.cz'
-					photo: 'michaela.jpg'
-					address:
-						name: 'Dům Rukou Světla'
-						street: 'Liblická 5'
-						city: 'Praha 9 Hloubětín (u metra B Hloubětín)'
 		praha-10:
 			name: 'Praha 10'
 			contact:
