@@ -1,144 +1,6 @@
 parameters:
 	courses:
 		-
-			name: 'KST III.'
-			price: 4200
-			occupied: true
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '12.05.2018 10:00'
-					end: '18:00'
-				-
-					date: '13.05.2018 9:00'
-					end: '16:00'
-		-
-			name: 'KST I. + II. + práce s energií'
-			price: 9200
-			deposit: 3200
-			occupied: true
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '25.05.2018 10:00'
-					end: '18:00'
-				-
-					date: '26.05.2018 10:00'
-					end: '18:00'
-				-
-					date: '27.05.2018 9:00'
-					end: '16:00'
-				-
-					date: '09.06.2018 10:00'
-					end: '18:00'
-				-
-					date: '10.06.2018 9:00'
-					end: '16:00'
-		-
-			name: 'KST I. + II. + III.'
-			price: 11200
-			deposit: 4200
-			occupied: true
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '26.5.2018 10:00'
-					end: '18:00'
-				-
-					date: '27.5.2018 9:00'
-					end: '16:00'
-				-
-					date: '9.6.2018 10:00'
-					end: '18:00'
-				-
-					date: '10.6.2018 9:00'
-					end: '16:00'
-				-
-					date: '1.12.2018 10:00'
-					end: '18:00'
-				-
-					date: '2.12.2018 9:00'
-					end: '16:00'
-		-
-			name: 'KST I. + II. + III. + práce s energií'
-			price: 12600
-			deposit: 4600
-			occupied: true
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '25.5.2018 10:00'
-					end: '18:00'
-				-
-					date: '26.5.2018 10:00'
-					end: '18:00'
-				-
-					date: '27.5.2018 9:00'
-					end: '16:00'
-				-
-					date: '9.6.2018 10:00'
-					end: '18:00'
-				-
-					date: '10.6.2018 9:00'
-					end: '16:00'
-				-
-					date: '1.12.2018 10:00'
-					end: '18:00'
-				-
-					date: '2.12.2018 9:00'
-					end: '16:00'
-		-
-			name: 'Práce s energií'
-			price: 1700
-			occupied: true
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '25.05.2018 10:00'
-					end: '18:00'
-		-
-			name: 'KST I. + II.'
-			price: 7800
-			deposit: 2800
-			occupied: true
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '26.05.2018 10:00'
-					end: '18:00'
-				-
-					date: '27.05.2018 9:00'
-					end: '16:00'
-				-
-					date: '09.06.2018 10:00'
-					end: '18:00'
-				-
-					date: '10.06.2018 9:00'
-					end: '16:00'
-		-
-			name: 'Práce s energií'
-			price: 1700
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '14.09.2018 10:00'
-					end: '18:00'
-		-
 			name: 'KST I. + II.'
 			price: 7800
 			deposit: 2800
@@ -154,10 +16,10 @@ parameters:
 					date: '16.09.2018 9:00'
 					end: '16:00'
 				-
-					date: '22.09.2018 10:00'
+					date: '29.09.2018 10:00'
 					end: '18:00'
 				-
-					date: '23.09.2018 9:00'
+					date: '30.09.2018 9:00'
 					end: '16:00'
 		-
 			name: 'KST I. + II. + práce s energií'
@@ -169,19 +31,19 @@ parameters:
 				- 'Zdeňka Ocelíková'
 			dates:
 				-
-					date: '14.09.2018 10:00'
-					end: '18:00'
-				-
 					date: '15.09.2018 10:00'
 					end: '18:00'
 				-
 					date: '16.09.2018 9:00'
-					end: '16:00'
-				-
-					date: '22.09.2018 10:00'
 					end: '18:00'
 				-
-					date: '23.09.2018 9:00'
+					date: '28.09.2018 10:00'
+					end: '16:00'
+				-
+					date: '29.09.2018 10:00'
+					end: '18:00'
+				-
+					date: '30.09.2018 9:00'
 					end: '16:00'
 		-
 			name: 'KST I. + II. + III. + práce s energií'
@@ -193,25 +55,25 @@ parameters:
 				- 'Zdeňka Ocelíková'
 			dates:
 				-
-					date: '14.09.2018 10:00'
-					end: '18:00'
-				-
 					date: '15.09.2018 10:00'
 					end: '18:00'
 				-
 					date: '16.09.2018 9:00'
-					end: '16:00'
-				-
-					date: '22.09.2018 10:00'
 					end: '18:00'
 				-
-					date: '23.09.2018 9:00'
+					date: '28.09.2018 10:00'
 					end: '16:00'
 				-
-					date: '1.12.2018 10:00'
+					date: '29.09.2018 10:00'
 					end: '18:00'
 				-
-					date: '2.12.2018 9:00'
+					date: '30.09.2018 9:00'
+					end: '16:00'
+				-
+					date: '23.2.2019 10:00'
+					end: '18:00'
+				-
+					date: '24.2.2019 9:00'
 					end: '16:00'
 		-
 			name: 'KST I. + II. + III.'
@@ -229,17 +91,28 @@ parameters:
 					date: '16.09.2018 9:00'
 					end: '16:00'
 				-
-					date: '22.09.2018 10:00'
+					date: '29.09.2018 10:00'
 					end: '18:00'
 				-
-					date: '23.09.2018 9:00'
+					date: '30.09.2018 9:00'
 					end: '16:00'
 				-
-					date: '1.12.2018 10:00'
+					date: '23.2.2019 10:00'
 					end: '18:00'
 				-
-					date: '2.12.2018 9:00'
+					date: '24.2.2019 9:00'
 					end: '16:00'
+		-
+			name: 'Práce s energií'
+			price: 1700
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			dates:
+				-
+					date: '28.09.2018 10:00'
+					end: '18:00'
 		-
 			name: 'Práce s energií'
 			price: 1700
@@ -366,4 +239,18 @@ parameters:
 					end: '18:00'
 				-
 					date: '2.12.2018 9:00'
+					end: '16:00'
+		-
+			name: 'KST III.'
+			price: 3800
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			dates:
+				-
+					date: '23.2.2019 10:00'
+					end: '18:00'
+				-
+					date: '24.2.2019 9:00'
 					end: '16:00'
