@@ -260,6 +260,12 @@
 				{foreach $course['dates'] as $date}
 					<li>
 						{$date['date']|date:'%a %d.%m.%Y'} od {$date['date']|date:'%H:%M'} do {$date['end']} h
+						{if isset($date['type'])}
+							{if $date['type'] == 1}KST I{/if}
+							{if $date['type'] == 2}KST II{/if}
+							{if $date['type'] == 3}KST III{/if}
+							{if $date['type'] == 4}Energie{/if}
+						{/if}
 					</li>
 				{/foreach}
 			</ul>
