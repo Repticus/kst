@@ -1,130 +1,6 @@
 parameters:
 	courses:
 		-
-			name: 'KST I. + II.'
-			price: 7800
-			deposit: 2800
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '15.09.2018 10:00'
-					end: '18:00'
-					type: 1
-				-
-					date: '16.09.2018 9:00'
-					end: '16:00'
-					type: 1
-				-
-					date: '29.09.2018 10:00'
-					end: '18:00'
-					type: 2
-				-
-					date: '30.09.2018 9:00'
-					end: '16:00'
-					type: 2
-		-
-			name: 'KST I. + II. + práce s energií'
-			price: 9200
-			deposit: 3200
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '15.09.2018 10:00'
-					end: '18:00'
-					type: 1
-				-
-					date: '16.09.2018 9:00'
-					end: '18:00'
-					type: 1
-				-
-					date: '28.09.2018 10:00'
-					end: '16:00'
-					type: 4
-				-
-					date: '29.09.2018 10:00'
-					end: '18:00'
-					type: 2
-				-
-					date: '30.09.2018 9:00'
-					end: '16:00'
-					type: 2
-		-
-			name: 'KST I. + II. + III. + práce s energií'
-			price: 12600
-			deposit: 4600
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '15.09.2018 10:00'
-					end: '18:00'
-					type: 1
-				-
-					date: '16.09.2018 9:00'
-					end: '18:00'
-					type: 1
-				-
-					date: '28.09.2018 10:00'
-					end: '16:00'
-					type: 4
-				-
-					date: '29.09.2018 10:00'
-					end: '18:00'
-					type: 2
-				-
-					date: '30.09.2018 9:00'
-					end: '16:00'
-					type: 2
-				-
-					date: '23.2.2019 10:00'
-					end: '18:00'
-					type: 3
-				-
-					date: '24.2.2019 9:00'
-					end: '16:00'
-					type: 3
-		-
-			name: 'KST I. + II. + III.'
-			price: 11200
-			deposit: 4200
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '15.09.2018 10:00'
-					end: '18:00'
-					type: 1
-				-
-					date: '16.09.2018 9:00'
-					end: '16:00'
-					type: 1
-				-
-					date: '29.09.2018 10:00'
-					end: '18:00'
-					type: 2
-				-
-					date: '30.09.2018 9:00'
-					end: '16:00'
-					type: 2
-				-
-					date: '23.2.2019 10:00'
-					end: '18:00'
-					type: 3
-				-
-					date: '24.2.2019 9:00'
-					end: '16:00'
-					type: 3
-		-
 			name: 'Práce s energií'
 			price: 1700
 			occupied: false
@@ -136,18 +12,21 @@ parameters:
 					date: '28.09.2018 10:00'
 					end: '18:00'
 		-
-			name: 'Práce s energií'
-			price: 1700
+			name: 'Základy KINEZIOLOGIE'
+			price: 2800
 			occupied: false
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'
 			dates:
 				-
-					date: '2.11.2018 10:00'
-					end: '18:00'
+					date: '13.10.2018 10:00'
+					end: '17:00'
+				-
+					date: '14.10.2018 9:00'
+					end: '13:00'
 		-
-			name: 'KST I. + II. + práce s energií'
+			name: 'KST I+II + práce s energií'
 			price: 9200
 			deposit: 3200
 			occupied: false
@@ -176,7 +55,7 @@ parameters:
 					end: '16:00'
 					type: 2
 		-
-			name: 'KST I. + II. + III. + práce s energií'
+			name: 'KST I+II+III + práce s energií'
 			price: 12600
 			deposit: 4600
 			occupied: false
@@ -213,7 +92,7 @@ parameters:
 					end: '16:00'
 					type: 3
 		-
-			name: 'KST I. + II.'
+			name: 'KST I+II'
 			price: 7800
 			deposit: 2800
 			occupied: false
@@ -234,7 +113,7 @@ parameters:
 					date: '18.11.2018 9:00'
 					end: '16:00'
 		-
-			name: 'KST I. + II. + III.'
+			name: 'KST I+II+III'
 			price: 11200
 			deposit: 4200
 			occupied: false
@@ -267,7 +146,7 @@ parameters:
 					end: '16:00'
 					type: 3
 		-
-			name: 'KST III.'
+			name: 'KST III'
 			price: 3800
 			occupied: true
 			place: %place.dumsvetla%
@@ -281,7 +160,42 @@ parameters:
 					date: '2.12.2018 9:00'
 					end: '16:00'
 		-
-			name: 'KST III.'
+			name: 'KST I + II (kraniosakrální terapie)'
+			price: 7800
+			deposit: 3800
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			dates:
+				-
+					date: '18.01.2019 10:00'
+					end: '18:00'
+				-
+					date: '19.01.2019 9:00'
+					end: '17:00'
+				-
+					date: '20.01.2019 9:00'
+					end: '17:00'
+				-
+					date: '21.01.2019 9:00'
+					end: '13:00'
+		-
+			name: 'PE (Práce s energií, emoce a tělo)'
+			price: 3800
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			dates:
+				-
+					date: '2.2.2019 10:00'
+					end: '18:00'
+				-
+					date: '3.2.2019 9:00'
+					end: '16:00'
+		-
+			name: 'KST III (Kraniosakrální t. - lebka).'
 			price: 3800
 			occupied: false
 			place: %place.dumsvetla%
@@ -293,4 +207,102 @@ parameters:
 					end: '18:00'
 				-
 					date: '24.2.2019 9:00'
+					end: '16:00'
+		-
+			name: 'KST ZB (Základy ks-biodynamiky)'
+			price: 3800
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			dates:
+				-
+					date: '23.2.2019 10:00'
+					end: '18:00'
+				-
+					date: '24.2.2019 9:00'
+					end: '16:00'
+		-
+			name: 'PE (Práce s energií, emoce a tělo)'
+			price: 3800
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			dates:
+				-
+					date: '16.3.2019 10:00'
+					end: '18:00'
+				-
+					date: '17.3.2019 9:00'
+					end: '16:00'
+		-
+			name: 'KST I + II (kraniosakrální terapie)'
+			price: 7800
+			deposit: 3800
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			dates:
+				-
+					date: '29.03.2019 10:00'
+					end: '18:00'
+				-
+					date: '30.03.2019 9:00'
+					end: '17:00'
+				-
+					date: '31.03.2019 9:00'
+					end: '17:00'
+				-
+					date: '1.4.2019 9:00'
+					end: '13:00'
+		-
+			name: 'PE (Práce s energií, emoce a tělo)'
+			price: 3800
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			dates:
+				-
+					date: '11.05.2019 10:00'
+					end: '18:00'
+				-
+					date: '12.05.2019 9:00'
+					end: '16:00'
+		-
+			name: 'KST I + II (kraniosakrální terapie)'
+			price: 7800
+			deposit: 3800
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			dates:
+				-
+					date: '24.05.2019 10:00'
+					end: '18:00'
+				-
+					date: '25.05.2019 9:00'
+					end: '17:00'
+				-
+					date: '26.05.2019 9:00'
+					end: '17:00'
+				-
+					date: '27.05.2019 9:00'
+					end: '13:00'
+		-
+			name: 'KST III (Kraniosakrální t. - lebka).'
+			price: 3800
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			dates:
+				-
+					date: '08.06.2019 10:00'
+					end: '18:00'
+				-
+					date: '09.06.2019 9:00'
 					end: '16:00'
