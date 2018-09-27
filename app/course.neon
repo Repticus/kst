@@ -209,20 +209,6 @@ parameters:
 					date: '24.2.2019 9:00'
 					end: '16:00'
 		-
-			name: 'KST ZB (Základy ks-biodynamiky)'
-			price: 3800
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '23.2.2019 10:00'
-					end: '18:00'
-				-
-					date: '24.2.2019 9:00'
-					end: '16:00'
-		-
 			name: 'PE (Práce s energií, emoce a tělo)'
 			price: 3800
 			occupied: false
@@ -257,6 +243,20 @@ parameters:
 				-
 					date: '1.4.2019 9:00'
 					end: '13:00'
+		-
+			name: 'KST ZB (Základy ks-biodynamiky)'
+			price: 3800
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			dates:
+				-
+					date: '13.4.2019 10:00'
+					end: '18:00'
+				-
+					date: '14.4.2019 9:00'
+					end: '16:00'
 		-
 			name: 'PE (Práce s energií, emoce a tělo)'
 			price: 3800
