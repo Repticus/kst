@@ -68,22 +68,21 @@ parameters:
 						name: 'Dům Rukou Světla'
 						street: 'Liblická 5'
 						city: 'Praha 9 Hloubětín'
-		praha-10:
-			name: 'Praha 10'
+		praha-16:
+			name: 'Praha 16'
 			contact:
 				-
 					name: 'Mgr. Eva Vojtěchovská'
 					profession:
 						- 'Kraniosakrální Reiki terapie'
-						- 'Kraniosakrální terapie v ústech'
 					phone: '+420 736 264 988'
 					mail: 'eva@kraniosa.cz'
 					photo: 'eva-vojtechovska.jpg'
 					web:
 						- 'www.kraniosa.cz'
 					address:
-						street: 'Na Šafránce 17'
-						city: 'Praha 10 Vinohrady'
+						street: 'Vrážská 12'
+						city: 'Praha 16 Radotín'
 		praha-vychod:
 			name: 'Praha-východ'
 			contact:
