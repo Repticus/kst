@@ -14,57 +14,20 @@
 
 {block content}
 <h1>Informace ke kurzům než se přihlásíte</h1>
-
 <p>
-	Kurzy, uvedené na této stránce, na sebe navazují volně, certifikát získáte za každý kurz zvlášť.
-	Už po absolvování KST I.+II. si můžete otevřít kraniosakrální praxi. Kurz KST I.+II. by měl by být absolvován jako první v pořadí,
-	eventuálně můžete jako první absolvovat kurz Práce s energií (PE).
-	Tyto dva jsou takový základ. Doporučuji však dodělat si časem i KST III, eventuálně základy kraniosakrální biodynamiky (KST ZB).
+	<b>Tuto stránku si prosím pozorně pročtěte</b>, pokud uvažujete o kurzu kraniosakrální terapie nebo práce s energií.
+	<b>Níže je tabulka s termíny kurzů</b> – kliknutím na řádku se objeví časový rozvrh, cena, místo konání a možnost se přihlásit.
+	Úplně dole na stránce jsou pro mimopražské také <b>informace o ubytování</b>.
 </p>
-<p>
-	Pokud zabrousíte nebo jste již zabrousili na jiné weby,
-	kde se nabízejí dlouhodobé výcviky v biodynamické kraniosakrální terapii (kraniosakrální biodynamice),
-	nejedná se o klasickou kraniosakrální terapii.
-	Tyto výcviky jsou dlouhodobé z toho důvodu, že se tam pořád dokola procvičuje jedno a totéž.
-	Biodynamická kraniosakrální terapie je dost odlišná od klasické kraniosakrální terapie (či osteopatie).
-	Proto nově nabízím i jednovíkendový kurz základů kraniosakrální biodynamiky,
-	kde se můžete s touto metodou seznámit, vyzkoušet si ji,
-	abyste se pak mohli eventuálně rozhodnout pro víceletý výcvik (jinde, já je nepořádám).
-</p>
-<p>
-	Některé jiné organizace nabízejí kurzy klasické (čili „Upletgerovské“) kraniosakrální terapie
-	(já je označuji jako KST I+II, KST III, PE – viz níže tabulka s nabídkou mých kurzů) nebo kraniosakrální osteopatie (což je podovné),
-	ale vyučují je příliš vědecky a odborně - zejména co se týká latinské anatomie,
-	což podle mě některým studentům zbytečně zamotá hlavu a prodlouží studium.
-	Z mojí praxe vím jistě, že nepotřebujete dvou či tříletý výcvik,
-	abyste byli úspěšnými kraniosakrálními terapeuty. Tuto metodu praktikuji od roku 2008,
-	ročně vyškolím 50 až 60 nových terapeutů a od většiny z nich mám zpětnou vazbu z jejich následné praxe.
-	Občas mám zpětnou vazbu dokonce i od jejich klientů, a tak vím, že mezi nimi jsou skvělí terapeuti s velkými úspěchy,
-	ačkoli někteří z nich absolvovali třeba jen 6 výukových dní, tedy např. KST I+II a PE nebo KST I+II+III.
-</p>
-
-<h2 class="clr">Reference z našich kurzů</h2>
 <p>
 	Než se přihlásíte, můžete si přečíst
 	<a n:href="referenceKurzu">ohlasy absolventů na naše kurzy</a>	nebo také
 	<a n:href="referenceKlientu">reference mých klientů</a>.
 </p>
 
-<h2>Přihláška</h2>
-<p>
-	<img class="right" src="img/dcr/kurzy-kraniosakralni-terapie-2.jpg" title="Kranio-sakrální terapie" alt="Kranio-sakrální terapie" />
-	<b>Níže jsou v tabulce vypsány termíny kurzů KST (kraniosakrální terapie), Práce s energií, emoce a tělo</b>
-	a čas od času i dalších kurzů a seminářů,	na něž se můžete přihlásit skrze formulář	vybrané řádky v tabulce.
-	Po rozkliku uvidíte také cenu, časový rozvrh a adresu konání akce.
-	Pokud vás nebaví vyplňovat formuláře, napište mi mailem svoje jméno,
-	telefon a e-mail a na jaký kurz a termín se hlásíte.
-</p>
-<p>
-	Na této stránce pod tabulkou jsou další důležité informace včetně popisu jednotlivých kurzů,
-	kde podtržený název kurzů můžete prokliknout pro ještě více informací o daném kurzu.
-</p>
+{*	<img class="right" src="img/dcr/kurzy-kraniosakralni-terapie-2.jpg" title="Kranio-sakrální terapie" alt="Kranio-sakrální terapie" />*}
 
-<h2>Termíny kurzů, časový rozvrh, cena a přihláška.<br>Pod tabulkou najdete popis kurzů.</h2>
+<h2>Termíny kurzů, časový rozvrh, cena a přihláška.<br>Zde dole na stránce najdete popis kurzů.</h2>
 <div id="accordion" n:inner-foreach="$courses as $key => $course">
 	<div itemscope itemref="coursename coursedescription address{$iterator->counter}" itemtype="http://schema.org/Event">
 		<time itemprop="startDate" datetime="{$course['dates'][0]['date']|date:'%Y-%m-%d'}">{$course['dates'][0]['date']|date:'%d.%m.%Y'}</time>
@@ -198,50 +161,6 @@
 	kterou vypíšu ručně a bude mít jiný variabilní symbol než ten, který je vygenerován automaticky v odpovědním mailu mimo můj ruční zásah.
 </p>
 
-<h2>SLEVY z kurzovného</h2>
-<p>
-	Tento systém platí pro kurzy konané v 2019, protože v cenách kurzů 2018 je množstevní sleva již zahrnuta.
-</p>
-<p>
-	Slevu lze uplatnit jen na kombinaci kurzů KST I+II, KST III, KSTZB a PE (Práce s energií),
-	protože tyto čtyři kurzy tvoří jakési ucelené vzdělání.
-	Nezapomínejte, že KST I+II je jeden kurz, nikoli dva.
-</p>
-<ul>
-	<li>Pokud se přihlásíte najednou do 2 kurzů: KST I+II a III, dostanete slevu 800 Kč.</li>
-	<li>Pokud se přihlásíte najednou do 2 kurzů: KST I+II a PE, je sleva 800 Kč.</li>
-	<li>Pokud se přihlásíte najednou do 2 kurzů: KST I+II a KSTZB, je sleva 800 Kč.</li>
-	<li>Pokud se přihlásíte najednou do 2 kurzů: ZB a PE, je sleva 800 Kč.</li>
-	<li>Pokud se přihlásíte najednou do 3 kurzů: KST I+II a III a PE, je sleva 1200 Kč. </li>
-	<li>Pokud se přihlásíte najednou do 3 kurzů: KST I+II a PE a KSTZB, je sleva 1200 Kč.</li>
-	<li>Pokud se přihlásíte najednou do 3 kurzů: KST I+II a III a KSTZB, je sleva 1200 Kč.</li>
-	<li>Pokud se přihlásíte najednou do 4 kurzů: KST I+II a III a KSTZB a PE, je sleva 2000 Kč.</li>
-</ul>
-
-<p>
-	<b>Pokud se hlásíte na více kurzů najednou a chcete uplatnit množstevní slevu</b>,
-	pošlete přihlášku na každý kurz zvlášť v jednom dni, ale platby si můžete sečíst a poslat najednou.
-	Do kolonky odesílatele platby napište svoje jméno.
-	Pokud u žádného z kurzů, na které jste se přihlásili, není uvedena záloha, ale jen plná cena kurzu,
-	pak si celkovou cenu sami sečtěte a odečtěte výše popsanou slevu a výslednou částku zašlete na účet,
-	který najdete v kterémkoli přihláškovém odpovědním mailu.
-	Pokud je u některého z kurzů napsána záloha a doplatek, pak sečtěte všechny ceny vyjma doplatku a sleva vám bude odečtena z doplatku,
-	který probíhá v hotovosti těsně před kurzem (můžete ho ale zaslat i předem převodem). Pokud u kurzu není uvedena záloha, hradíte rovnou plnou cenu kurzu.
-	Záloha se hradí pouze u kurzu KST I+II, u ostatních kurzů hradíte předem plnou cenu.
-	<b>Jestli vám to připadá moc složité nebo pokud chcete fakturu</b>, tak mi napište mail nebo do poznámky v přihlášce,
-	abych vám vystavila fakturu nebo do mailu vypočítala výslednou částku.
-</p>
-
-<p>
-	<b>Podmínkou pro uplatnění slevy</b> je uhradit do tří dnů od přihlášky (či od vystavení faktury) všechny kurzy,
-	na které se přihlásíte (v případe KST I+II stačí uhradit uvedenou zálohu).
-	Na kurzy, které nejsou uvedeny v odstavci slevy, se žádná sleva nevztahuje.
-</p>
-
-<p>
-	(Platební systém u žadatelů v sociální tísni je individuální a závisí na dohodě a posouzení.)
-</p>
-
 <h2>Storno podmínky</h2>
 <p>
 	Pokud jste uhradili kurz (či zálohu jestliže je uvedena)
@@ -291,31 +210,8 @@
 	- to je něco jako zkouška, ale nikoho z ní nevyhazuji, jen opravuji chyby.
 	Nemusíte tedy absolvovat všechny kurzy a stupně a čekat na jediný závěrečný certifikát, ale můžete praktikovat již po KST I +II.
 </p>
-<p>
-	<b>Termíny kurzů si vybíráte sami</b> (tedy i jednotlivých stupňů KST a doplňkových kurzů),
-	takže časové mezery mezi KST I+II a mezi KST III a dalšími kurzy si zvolíte podle toho, jak vám to vyhovuje.
-	<b>Většina našich kurzů jsou nezávislé na nutnosti absolvovat i ty ostatní</b>,
-	ale některé z nich doporučujeme ve vzájemné kombinaci, jako například KST I+II a Práce s energií,
-	emoce a tělo, protože mezi nimi je souvztažnost, ale na pořadí absolvování zde nezáleží.
-	Jedině pro KST III. a Kranio jógu je nutné předem absolvovat KST I+II,
-	protože k nim potřebujete informace z KST I+II Také KST ZB je lepší absolvovat až po KST I+II.
-	Po ostatní kurzy není doporučované žádné pořadí.
-</p>
-<p>
-	<b>Vyučuji také „Práci s energií, emoce a tělo“</b>,
-	což je samostatný kurz (dříve jsme jeho obsah automaticky zahrnovali do kurzu KST I+II),
-	který má s kraniosakrální terapií úzkou souvislost a vy máte dnes možnost se rozhodnout,
-	zda jej chcete absolvovat či nikoli. Není tedy povinný, je jen doporučovaný ke KST (nebo i samostatně bez KST).
-</p>
-<p>
-	<b>Množstevní slevy</b> - Kraniosakrální praxi můžete provádět již po kurzu KST I+II,
-	nemusíte čekat až budete mít za sebou i KST III. i kurz Práce s energií atd.
-	Můžete se však zapsat do dvou nebo tří kurzů najednou (viz odstavec výše „Slevy z kurzovného“) a využít množstevní slevy.
-	Zápis do více kurzů najednou má i další výhodu – budete mít místo na kurzech předem zajištěné,
-	takže se nemusíte bát, že se do něj později kapacitně nevejdete.
-</p>
 
-<h2>Popis kurzů:</h2>
+<h2 class="clr">Popis kurzů:</h2>
 <ul class="courses">
 	<li>
 		<a n:href="kurzKraniosakralniTerapie12">KST I+II</a> (Kraniosakrální terapie I+II)
@@ -328,13 +224,10 @@
 		dále se vyučuje další práce na lebce zvenku a hlavně zevnitř, rozvíjíte se vnímavost a intuice.
 	</li>
 	<li>
-		<a n:href="praceEnergie">Práce s energií, emoce a tělo</a>
-		- 2 dny, doporučuji absolvovat před KST I+II (nebo těsně po).
-		Pro praxi nejen léčitelskou, ale i kraniosakrální, je umění pracovat s energiemi docela důležité.
-		Vyučuje se zde teorie i praxe, tedy vnímavost energií, vidění vnitřním zrakem, rukama,
-		intuitivní práce nablízko i na dálku, dotykem i bezdotykově,
-		čakry a struktura energetických těl a jejich vztah k hormonálnímu systému.
-		Dále také diagnostika a uvolnění emocí zapouzdřených ve tkáních.
+		<a n:href="praceEnergie">Práce s energií</a>
+		- 1 den, pro praxi nejen léčitelskou, ale i kraniosakrální, je umění pracovat s energiemi docela důležité.
+		Vyučuje se zde teorie i praxe, tedy vnímavost energií, vidění vnitřním zrakem, rukama, intuitivní práce nablízko i na dálku,
+		dotykem i bezdotykově, čakry a struktura energetických těl a jejich vztah k hormonálnímu systému.
 	</li>
 	<li>
 		<a n:href="kraniosakralniBiodynamika">KST ZB - Základy ks biodynamiky</a>
@@ -371,31 +264,241 @@
 	které si lze u nás vyžádat pro svoji skupinku.
 </p>
 
-<h2>Certifikát</h2>
+<h2>Existuje jen jedna kraniosakrální terapie nebo je více druhů?</h2>
+<p>
+	<img class="right" src="img/dcr/kurzy-kraniosakralni-terapie-2.jpg" title="Kranio-sakrální terapie" alt="Kranio-sakrální terapie" />
+	Na trhu je nabídka kraniosakrální terapie, kraniosakrální osteopatie a kraniosakrální biodynamiky,
+	které se říká také biodynamická kraniosakrální terapie nebo zkráceně rovněž kraniosakrální terapie.
+	A to je důvod, proč si je lidé často zaměňují.
+	Přitom jde o <b>různé metody</b>, které se provádějí každá jinak a fungují na jiném principu.
+	Jak se v tom vyznat?
+</p>
+<p>
+	Prostudovala jsem řadu knih o všech těchto kraniosakrálních metodách a absolvovala řadu kurzů v různých kraniosakrálních metodách, takže rozdíl znám.
+	V letech 2008-9 jsem vystudovala klasickou kraniosakrální terapii a somatoemocionální uvolnění (podle principů Dr. Upletgera),
+	pak jsem absolvovala rekvalifikační lektorský kurz a v roce 2017 jsem se zúčastnila 4 denního semináře kraniosakrální osteopatie.
+	Na začátku roku 2018 jsem nastoupila do dvouletého výcviku v kraniosakrální biodynamice, který jsem pak v létě přerušila, protože mi nedával nic nového,
+	co bych už předtím neuměla - po konzultaci s lektorkou jsem dospěla k závěru, že se tam ani do budoucna nenaučím pro mě nic nového.
+	Jednalo se o výcvik, kde se procvičovalo od prvního dne pořád jedno a totéž dokola – to, co jsem už dávno uměla.
+</p>
+<p>
+	Podle mě je zavádějící i to, že klasickou (já jí říkám klasická) kraniosakrální terapii, kterou vytvořil Dr. Upletger, nazývají kr.biodynamici „<b>kraniosakrální biomechanikou</b>“.
+	Podle mě to není žádná „mechanika“, na druhou stranu mi připadá zavádějící vůbec samo přízvisko „<b>kraniosakrální</b>“ v názvu kraniosakrální biodynamika
+	či biodynamická kraniosakrální terapie, a to proto, že tam v podstatě nejde o kranium = cranium = lebku či sakrum = sacrum = kříž (kost křížovou) na rozdíl od klasické KST.
+	Přízvisko „kraniosakrální“ je u biodynamiky nejspíš proto, že ji vymysleli kraniosakrální osteopaté/terapeuté.
+</p>
+<p>
+	<b>Pokud zabrousíte nebo jste již zabrousili na jiné weby</b>,
+	kde jsou nabízeny dlouhodobé výcviky v biodynamické kraniosakrální terapii (kraniosakrální biodynamice),
+	<b>nejedná se tedy o klasickou kraniosakrální terapii</b> vytvořenou Dr. Upletgerem.
+	Tyto výcviky jsou dlouhodobé z toho důvodu, že se tam pořád dokola procvičuje jedno a totéž – nikoli technika nebo nějaké hmaty,
+	nýbrž procvičuje se schopnost naladit svoje vědomí do stavu neutrálu, tj. vnitřního klidu, a to většinou formou meditací.
+	Nejde v ní o žádnou zvláštní techniku práce s klientem. To je Biodynamická kraniosakrální terapie,
+	a ta je tím dost odlišná od klasické kraniosakrální terapie, kterou vyučuji například já.
+	Na mých kurzech, podobně jako na jiných kurzech klasické („Upletgerovské“) kraniosakrální terapie, se tento stav klidu považuje za samořejmý,
+	nenacvičuje se a namísto něj se zde vyučují různé hmaty a intuitivní vnímání kraniosakrálního pulzu, což je jemný pohyb fyzicko-energetického těla,
+	který naopak kr.biodynamika považuje z hlediska léčení za nepodstatný, stejně jako považuje za zbytečné či dokonce kontraproduktivní mnohé kraniosakrální hmaty.
+	V tom se obě metody dost liší, každá pracuje na trochu jiném principu.
+</p>
+<p>
+	<b>Při biodynamické kraniosakrální terapii</b> se terapeut dotýká klienta třeba i hodinu na jednom nebo dvou místech těla,
+	která určí intuitivně a udržuje přitom stav vnitřního klidu a neutrálu, to je celé. Nic víc vlastně nedělá,
+	jen respektuje vlastní autoregulační proces organizmu, o němž věří, že se tímto způsobem dá do pohybu a že jakýkoli sebemenší zásah zvenčí,
+	byť jen energetický, by tento autoregulační proces narušil.
+	Tento stav klidného „bytí“ se totiž díky naladění terapeuta vytvoří v celém prostoru, kde se nachází klient a terapeut, a to je působí blahodárně.
+	Z vlastní zkušenosti vím, že jakkoli se to může zdát nemožné a nepochopitelné, tak se i při takovémto přístupu skutečně někdy dějí velké věci a odbloky.
+	Může se zdát, že k tomu, aby se člověk naladil na stav vnitřního klidu, nepotřebuje dlouhodobý výcvik.
+	Myslím si to také, proto, že jsem od začátku své praxe zvyklá pracovat ve stavu vnitřního klidu.
+	Na druhou stranu jsem si na biodynamickém výcviku uvědomila,
+	že stavu neutrálu a biodynamického klidu je pro většinu lidí mnohem snazší dosáhnout a zažít ve skupině než někde o samotě.
+	Ve skupině je to silnějsí. Nicméně existují i názory, že výcvik je tak dlouhý proto, že jde o byznys.	Nechci to komentovat.
+</p>
+<p>
+	<img class="right" src="img/dcr/kranio-03.jpg" title="Kranio-sakrální terapie" alt="Kranio-sakrální terapie" />
+	<b>Při klasické kraniosakrální terapii</b> se terapeut naopak postupně přemisťuje od jedné části těla ke druhé
+	a v průběhu jednoho ošetření přikládá ruce na téměř všechny části klientova těla.
+	Buď je tam má jen chvíli přiložené a sleduje, co se uvnitř děje nebo podle potřeby na daných místech i zasahuje – tedy „něco“ jemného dělá,
+	a to nejen na trupu, ale i na jednotlivých lebečních kostech - kvůli uvolnění lebečních švů a eventuálních bloků,
+	které by zde mohly být přítomny a které by mohly negativně ovlivňovat zdraví a psychiku. Dodržuje vlastně určitý technický postup,
+	který je pevně daný krok za krokem. Ovšem síla, kterou přitom vyvíjí je adekvátní jemnému doteku, není nijak velká. Dr. Upletger říká,
+	že bychom při kraniosakrální práci měli zapomenout na to, že máme logickou hemisféru, měli bychom se naladit na tu intuitivní a kreativní.
+	A tak v rámci určitého pevně daného postupu terapeut pracuje na mnohých místech těla intuitivně – podle svého cítění.
+	Měl by přitom také být po většinu času ve stavu neutrálu, který se ale na kurzech kraniosakrální terapie nenacvičuje,
+	protože se předpokládá, že se do něj člověk automaticky umí položit.
+</p>
+<p>
+	Obě metody – jak biodynamická, tak klasická (biomechanická) jsou velice příjemné a při obou leží oblečený klient na pohodlném lehátku
+	na zádech a oběma jde o povzbuzení či probuzení samoozdravného autoregulačního systému těla a jemné odblokování.
+</p>
+<p>
+	Mám také informace od studentů, že některé organizace nabízejí, stejně jako já, kurzy klasické (čili biomechanické) kraniosakrální terapie,
+	ale vyučují je příliš vědecky a odborně - zejména co se týká latinské anatomie, což podle mě některým studentům zbytečně zamotá hlavu a prodlouží studium.
+	Z mojí praxe vím jistě, že nepotřebujete dvou či tříletý výcvik, abyste byli úspěšnými kraniosakrálními terapeuty.
+	Tuto metodu praktikuji od roku 2008, ročně vyškolím 50 až 60 nových terapeutů a od většiny z nich mám zpětnou vazbu z jejich následné praxe.
+	Občas mám zpětnou vazbu dokonce i od jejich klientů, a tak vím, že mezi nimi jsou skvělí terapeuti s velkými úspěchy.
+</p>
+
+<h2>Kolik je na kurzu účastníků? Je prostor pro individuální přístup?</h2>
+<p>
+	Dávám dost prostoru na dotazy, a protože moje kurzy KST mají kapacitu max. 10 lidí,	je zde rozhodně prostor pro individuální přístup.
+	Například složité hmaty vyučuji tak, že KAŽDÝ účastník si je zkusí přímo na mě, dříve, než půjde do dvojice s jiným účastníkem kurzu.
+	Také ukazuji některé hmaty přímo na nich – na všech účastnících, aby pocítili ten účinek a mohli tomu, kdo s nimi pracuje ve dvojici,
+	říci, zda to dělá správně či nikoli - zda se u toho cítí stejně jako když jsem jim ten hmat dělala já sama.
+	Kdyby na kurzu bylo více účastníků, nebylo by z časových důvodů možné takto individuálně pracovat.
+</p>
+
+<h2>Pro koho jsou kurzy určeny? Jsou srozumitelné i pro laiky?</h2>
+<p>
+	Uvedené kurzy v tabulce jsou určeny pro každého, koho tato tématika zajímá.
+	Metodu můžete používat a nabízet samostatně, anebo jako součást své profese – fyzioterapeutické,
+	kosmetické, ale i	psychoterapeutické nebo jako službu osobního charakteru, anebo ji můžete používat jen doma pro své blízké a přátele.
+	Také můžete vytvořit na kurzu s někým přátelskou dvojici a po kurzu se scházet a dopřávat si vzájemné ošetření.
+</p>
+<p>
+	Nezáleží na tom, zda jste zdravotnicky vzdělaní nebo ne, výuku vedu velice lidsky, obyčejně a názorně - tak, že každý porozumí všemu.
+	To však neznamená, že bych vás ošidila o některé důležité informace či dovednosti, znamená to jen, že si nehraju na přehnanou odbornost,
+	abych udělala dojem a ani na nutnost studovat u mě několik roků na to, abyste byli dobrými terapeuty, protože to není pravda.
+</p>
+
+<h2>Jsou tyto krátké kurzy méně kvalitní než dlouhodobé výcviky?</h2>
+<p>
+	Ti, kteří někde absolvovali dlouholeté výcviky a neabsolvovali žádný krátkodobý, většinou tvrdí,
+	že se nemůžete stát kvalitním kraniosakrálním terapeutem absolvováním krátkodobého kurzu,
+	což je pochopitelné s ohledem na to, že do toho tito lidé investovali spoustu svého času a peněz a navíc jim to říkají jejich učitelé.
+	Oni to však nemohou dobře posoudit, když nikdy před tím nebyli na krátkodobém kurzu a ani nebyli
+	„pacientem“ absolventa krátkodobého kurzu,	kterému tento třeba velmi pomohl.
+	Já to posoudit mohu, protože jednak jsem sama byla nejprve „pacientem“ absolventky krátkodobého kurzu
+	a ta mi nesmírně pomohla na moje zdravotní problémy a posléze jsem já sama aplikovala kraniosakrální terapii na svých klientech
+	- s velkými úspěchy - už po absolvování prvního 4-denního kurzu u Giovanniho Conchina.
+</p>
+<p>
+	Navíc jsem poté po dobu několika roků v průběhu následujících 10 let, když už jsem kraniosakrální terapii sama vyučovala,
+	absolvovala alespoň částečně další – i dlouhodobé výcviky kraniosakrální terapie i biodynamiky u různých učitelů a organizací,
+	abych si rozšířila obzory, ale žádný z nich mi nedal nic nového, pouze mě informoval o tom,
+	že z hlediska kraniosakráních dovedností byla moje účast na nich absolutně zbytečná.
+	Některé z nich jsem neměla trpělivost ani dokončit, protože byly nudné a nezáživné.
+	Časový harmonogram zde byl zaplněn například spoustou nedůležitých slov nebo mnoha dlouhými meditacemi,
+	což jsem netušila předem, v lepším případě jsme se učili naprosto totéž,
+	co jsem už dávno uměla z původního kurzu u Giovanniho – rozdíl byl jen v tom, že to bylo podáváno odbornějšími výrazy,
+	a tedy mnohem méně srozumitelnými pro nezdravotníky a také v tom, že na kurzech bylo většinou 20 i více účastníků,
+	takže se na moje dotazy někdy ani nedostalo.
+</p>
+
+<h2>Opravdu stačí absolvovat jen krátkodobé kurzy KST?</h2>
+<p>
+	Úplně nejvíc mi daly moje úplně první kurzy kraniosakrální terapie absolvované u Dott. Giovanniho Conchina v jeho institutu Color life v letech 2008 až 2009.
+	Kdybych měla říci, kolik to bylo čistého času, tak to nejvíc, co používám dodnes a funguje mi to perfektně,
+	mi předal za 8 dní čistého času v průběhu prvního půl roku studia,
+	ve kterých jsme ještě malou část času strávili buddhismem
+	- výukou čtyř vznešených pravd, protože Giovanni je buddhistický láma.
+	Z těchto 8 dní, absolvovaných v průběhu prvních šesti měsíců studia v Color life,
+	čerpám dodnes a kraniosakrální terapii dělám přesně tak, jak mi ji tehdy Giovanni naučil.
+	Další cenné informace a dovednosti mi pak dala moje vlastní praxe v kraniosakrální terapii.
+	Od té doby jsem se nikde jinde, u žádného jiného učitele, nenaučila ani o milimetr ničeho navíc než na prvních kurzech u Giovanniho.
+</p>
+<p>
+	Všechna ostatní studia, kterými jsem v průběhu dalších 10 let prošla, byla pro mě z 99% zbytečná.
+	Sloužila jen k tomu zjištění, že už jsem to všechno předtím uměla.
+	To mě vlastně i uklidnilo, pokud neberu v úvahu finanční „ztrátu“, protože jsem tak zjistila,
+	že mě to Giovanni naučil opravdu dobře a že jsem opravdu nepotřebovala studovat vůbec nic navíc.
+	U Giovanniho jsem studovala déle než těch 8 dní v průběhu půl roku, jenže to, co jsme probírali později,
+	se v praxi moc nepoužívá, takže to už mi také připadalo skoro zbytečné. Gró nabytých vědomostí a dovedností trvalo tedy 8 dní.
+	Některá školící centra svoje kurzy zbytečně moc natahují a zaplňují nepodstatnými informacemi.
+	Nemůžu však hovořit takto o všech školitelích, protože informace mám jen o některých.
+</p>
+<p>
+	Další moje velká učitelka je Barrbara Ann Brennan, což je velká světová léčitelka a vědkyně NASA,
+	která napsala knihy „Ruce světla“, „Zjevení světla“ a „Léčení světlem“.
+	Z jejích knih jsem získala pro svoji práci ten zbytek.
+</p>
+
+<h2>ŘÍKÁM VÁM, ŽE</h2>
+<p>
+	jak na základě mých vlastních zkušeností, tak na základě zkušeností absolventů mých kurzů,
+	kteří předtím nebo potom studovali KST ještě i někde jinde: Můžete být naprosto skvělí v oboru kraniosakrální terapie už po absolvování dvouvíkendového kurzu,
+	pokud je takový kurz srozumitelný, názorný, věcný a je na něm dost dobře vysvětlené praxe a pokud na něm dáváte pozor a máte alespoň 90% účast.
+	Na mých kurzech kromě obsáhlých skript s barevnými obrázky navíc dostanete fotky ke všem hmatům a přístup k videu s celým názorným postupem ošetření.
+	Někteří budoucí kraniosakrální terapeuté však přesto chtějí být raději součástí nějaké velké organizace,
+	která má „zvučné jméno“ a věhlas a kde se studuje několik let, vypracovávají se diplomové práce, atd., bez ohledu na to ostatní.
+	To už je věc vkusu a názoru.
+</p>
+
+<h2>Je nutné pak dál studovat KS terapii ještě někde jinde?</h2>
+<p>
+	Pokud vím, tak to není nutné. Nicméně někteří lidé mají potřebu studovat danou tématiku u různých učitelů,
+	aby nabyli více sebedůvěry a vědomostí a tím se leckdy i tříbí jejich dovednost.
+	Já jsem to tak také dělala, už proto, že sama kraniosakrální terapii vyučuji, tak jsem o ní chtěla vědět prostě všechno.
+	Takže pokud budete chtít jít pak ještě i jinam na kurz, proč ne? Ale pro vlastní praxi to opravdu nezbytné není.
+</p>
+
+<h2>Proč je součástí našich kranio-kurzů také práce s energií?</h2>
+<p>
+	V roce 2012 jsem dělala kurzy KST dohromady s prací s energií.
+	V roce 2013 jsem to rozdělila a lidé si mohli vybrat buď jen KST nebo dohromady i s prací s energií.
+	Přesto se 90% lidí přihlásilo současně na obojí. Pro mě je důležitá zpětná vazba od absolventů,
+	proto na konci každého kurzu dělám anketu, kde chci znát jejich názor.
+	Názor drtivé většiny mých absolventů je, že práce s energií je úžasný jednodenní úvod do kraniosakrální terapie, třeba i proto,
+	že běžnou součástí KST vlastně je práce s energií – tedy s vlastní energií klienta, o které se selektivně vlastně běžně ani nemluví.
+</p>
+<p>
+	Řada absolventů mi řekla, že než šli na můj kurz, tak jim nebylo jasné,
+	co se na kurzu práce s energií mohou dozvědět nového nebo zajímavého oproti tomu,
+	co už znají, protože už při své praxi třeba s energií dříve pracovali,
+	jsou třeba zasvěcení do Reiki apod., ale přesto se třeba ze zvědavosti na kurz práce s energií přihlásili.
+	A po jeho absolvování prý zjistili, že se tam přesto naučili nové věci a dokonce mi řekli,
+	že bez jednodenního úvodu ke kraniosakrální terapii formou Práce s energií, by jim některé věci na kurzu KST nešly tak lehce.
+	Jedna paní doslova řekla, že ten jeden úvodní den Práce s energií jí pomohl přirozeně a snadno vplout do problematiky KST a ostatní téhož kurzu se k jejímu názoru přidali.
+	To je důvod, proč jsem se vrátila k původnímu modelu z roku 2012, tj. zařadit Práci s energií automaticky do základního kurzu KST I+II.
+	Nakonec uvažuji, že zruším i samostatný jednodenní kurz Práce s energií, protože všichni (až na úplné výjimky),
+	kteří byli na jednodenním kurzu práce s energií, se zanedlouho přihlásili i na kurz Kraniosakrální terapie I+II.
+</p>
+
+<h2>Dostanu po kurzu certifikát? Mohu si pak založit živnost?</h2>
 <p>
 	<img class="left" src="img/dcr/certifikat.png" title="Certifikát" alt="Certifikát" />
-	<b>Absolvováním každého kurzu (stupně) získáte certifikát</b> - osvědčení o absolvování.
-	V případě KST I+II jej však získáte až po absolvování všech 4 dní plus jedné individuální supervize v ceně 1000 Kč.
-	Pokud se absolvent po kurzu neobjedná na supervizi, získá sice doklad o účasti na kurzu, ale ne certifikát.
-	Supervize pro získání certifikátu po KST I+II je <b>novinka, kterou zavádím od ledna 2019</b>, protože jsem zjistila,
-	že navzdory osobnímu přístupu a malému počtu účastníků na kurzech,
-	si většina absolventů nepamatuje úplně správně celý postup ošetření.
+	Ano, dostanete. Po kurzu KST I+II jej však dostanete s jednou podmínkou – a tou je absolvování individuální supervize,
+	tj: Kdykoli po ukončení kurzu KST I+II si se mnou dohodnete termín, přijedete ke mně na cca hodinu a půl,
+	uděláte na mě kraniosakrální ošetření, já vám opravím chyby a zodpovím vaše dotazy, které od kurzu u vás vyvstaly.
+	Pokud jste zdaleka, můžeme udělat supervizi na konci kurzu - těsně před vaším odjezdem domů (poslední den kurzu končíváme obvykle ještě dříve než je v plánu).
+	To odpoledne se však stihnou max. dvě supervize a navíc je lepší nechat si to aspoň pár týdnů uležet. Supervize stojí 1000 Kč.
+	Pak dostanete certifikát absolventa KST I+II. Ten vás ale automaticky neopravňuje k založení jakékoli živnosti – čtěte dál:
 </p>
 <p>
-	Díky supervizi (tu si lze dohodnout kdykoli po kurzu a trvá hodinu až hodinu a půl),
-	kde si student vyzkouší na mě celý postup ošetření a já mu opravím všechny chyby,
-	si budu jista, že mu mohu vystavit absolventské osvědčení a že bude svou praxi provádět správně.
+	Kraniosakrální terapie je metoda, která u nás není oficiálně uznávaná jako léčebná.
+	Nespadá tedy do zdravotnictví. Dokonce ani různé živnostenské úřady si nejsou jisty,
+	pod jakou živnost vás mohou zařadit a zda vůbec pod nějakou.
+	Většina kraniosakrálních terapeutů má živnost na masáže (k tomu je však zapotřebí absolvovat rekvalifikační masérský kurz,
+	anebo mít fyzioterapeutické vzdělání), někteří provozují KS-terapii na živnost volnou „Služby osobního charakteru“,
+	ke které nepotřebujete nic, snad jen občanku a čistý trestní rejstřík. Podle mě je ale jistější mít rekvalifikaci na masáže, pokud chcete mít živnost.
 </p>
 <p>
-	Kromě toho si v úvodu kurzu KST III ověřuji, kolik si toho pamatujete z KST I+II a zkonzultuji s vámi vaše poznatky z vaší praxe KST,
-	kterou mezi tím doufám nabydete, takže na supervizi můžete přijít až po absolvování KST III.
+	Ať půjdete studovat kraniosakrální terapii ke komukoli, do jakékoli organizace, byť by měla sebehonosnější název a nabízela sebeodbornější vzdělání,
+	nikdo vám nedá žádný zvláštní certifikát, který by vás opravňoval k něčemu speciálnímu, jako například k získání vázané živnosti nebo oprávnění pro práci fyzioterapeuta.
+	Jakýkoli certifikát na kraniosakrální terapii či biodynamiku, od jakékoli organizace, má v ČR (tuším i v SR) pouze informační charakter o tom,
+	že jste tuto metodu absolvovali a tudíž je předpoklad, že ji umíte. To je vše. Ale kolik z nás má rozvěšené certifikáty po zdech své ordinace? Já ne.
+	A nepamatuji si, že by někdy některý klient ode mne chtěl vidět nějaký certifikát nebo osvědčení. Mám je v šuplíku - pro případ.
+	Ale pro jakékoli úřady nemá certifikát z absolvování kraniosakrální terapie vůbec žádný význam.
 </p>
+
+<h2>V sekci „Reference z kurzů“ čtu samé kladné ohlasy účastníků, máte i nějaké negativní ohlasy?</h2>
 <p>
-	Supervizí můžete absolvovat kolik budete chtít (cena je vždy 1000 Kč), ale pro certifikát z KST je jedna povinná.
-	Kdo jste z větší dálky a je pro vás obtížné jezdit do Prahy zvlášť jen kvůli supervizi,
-	je možné objednat si se mnou supervizi odpoledne či večer hned po konání jakéhokoli kurzu, kterého se zúčastníte, pokud na to bude čas.
-	Stejně tak někdy řeším individuální zasvěcení do Reiki, Shambally či Ra Sheeby – tedy večer po kurzu nebo den před kurzem – tak,
-	že přijedete do Prahy o den dříve, zasvěcení s výkladem trvá cca hodinu.
+	Ano, vím asi o třech negativních ohlasech na moje kurzy.
+	Tito lidé mi je však nedali písemně, ale klidně vám je tady napíšu.
+	Dvě ženy – kamarádky – odešly z kurzu KST už po prvním dni, s tím, že můj kurz je na jejich vkus málo odborný.
+	Tak z této kritiky jsem neudělala žádný závěr, protože účelem mých kurzů není „být dostatečně odborný“,
+	ale cílem je, aby všichni všechno dobře pochopili, proto to vysvětluji „jednoduše selsky“, a to tady také dost jasně píšu.
+	Tyto dámy, které přijely na kurz z velké dálky, si předem asi nepřečetly informace o kurzech na tomto webu.
+	Drtivá většina účastníků se právě proto se přihlašuje na moje kurzy, že to není příliš odborné.
+	Dále zde byl jeden nebo dva negativní ohlasy na to, že můj kurz je „příliš ezoterický“.
+	Tak z toho jsem si vzala ponaučení a dnes moje kurzy už příliš ezoterické rozhodně nejsou.
+	Sice trošku zaběhneme do duchovna, protože se přece jen jedná o metodu, o níž se říká, že je někde „mezi nebem a zemí“,
+	ale zdaleka to nepřeháním tolik, jako třeba v prvních letech pořádání kurzů KST.
+	Po této změně jsem naopak zaznamenala jeden negativní ohlas, že kurz je prozměnu „málo ezoterický“.
+	Ale znáte to „není na světě člověk ten, aby se zavděčil lidem všem“.
+	A to pracuji s malými skupinami lidí a přizpůsobuji se vždy „duchu“ té které skupinky,
+	která zrovna přijde na kurz, takže pokaždé to je trošičku jiné.
+	Valná část ohlasů na moje kurzy vyznívá tak, že moje kurzy nejsou příliš „technické“ ani příliš „vědecké“,
+	ale spíš lidsky „normální“, srozumitelné, s důrazem na intuitivní vnímání.
 </p>
 
 <h2>Ubytování v Praze</h2>
