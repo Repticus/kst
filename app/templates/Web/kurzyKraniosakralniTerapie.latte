@@ -17,17 +17,16 @@
 <p>
 	<b>Tuto stránku si prosím pozorně pročtěte</b>, pokud uvažujete o kurzu kraniosakrální terapie nebo práce s energií.
 	<b>Níže je tabulka s termíny kurzů</b> – kliknutím na řádku se objeví časový rozvrh, cena, místo konání a možnost se přihlásit.
+	Pod tabulkou je podrobný popis kurzů a hned pod ním je článek, v němž se dozvíte, že existuje více druhů kraniosakrální terapie,
+	z nichž každá je založena na trochu jiném principu a každá se provádí jinak.
 	Úplně dole na stránce jsou pro mimopražské také <b>informace o ubytování</b>.
 </p>
 <p>
 	Než se přihlásíte, můžete si přečíst
 	<a n:href="referenceKurzu">ohlasy absolventů na naše kurzy</a>	nebo také
-	<a n:href="referenceKlientu">reference mých klientů</a>.
+	<a n:href="referenceKlientu">reference ošetřených klientů</a>.
 </p>
 
-{*	<img class="right" src="img/dcr/kurzy-kraniosakralni-terapie-2.jpg" title="Kranio-sakrální terapie" alt="Kranio-sakrální terapie" />*}
-
-<h2>Termíny kurzů, časový rozvrh, cena a přihláška.<br>Zde dole na stránce najdete popis kurzů.</h2>
 <div id="accordion" n:inner-foreach="$courses as $key => $course">
 	<div itemscope itemref="coursename coursedescription address{$iterator->counter}" itemtype="http://schema.org/Event">
 		<time itemprop="startDate" datetime="{$course['dates'][0]['date']|date:'%Y-%m-%d'}">{$course['dates'][0]['date']|date:'%d.%m.%Y'}</time>
@@ -214,12 +213,12 @@
 <h2 class="clr">Popis kurzů:</h2>
 <ul class="courses">
 	<li>
-		<a n:href="kurzKraniosakralniTerapie12">KST I+II</a> (Kraniosakrální terapie I+II)
-		– 4 dny, je nedělitelný - tj. nelze se zapsat jen do KST I, vyučuje se zde anatomie, vnímavost dotykem,
+		<a n:href="kurzKraniosakralniTerapie12">Kraniosakrální terapie I+II a práce s energií</a>
+		– 5 dní, je nedělitelný - tj. nelze se zapsat jen do KST I, vyučuje se zde anatomie, vnímavost dotykem,
 		technický postup ošetření celého těla a rozvíjí se intiuce.
 	</li>
 	<li>
-		<a n:href="kurzKraniosakralniTerapie3">KST III</a> (Kraniosakrální terapie III)
+		<a n:href="kurzKraniosakralniTerapie3">Kraniosakrální terapie III</a>
 		– 2 dny, lze jej absolvovat až po KST I+II. Na začátku se krátce opakuje KST I+II,
 		dále se vyučuje další práce na lebce zvenku a hlavně zevnitř, rozvíjíte se vnímavost a intuice.
 	</li>
@@ -230,7 +229,7 @@
 		dotykem i bezdotykově, čakry a struktura energetických těl a jejich vztah k hormonálnímu systému.
 	</li>
 	<li>
-		<a n:href="kraniosakralniBiodynamika">KST ZB - Základy ks biodynamiky</a>
+		<a n:href="kraniosakralniBiodynamika">Základy kraniosakrální biodynamiky</a>
 		– 2 dny, můžete jej absolvovat nezávisle na ostatních kurzech,
 		avšak doporučujeme ještě před tím absolvovat napřed KST I+II.
 		Vyučuje se zde intuice, vnímavost ke tkáňovým pohybům, uvnitřnění a neutrální stav bytí při práci,
