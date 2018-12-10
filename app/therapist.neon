@@ -1,4 +1,4 @@
-parameters:
+﻿parameters:
 	therapist:
 		praha-4:
 			name: 'Praha 4'
@@ -40,10 +40,10 @@ parameters:
 				-
 					name: 'Zdeňka Ocelíková'
 					profession:
-						- 'kraniosakrální terapie a energie'
+						- 'kraniosakrální terapie, léčitelství'
+						- 'lymfodrenáž, astroporadenství, Reiki'
+						- 'astroporadna, kineziologie one brain'
 						- 'lektor kurzů uvedených na tomto webu'
-						- 'manuální lymfodrenáž'
-						- 'astroporadenství, rodinné konstelace'
 					phone: '+420 602 748 729'
 					mail: 'kurzKST@seznam.cz'
 					photo: 'zdenka-ocelikova.jpg'
