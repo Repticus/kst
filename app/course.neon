@@ -81,7 +81,7 @@ parameters:
 		-
 			name: 'Kraniosakrální terapie III'
 			price: 3800
-			occupied: true
+			occupied: false
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'
