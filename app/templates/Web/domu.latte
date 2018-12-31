@@ -1,3 +1,25 @@
+{block head}
+<link rel="stylesheet" href="/css/jquery.css" type="text/css">
+<link rel="stylesheet" href="/css/gallery.css" type="text/css">
+<script type="application/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script type="application/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script type="text/javascript" src="/js/fadeSlideShow.js"></script>
+<script type="text/javascript" src="/js/nette.ajax.js"></script>
+<script type="text/javascript">
+	$(function () {
+		$("#slideshow").fadeSlideShow({
+			width: 570,
+			height: 370
+		});
+		$("#fssList li a").button();
+		$("img[alt='Kurz kraniosakrální terapie']").click(function () {
+			$("#frmauthentication-send").click();
+		});
+	});
+</script>
+
+{/block}
+
 {block content}
 <h1 n:block="title">Kraniosakrální terapie a Energie</h1>
 <p>
@@ -21,6 +43,13 @@
 	doporučuji vám přečíst si něco o <a n:href="kraniosakralniTerapie">kraniosakrální terapii</a>,
 	<a n:href="kraniosakralniBiodynamika">kraniosakrální biodynamice</a> a podrobnosti o kurzech.
 </p>
+
+<div id="slideshowWrapper">
+	<ul id="slideshow" n:inner-foreach="$images as $image">
+		<li><img src="{$image}" /></li>
+	</ul>
+</div>
+
 <p>
 	Věnuji se také <a n:href="lymfatickaRucniDrenaz">ruční lymfodrenáži (lymfatické masáži)</a>.
 </p>

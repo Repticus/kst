@@ -53,7 +53,7 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 		return $courses;
 	}
 
-	public function actionFotoVideo() {
+	public function actionDomu() {
 		$dir = 'img/glr/';
 		foreach (Finder::findFiles('*.jpg')->in($dir) as $file) {
 			$images[] = $dir . $file->getBasename();

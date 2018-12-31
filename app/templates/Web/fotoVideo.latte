@@ -4,34 +4,14 @@
 
 {block head}
 <link rel="stylesheet" href="/css/jquery.css" type="text/css">
-<link rel="stylesheet" href="/css/gallery.css" type="text/css">
-<script type="application/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-<script type="application/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 <script type="text/javascript" src="/js/fadeSlideShow.js"></script>
 <script type="text/javascript" src="/js/nette.ajax.js"></script>
 <script type="text/javascript" src="/js/netteForms.js"></script>
 <script type="text/javascript" src="/js/kranio2.js"></script>
-<script type="text/javascript">
-	$(function () {
-		$("#slideshow").fadeSlideShow({
-			width: 570,
-			height: 370
-		});
-		$("#fssList li a").button();
-		$("img[alt='Kurz kraniosakrální terapie']").click(function () {
-			$("#frmauthentication-send").click();
-		});
-	});
-</script>
 {/block}
 
 {block content}
 <h1>Fotogalerie a video z kurzů kraniosakrální terapie</h1>
-<div id="slideshowWrapper">
-	<ul id="slideshow" n:inner-foreach="$images as $image">
-		<li><img src="{$image}" /></li>
-	</ul>
-</div>
 <iframe src="https://player.vimeo.com/video/97170120?color=0BB8A2&title=0&byline=0&portrait=0" width="540" height="303" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p>
 	Následující video z kurzu kraniosakrální terapie je přístupné pouze absolventům kurzu pro zopakování probírané látky.
