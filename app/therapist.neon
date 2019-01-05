@@ -53,21 +53,6 @@
 						name: 'Dům Rukou Světla'
 						street: 'Liblická 5'
 						city: 'Praha 9 Hloubětín (u metra B Hloubětín)'
-				-
-					name: 'Vendy Kyralová'
-					profession:
-						- 'Kineziologie'
-						- 'Bachova terapie'
-						- 'Kranio-sakrální terapie'
-					phone: '+420 604 534 508'
-					mail: 'vendy.kyralova@gmail.com'
-					web:
-						- 'www.zdravi-stesti.cz'
-					photo: 'vendy-kyralova.jpg'
-					address:
-						name: 'Dům Rukou Světla'
-						street: 'Liblická 5'
-						city: 'Praha 9 Hloubětín'
 		praha-16:
 			name: 'Praha 16'
 			contact:
@@ -113,52 +98,6 @@
 					address:
 						street: 'Husova 13 (2. patro)'
 						city: 'Brno'
-		ceske-budejovice:
-			name: 'České Budějovice'
-			contact:
-				-
-					name: 'Eva Šedivá'
-					profession:
-						- 'Kranio-sakrální terapie'
-						- 'Konzultace'
-					phone: '+420 774 581 168'
-					mail: 'masazeva@seznam.cz'
-					photo: 'eva.jpg'
-					web:
-						- 'www.lecivedoteky.cz'
-					address:
-						street: 'Hroznova 9'
-						city: 'České Budějovice'
-				-
-					name: 'Marcela Velková'
-					profession:
-						- 'Kranio-sakrální terapie'
-						- 'Konzultace'
-					phone: '+420 777 067 047'
-					mail: 'marcela.velkova@seznam.cz'
-					photo: 'marcela-velkova.jpg'
-					web:
-						- 'www.poslouchejse.cz'
-					address:
-						name: 'Salon Katty'
-						street: 'nám. Přemysla Otakara II. 21 (1. patro)'
-						city: 'České Budějovice'
-		cesky-krumlov:
-			name: 'Český Krumlov'
-			contact:
-				-
-					name: 'Marcela Velková'
-					profession:
-						- 'Kranio-sakrální terapie'
-						- 'Konzultace'
-					phone: '+420 777 067 047'
-					mail: 'marcela.velkova@seznam.cz'
-					photo: 'marcela-velkova.jpg'
-					web:
-						- 'www.poslouchejse.cz'
-					address:
-						street: 'Kostelní 163'
-						city: 'Český Krumlov'
 		pardubice:
 			name: 'Pardubice'
 			contact:
@@ -176,3 +115,19 @@
 					address:
 						street: 'Sjezdová 147'
 						city: 'Pardubice'
+		jihlava:
+			name: 'Jihlava'
+			contact:
+				-
+					name: 'Ivana Brussmannová, DiS'
+					profession:
+						- 'Kraniosakrální terapie'
+						- 'Reiki'
+						- 'Výživové poradenství'
+					phone: '+420 603 464 090'
+					mail: 'ivana.brussmannova@centrum.cz'
+					web:
+						- 'www.prirozenaenergie.cz'
+					address:
+						street: 'Židovská 3 (Office Park)'
+						city: 'Jihlava'
