@@ -184,6 +184,20 @@ parameters:
 					date: '14.04.2019 9:00'
 					end: '16:00'
 		-
+			name: 'Základy kraniosakrální biodynamiky a emoce+tělo'
+			price: 3800
+			occupied: false
+			place: %place.dumsvetla%
+			lectors:
+				- 'Zdeňka Ocelíková'
+			dates:
+				-
+					date: '27.04.2019 10:00'
+					end: '18:00'
+				-
+					date: '28.04.2019 9:00'
+					end: '16:00'
+		-
 			name: 'Kraniosakrální terapie I+II a Práce s energií'
 			price: 9300
 			deposit: 3300
