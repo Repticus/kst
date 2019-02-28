@@ -1,23 +1,22 @@
-﻿parameters:
+parameters:
 	therapist:
 		praha-4:
-			name: 'Praha 4'
+			name: 'Praha-západ'
 			contact:
 				-
-					name: 'Laura Brožová'
+					name: 'Zdeňka Ocelíková'
 					profession:
-						- 'EFT terapie'
-						- 'Kranio-sakrální terapie'
-						- 'Manuální lymfodrenáž'
-					phone: '+420 605 039 300'
-					mail: 'eft-poradenstvi@seznam.cz'
-					photo: 'laura.jpg'
+						- 'kraniosakrální terapie, léčitelství'
+						- 'lymfodrenáž, astroporadenství, Reiki'
+						- 'astroporadna, kineziologie one brain'
+						- 'lektor kurzů uvedených na tomto webu'
+					phone: '+420 602 748 729'
+					mail: 'kurzKST@seznam.cz'
+					photo: 'zdenka-ocelikova.jpg'
 					web:
-						- 'www.eft-poradenstvi.cz'
+						- 'www.kranio-sakralni-terapie.cz'
 					address:
-						name: 'SOPHISTES'
-						street: 'Pšenčíkova 22'
-						city: 'Praha 4 Kamýk'
+						name: 'Řevnice a okolí (mohu přijet i já k vám)'
 		praha-8:
 			name: 'Praha 8'
 			contact:
