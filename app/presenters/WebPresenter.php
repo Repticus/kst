@@ -252,6 +252,8 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 		$form->addCheckbox('acceptance', 'Seznámil/a jsem se s obsahem kurzu pod tabulkou.')
 				  ->setRequired('Před odesláním formuláře je nutné zaškrtnout okénko o seznámení se s obsahem kurzu.');
 		$form->addCheckbox('invoice', 'Chci vystavit fakturu.');
+		$form->addCheckbox('gdpr', 'Souhlasím se zpracováním osobních údajů pro účely zaevidování do našich kurzů.')
+				  ->setRequired('Souhlas se zpracováním osobních údajů musí být zaškrtnut.');
 		$form->addText('firm', 'Firma')
 				  ->setAttribute('placeholder', 'Název firmy s.r.o.')
 				  ->addConditionOn($form['invoice'], Form::EQUAL, TRUE)
