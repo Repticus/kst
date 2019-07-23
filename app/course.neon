@@ -1,74 +1,6 @@
 parameters:
 	courses:
 		-
-			name: 'Práce s energií'
-			price: 1900
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '15.03.2019 10:00'
-					end: '18:00'
-		-
-			name: 'Základy kraniosakrální biodynamiky a emoce+tělo'
-			price: 3800
-			occupied: true
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '13.04.2019 10:00'
-					end: '18:00'
-				-
-					date: '14.04.2019 9:00'
-					end: '16:00'
-		-
-			name: 'Základy kraniosakrální biodynamiky a emoce+tělo'
-			price: 3800
-			occupied: true
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '27.04.2019 10:00'
-					end: '18:00'
-				-
-					date: '28.04.2019 9:00'
-					end: '16:00'
-		-
-			name: 'Kraniosakrální terapie I+II a Práce s energií'
-			price: 9300
-			deposit: 3300
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '10.05.2019 10:00'
-					end: '18:00'
-					type: 4
-				-
-					date: '11.05.2019 9:00'
-					end: '17:00'
-					type: 1
-				-
-					date: '12.05.2019 9:00'
-					end: '16:00'
-					type: 1
-				-
-					date: '25.05.2019 10:00'
-					end: '18:00'
-					type: 2
-				-
-					date: '26.05.2019 9:00'
-					end: '16:00'
-					type: 2
-		-
 			name: 'Kraniosakrální terapie I+II+III a Práce s energií'
 			price: 12800
 			deposit: 3800
@@ -189,11 +121,11 @@ parameters:
 					end: '16:00'
 					type: 2
 				-
-					date: '7.12.2019 10:00'
+					date: '25.04.2020 10:00'
 					end: '18:00'
 					type: 3
 				-
-					date: '8.12.2019 9:00'
+					date: '26.04.2020 9:00'
 					end: '16:00'
 					type: 3
 		-
@@ -259,11 +191,11 @@ parameters:
 					end: '16:00'
 					type: 2
 				-
-					date: '7.12.2019 10:00'
+					date: '25.04.2020 10:00'
 					end: '18:00'
 					type: 3
 				-
-					date: '8.12.2019 9:00'
+					date: '26.04.2020 9:00'
 					end: '16:00'
 					type: 3
 		-
