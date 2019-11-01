@@ -1,193 +1,6 @@
 parameters:
 	courses:
 		-
-			name: 'Kraniosakrální terapie I+II+III a Práce s energií'
-			price: 12800
-			deposit: 3800
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '10.05.2019 10:00'
-					end: '18:00'
-					type: 4
-				-
-					date: '11.05.2019 9:00'
-					end: '17:00'
-					type: 1
-				-
-					date: '12.05.2019 9:00'
-					end: '16:00'
-					type: 1
-				-
-					date: '25.05.2019 10:00'
-					end: '18:00'
-					type: 2
-				-
-					date: '26.05.2019 9:00'
-					end: '16:00'
-					type: 2
-				-
-					date: '7.12.2019 10:00'
-					end: '18:00'
-					type: 3
-				-
-					date: '8.12.2019 9:00'
-					end: '16:00'
-					type: 3
-		-
-			name: 'Kraniosakrální terapie I+II a Práce s energií'
-			price: 9300
-			deposit: 3300
-			occupied: true
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '13.09.2019 10:00'
-					end: '18:00'
-					type: 4
-				-
-					date: '14.09.2019 9:00'
-					end: '17:00'
-					type: 1
-				-
-					date: '15.09.2019 9:00'
-					end: '16:00'
-					type: 1
-				-
-					date: '28.09.2019 10:00'
-					end: '18:00'
-					type: 2
-				-
-					date: '29.09.2019 9:00'
-					end: '16:00'
-					type: 2
-		-
-			name: 'Kraniosakrální terapie I+II+III a Práce s energií'
-			price: 12800
-			deposit: 3800
-			occupied: true
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '13.09.2019 10:00'
-					end: '18:00'
-					type: 4
-				-
-					date: '14.09.2019 9:00'
-					end: '17:00'
-					type: 1
-				-
-					date: '15.09.2019 9:00'
-					end: '16:00'
-					type: 1
-				-
-					date: '28.09.2019 10:00'
-					end: '18:00'
-					type: 2
-				-
-					date: '29.09.2019 9:00'
-					end: '16:00'
-					type: 2
-				-
-					date: '07.12.2019 10:00'
-					end: '18:00'
-					type: 3
-				-
-					date: '08.12.2019 9:00'
-					end: '16:00'
-					type: 3
-		-
-			name: 'Práce s energií a kvantovým polem'
-			price: 2200
-			occupied: true
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '13.09.2019 10:00'
-					end: '18:00'
-
-		-
-			name: 'Kraniosakrální terapie I+II'
-			price: 7800
-			deposit: 2800
-			occupied: true
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '14.09.2019 9:00'
-					end: '17:00'
-					type: 1
-				-
-					date: '15.09.2019 9:00'
-					end: '16:00'
-					type: 1
-				-
-					date: '28.09.2019 10:00'
-					end: '18:00'
-					type: 2
-				-
-					date: '29.09.2019 9:00'
-					end: '16:00'
-					type: 2
-		-
-			name: 'Kraniosakrální terapie I+II+III'
-			price: 11200
-			deposit: 3200
-			occupied: true
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '14.09.2019 9:00'
-					end: '17:00'
-					type: 1
-				-
-					date: '15.09.2019 9:00'
-					end: '16:00'
-					type: 1
-				-
-					date: '28.09.2019 10:00'
-					end: '18:00'
-					type: 2
-				-
-					date: '29.09.2019 9:00'
-					end: '16:00'
-					type: 2
-				-
-					date: '07.12.2019 10:00'
-					end: '18:00'
-					type: 3
-				-
-					date: '08.12.2019 9:00'
-					end: '16:00'
-					type: 3
-		-
-			name: 'Základy kineziologie'
-			price: 2900
-			occupied: false
-			place: %place.dumsvetla%
-			lectors:
-				- 'Zdeňka Ocelíková'
-			dates:
-				-
-					date: '19.10.2019 10:00'
-					end: '18:00'
-				-
-					date: '20.10.2019 9:00'
-					end: '16:00'
-		-
 			name: 'Kraniosakrální terapie I+II a Práce s energií'
 			price: 9300
 			deposit: 3300
@@ -359,7 +172,7 @@ parameters:
 			name: 'Kraniosakrální terapie I+II a Práce s energií'
 			price: 9300
 			deposit: 3300
-			occupied: false
+			occupied: true
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'
@@ -388,7 +201,7 @@ parameters:
 			name: 'Kraniosakrální terapie I+II+III a Práce s energií'
 			price: 12800
 			deposit: 3800
-			occupied: false
+			occupied: true
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'
@@ -467,7 +280,7 @@ parameters:
 			name: 'Kraniosakrální terapie I+II a Práce s energií'
 			price: 9300
 			deposit: 3300
-			occupied: false
+			occupied: true
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'
@@ -495,7 +308,7 @@ parameters:
 		-
 			name: 'Práce s energií a kvantovým polem'
 			price: 2200
-			occupied: false
+			occupied: true
 			place: %place.dumsvetla%
 			lectors:
 				- 'Zdeňka Ocelíková'
